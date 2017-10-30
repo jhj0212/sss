@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <!-- 优先加载-固定日期插件css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/lib/dataTime.css">
+    <!-- 其他手写样式css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/addMemberCard.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>新建会员卡</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 头部标题 -->
+        <div id="headerContainer">
+            <h3>新建会员卡</h3>
+        </div>
+        <!-- 信息验证提示 -->
+        <h3 id="validate"></h3>
+        <form id="form" method="post" action="{:U('admin/create/createMember')}">
+            <!-- 基本信息容器：包括商户名称、卡券颜色、卡券标题、有效期、可用时段 -->
+            <div id="baseContianer">
+                <h4>基本信息</h4>
+                <!-- 商户名称 -->
+                <div class="base_shop">
+                    <p>商户名称：<span>吉林省腾放科技</span></p>
+                </div>
+                <!-- 商户提示信息 -->
+                <p class="base_shop_text">如商户信息有变更，请在卡券商户资料更新。</p>
+                <!-- 卡券颜色:固定颜色 -->
+                <div class="base_color_container">
+                    <span>卡券颜色：</span>
+                    <!-- 卡券支持的颜色列表；6个，传递不同值来识别颜色 -->
+                    <div class="base_color_list">
+                        <div class="base_color color0 true">
+                            <input type="radio" name="baseColor" checked="checked" value="Color010"></input>
+                        </div>
+                        <div class="base_color color1">
+                            <input type="radio" name="baseColor" value="Color030"></input>
+                        </div>
+                        <div class="base_color color2">
+                            <input type="radio" name="baseColor" value="Color050"></input>
+                        </div>
+                        <div class="base_color color3">
+                            <input type="radio" name="baseColor" value="Color070"></input>
+                        </div>
+                        <div class="base_color color4">
+                            <input type="radio" name="baseColor" value="Color080"></input>
+                        </div>
+                        <div class="base_color color5">
+                            <input type="radio" name="color" value="Color100"></input>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡券标题 -->
+                <div class="base_title">
+                    <span>会员卡标题：</span>
+                    <input type="text" name="title" placeholder="请输入卡券标题"></input>
+                </div>
+                <!-- 卡券有效期->两种有效期二选一 -->
+                <div class="base_chooseTime">
+                    <span>有效期：</span>
+                    <!-- 固定有效期 -->
+                    <div class="chooseTime_fixed">
+                        <div>
+                            <input type="radio" checked name="chooseTime" value="DATE_TYPE_FIX_TIME_RANGE"></input>
+                            <span>固定日期</span>
+                        </div>
+                        <!-- 日期选择插件 -->
+                        <div class="chooseTime_fixed_content">
+                            <div class="iDate date">
+                                <input type="text" name="begin_timestamp" class="chooseTimeFixed1" name="begin_timestamp">
+                                <button type="button" class="addOn"></button>
+                            </div>
+                            <span>至</span>
+                            <div class="iDate date">
+                                <input type="text" name="end_timestamp" class="chooseTimeFixed2" name="end_timestamp">
+                                <button type="button" class="addOn"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 生效有效期 -->
+                    <div class="chooseTime_select">
+                        <input type="radio" name="chooseTime" value="1">永久生效</input>
+                    </div>
+                </div>
+                <!-- 可用时间段 -->
+                <div class="base_slot">
+                    <span>可用时段：</span>
+                    <!-- 全部时段 -->
+                    <div class="slot_all">
+                        <input type="radio" name="slot" value="0">全部时段</input>
+                    </div>
+                    <!-- 部分时段 -->
+                    <div class="slot_some">
+                        <input type="radio" name="slot" value="1">部分时段</input>
+                        <!-- 部分时段->固定日期选择 -->
+                        <div class="slot_some_day">
+                            <span>日期(可多选)：</span>
+                            <div>
+                                <input type="checkbox" class="slotName" name="limit[]" value="MONDAY">周一</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="TUESDAY">周二</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="WEDNESDAY">周三</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="THURSDAY">周四</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="FRIDAY">周五</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="SATURDAY">周六</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="SUNDAY">周日</input>
+                            </div>
+                            <p class="addTime">添加时间段：<span>(仅可以添加两组，选填)</span></p>
+                            <div class="slot_some_input">
+                                <span>第一组时间：</span>
+                                <input type="text" name="begin_time[]" class="slotInput"></input>
+                                <span>至</span>
+                                <input type="text" name="end_time[]" class="slotInput"></input>
+                            </div>
+                            <div class="slot_some_input">
+                                <span>第二组时间：</span>
+                                <input type="text" name="begin_time[]" class="slotInput"></input>
+                                <span>至</span>
+                                <input type="text" name="end_time[]" class="slotInput"></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 会员卡优惠 -->
+                <div class="memberYouhui">
+                    <div class="memberYouhui_checkContainer">
+                        <span>会员卡优惠：</span>
+                        <input type="checkbox" checked value="true" name="supply_bonus" class="youhui_check_1">积分优惠</input>
+                        <input type="checkbox" checked value="true" name="discount" class="youhui_check_2">折扣优惠</input>
+                    </div>
+                    <div class="memberYouhui_first Youhui_first">
+                        <div>
+                            <span>消费送积分：</span>
+                            <div>
+                                <span>每消费</span>
+                                <input type="text" name="cost_money_unit" class="youhui_input"></input><span>元，</span>
+                                <span>赠送</span>
+                                <input type="text" name="increase_bonus" class="youhui_input"></input><span>积分</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>单次上限(选填)：</span>
+                            <div>
+                                <input type="text" name="max_increase_bonus" class="allInput"></input>
+                                <span>积分</span>
+                            </div>
+                            <span class="sign">请设置单次增加积分的上限，不填写表示无限制</span>
+                        </div>
+                        <div>
+                            <span>激活送积分(选填)：</span>
+                            <div>
+                                <input type="text" class="allInput"></input>
+                                <span>积分</span>
+                            </div>
+                            <span class="sign">请设置激活会员卡赠送的积分，不填写表示不赠送</span>
+                        </div>
+                        <div>
+                            <span>积分抵扣：</span>
+                            <div>
+                                <span>每使用</span>
+                                <input type="text" name="cost_bonus_unit" class="youhui_input"></input><span>积分，</span>
+                                <span>抵扣 </span>
+                                <input type="text" name="reduce_money" class="youhui_input"></input><span>元</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>抵扣条件(选填)：</span>
+                            <div>
+                                <span>订单满</span>
+                                <input type="text" name="least_money_to_use_bonus" class="youhui_input"></input><span>元可用，</span>
+                                <span>单笔上限</span>
+                                <input type="text" name="max_reduce_bonus" class="youhui_input"></input><span>积分</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="memberYouhui_first Youhui_second">
+                        <div>
+                            <span>享受折扣：</span>
+                            <div>
+                                <input name="baseDiscount" name="discount" type="text"></input>
+                                <span>折</span>
+                            </div>
+                            <span class="sign">请填写1-9.9之间的数字，精确到小数点后1位</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 会员卡详情 -->
+            <div id="discountContianer">
+                <h4>会员卡详情</h4>
+                <!-- 特权说明 -->
+                <div class="discount_notice">
+                    <span>特权说明：</span>
+                    <textarea name="prerogative" placeholder="注：1、上文设置中，如已经填写“积分优惠”“折扣优惠”的内容，将会自动在用户会员卡详情展示，无需重复填写。2、建议填写其他特权，举例：100积分可兑换精美礼品；会员日可享受折上折优惠等"></textarea>
+                </div>
+                <!-- 注意事项 -->
+                <div class="discount_notice">
+                    <span>使用须知(选填)：</span>
+                    <textarea name="description" placeholder="注：1、上文设置中，如已经填写“积分优惠”“折扣优惠”的内容，将会自动在用户会员卡详情展示，无需重复填写。2、建议填写其他注意事项，举例：积分不支持兑换现金"></textarea>
+                </div>
+            </div>
+            <!-- 商户介绍(选填) -->
+            <div id="shopContainer">
+                <h4>商户介绍(选填)</h4>
+                <!-- 电话信息 -->
+                <div class="shopPhone">
+                    <span>电话：</span>
+                    <input type="text" class="phone" name="service_phone" placeholder="请填写手机号码"></input>
+                </div>
+                <!-- 商户服务 -->
+                <div class="shopSupport">
+                    <span>商户服务(可多选)：</span>
+                    <div>
+                        <input type="checkbox" name="business_service[]" value="BIZ_SERVICE_FREE_WIFI">免费WIFI</input>
+                        <input type="checkbox" name="business_service[]" value="BIZ_SERVICE_WITH_PET">可带宠物</input>
+                        <input type="checkbox" name="business_service[]" value="BIZ_SERVICE_FREE_PARK">免费停车</input>
+                        <input type="checkbox" name="business_service[]" value="BIZ_SERVICE_DELIVER">可外卖</input>
+                    </div>
+                </div>
+            </div>
+            <!-- 提交 -->
+            <div id="btnContainer">
+                <button id="submitBtn" type="submit">立即提交</button>
+            </div>
+        </form>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/lib/moment.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/lib/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/addMemberCard.js"></script>
+</body>
+
+</html>

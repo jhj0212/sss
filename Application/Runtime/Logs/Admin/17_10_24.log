@@ -1,0 +1,10 @@
+[ 2017-10-24T13:49:33+08:00 ] ::1 /xhy.jltengfang.com/index.php/Admin/Admin/foods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sid D:\xampp\htdocs\xhy.jltengfang.com\Application\Admin\Controller\AdminController.class.php 第 594 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'future_restaurant_style'@'localhost' (using password: YES)
+

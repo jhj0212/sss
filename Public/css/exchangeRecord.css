@@ -1,0 +1,89 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+/*表格主体*/
+
+#table {
+    width: 100%;
+    height: auto;
+}
+
+
+/*表格容器*/
+
+#table-container {
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+/*移动端隐藏滚动条但可以滚动 css hack*/
+
+#table-container::-webkit-scrollbar {
+    display: none;
+}
+
+/*表格*/
+#table {
+    border: 0;
+    border-collapse: collapse;
+}
+
+#table td,
+#table th {
+    min-width: 5rem;
+    border: 1px solid #ddd;
+    padding: .5rem;
+}
+#table td{
+    text-align: center;
+    font-size: .75rem;
+}
+
+/*表头*/
+
+#table thead{
+    background: #CACACA;
+}
+#table thead th{
+    border-top: none;
+}
+
+/*表身*/
+
+#table tbody td{
+    color: #656565
+}
+#table tbody td span.table_exp{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #F22D2D;
+}

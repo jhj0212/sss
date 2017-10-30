@@ -1,0 +1,2204 @@
+[ 2017-09-28T09:54:02+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-09-28T09:54:05+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=0113L4ON1UReN51Y3EON1tpNNN13L4Oc&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2017-09-28T09:55:16+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-09-28T09:55:32+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-09-28T09:55:57+08:00 ] 124.235.153.58 /index.php/Admin/Admin/admin/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: keywords /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM sys_user as p INNER JOIN user_permission c ON p.sid=c.sid AND p.sys_user_level=c.sys_user_level  WHERE ( p.sid = "0000000001" ) ORDER BY p.sys_user_openid desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000954s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000992s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2017-09-28T09:56:04+08:00 ] 124.235.153.58 /index.php/Admin/Admin/staff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined index: keywords /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 277 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sid = "0000000001" )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-09-28T09:56:08+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-09-28T09:56:15+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-09-28T13:40:25+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-09-28T13:40:25+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+
+[ 2017-09-28T13:40:30+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=021Nv3Yl1PVXpi02NaYl1kraYl1Nv3Yf&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-09-28T13:40:35+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-09-28T13:40:41+08:00 ] 182.254.86.156 /admin/create/rec?signature=7fea3236d8ccf2e18d218770535b6acde97e9382&timestamp=1506577238&nonce=987355229&openid=oGcQ7wYU9xW_09dDE4R1e0BsaeEs&encrypt_type=aes&msg_signature=90c2c7f8a18d4c19c265a674803457d9e9c0c5a6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+
+[ 2017-09-28T13:40:51+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003677s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-09-28T13:42:34+08:00 ] 182.254.86.146 /admin/create/rec?signature=c9752676f3170db317c3607960ddffa44f4e9407&timestamp=1506577351&nonce=1894981750&openid=oGcQ7wYU9xW_09dDE4R1e0BsaeEs&encrypt_type=aes&msg_signature=5469765254b064272d0869b2f7b2d750201c80ce
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: Event /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-28T13:42:43+08:00 ] 182.254.86.141 /admin/create/rec?signature=dafb7f94a8d385bd71759ce50fbfd4d0ad055dd4&timestamp=1506577359&nonce=93885934&openid=oGcQ7wYU9xW_09dDE4R1e0BsaeEs&encrypt_type=aes&msg_signature=5ab0033201802e6d33f1c8e49cdf033bc9e04dd2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('unsubscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('unsubscribe',NULL)
+
+[ 2017-09-28T13:42:46+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004437s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-09-28T13:42:46+08:00 ] 182.254.86.156 /admin/create/rec?signature=ec3ed27ecd38518c0e7f97837842c5b0ec6272fb&timestamp=1506577366&nonce=1844036103&openid=oGcQ7wYU9xW_09dDE4R1e0BsaeEs&encrypt_type=aes&msg_signature=7f981e34362a584ee47450d1646c344f978b10dd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0011s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+
+[ 2017-09-28T13:42:56+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2017-09-28T13:55:47+08:00 ] 182.254.86.148 /admin/create/rec?signature=378d28ae8c99687e658f7218e79a4199f82bbcb5&timestamp=1506578143&nonce=167730137&openid=oGcQ7wbMxW0kiNEg-E2z2WlR75SQ&encrypt_type=aes&msg_signature=f58f7ddd6406c7487d1d15109dad5da1164ced0f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('unsubscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('unsubscribe',NULL)
+
+[ 2017-09-28T14:02:21+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2017-09-28T14:02:28+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2017-09-28T14:02:31+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined index: sys_user_openid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 147 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = null AND `sid` = '0000000001'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 32 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 33 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 35 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 40 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 44 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 48 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-09-28T14:03:08+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-09-28T14:03:10+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 32 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 33 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 35 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 40 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 44 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 48 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-09-28T14:03:15+08:00 ] 124.235.153.58 /index.php/Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+
+[ 2017-09-28T14:03:19+08:00 ] 124.235.153.58 /index.php/Admin/Admin?code=001pZ4500NHu2E1Hsu400Jja500pZ45L&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-09-28T14:03:20+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-09-28T14:03:29+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2017-09-28T14:03:34+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 32 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 33 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 35 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 40 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 44 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 48 行.
+NOTIC: [8] Undefined variable: data /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-09-28T14:08:00+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined index: sys_user_openid /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 32 行.
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 33 行.
+NOTIC: [8] Undefined index: sys_user_name /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 35 行.
+NOTIC: [8] Undefined index: sys_nickname /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 40 行.
+NOTIC: [8] Undefined index: sys_phone_number /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 44 行.
+NOTIC: [8] Undefined index: sys_user_position /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 48 行.
+NOTIC: [8] Undefined index: sys_attention_time /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2017-09-28T14:08:08+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003696s ]
+
+[ 2017-09-28T14:08:13+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=081s8tgP0SbiK82bFeiP0UjJgP0s8tgE&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-09-28T14:08:15+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000292s ]
+
+[ 2017-09-28T14:08:22+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-09-28T14:08:28+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: sys_user_openid /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 32 行.
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 33 行.
+NOTIC: [8] Undefined index: sys_user_name /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 35 行.
+NOTIC: [8] Undefined index: sys_nickname /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 40 行.
+NOTIC: [8] Undefined index: sys_phone_number /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 44 行.
+NOTIC: [8] Undefined index: sys_user_position /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 48 行.
+NOTIC: [8] Undefined index: sys_attention_time /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-09-28T14:09:13+08:00 ] 182.254.86.153 /admin/create/rec?signature=59772bb7f96f94e32757462a93071b6184f688f2&timestamp=1506578949&nonce=1627832373&openid=oGcQ7wbMxW0kiNEg-E2z2WlR75SQ&encrypt_type=aes&msg_signature=3ebd93bc627fb2505189b7dc42d1620be34f3a65
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+
+[ 2017-09-28T14:09:19+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-09-28T14:09:24+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=001n3FRx0xOqlf1fVQQx0kCJRx0n3FRQ&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004383s ]
+
+[ 2017-09-28T14:09:30+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-09-28T14:09:32+08:00 ] 182.254.86.153 /admin/create/rec?signature=6e6d15cabc3cc712b0556a96cf0f84f30c80575a&timestamp=1506578969&nonce=500082217&openid=oGcQ7wbMxW0kiNEg-E2z2WlR75SQ&encrypt_type=aes&msg_signature=fa6c17e986655799d9b17e56d6e62dc1e1172972
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: Event /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-28T14:09:39+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2017-09-28T14:09:45+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: sys_attention_time /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-09-28T14:09:57+08:00 ] 182.254.86.143 /admin/create/rec?signature=d08ec477dae9c812a0f05b644494f5bde2504ec2&timestamp=1506578994&nonce=1278760605&openid=oGcQ7wbMxW0kiNEg-E2z2WlR75SQ&encrypt_type=aes&msg_signature=065e25c403ecacab0bb36defc82ce411e1fd7d19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004341s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: Event /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1112 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-28T14:40:30+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2017-09-28T14:43:58+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0006s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wechat_session` SET `val`='T3PC79LMPgx5T3Ko3GwQDsWBF41dtbkf11OjIR6lo0-UeTTasZrUPmoTVXj2Um9zQaUjOhrAh1pajKN1aZOoGf8cVJCHhjbSwz9STitFd-sJXRgAIADRL',`time`='1506581038' WHERE `id` = 1 [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2017-09-28T14:45:29+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+
+[ 2017-09-28T14:45:32+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=071bMly320V4fL02eXy32c03y32bMly4&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-09-28T14:46:02+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-09-28T14:46:09+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-09-28T14:46:29+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-09-28T14:46:32+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-09-28T14:47:38+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005151s ]
+
+[ 2017-09-28T14:47:42+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=001qzqPG0nsYih29R0QG0RGmPG0qzqPR&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003725s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-09-28T14:47:51+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-09-28T14:47:58+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2017-09-28T14:48:01+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-09-28T14:49:49+08:00 ] 124.235.153.58 /index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+ERR: 非法操作:index
+
+[ 2017-09-28T14:49:55+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003031s ]
+
+[ 2017-09-28T14:49:59+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=021RsQRr1ti41q0NBHRr1x2LRr1RsQRh&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0134s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2017-09-28T14:50:00+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2017-09-28T14:50:05+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-09-28T14:50:07+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-09-28T14:51:56+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-09-28T14:52:11+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-09-28T14:52:50+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-09-28T14:54:46+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2017-09-28T14:54:58+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-09-28T14:57:08+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-09-28T14:57:32+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: li /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-09-28T15:00:34+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000773s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000797s ]
+NOTIC: [8] Undefined variable: li /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-28T15:06:11+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user_permission` WHERE `sid` = '0000000001'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-09-28T15:22:02+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+
+[ 2017-09-28T15:22:06+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=071QjJNT13BQr81nB4QT12M2OT1QjJNQ&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-09-28T15:22:12+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-09-28T15:22:18+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005174s ]
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-09-28T15:22:21+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user_permission` WHERE `sid` = '0000000001'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-09-28T15:23:09+08:00 ] 124.235.153.58 /index.php/Admin/Admin/admin/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined index: keywords /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM sys_user as p INNER JOIN user_permission c ON p.sid=c.sid AND p.sys_user_level=c.sys_user_level  WHERE ( p.sid = "0000000001" ) ORDER BY p.sys_user_openid desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-09-28T15:23:26+08:00 ] 124.235.153.58 /index.php/Admin/Admin/editAdmin/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user_permission` WHERE `sid` = '0000000001'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/70a779ec5eb6d7aa92bdf26f87b1ae9e.php 第 52 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/70a779ec5eb6d7aa92bdf26f87b1ae9e.php 第 52 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/70a779ec5eb6d7aa92bdf26f87b1ae9e.php 第 52 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/70a779ec5eb6d7aa92bdf26f87b1ae9e.php 第 52 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2017-09-28T15:23:34+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003605s ]
+
+[ 2017-09-28T15:23:41+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-09-28T15:23:47+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user_permission` WHERE `sid` = '0000000001'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-09-28T15:24:09+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user_permission` WHERE `sid` = '0000000001'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005417s ]
+
+[ 2017-09-28T15:25:07+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user_permission` WHERE `sid` = '0000000001'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-09-28T15:25:16+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0007s ]
+SQL: SELECT `sys_user_levelname` FROM `user_permission` WHERE `sys_user_level` = '1' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: sys_attention_time /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 160 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0005s ]
+SQL: UPDATE `sys_user` SET `sys_user_level`='1',`sys_user_position`='管理员',`sys_attention_time`=NULL WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-09-28T15:25:18+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002817s ]
+
+[ 2017-09-28T15:25:25+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-09-28T15:26:15+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-09-28T15:27:32+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-09-28T15:27:42+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-09-28T15:27:45+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff/sys_user_openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `user_permission` WHERE `sid` = '0000000001'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+NOTIC: [8] Use of undefined constant sys_user_level - assumed 'sys_user_level' /var/www/xhy/Application/Runtime/Cache/Admin/a6f2941bd33e1df43f6f7ec1da72500a.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2017-09-28T15:28:21+08:00 ] 124.235.153.58 /index.php/Admin/Admin/changeStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `user_permission` [ RunTime:0.0007s ]
+SQL: SELECT `sys_user_levelname` FROM `user_permission` WHERE `sys_user_level` = '2' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: sys_attention_time /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 160 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0006s ]
+SQL: UPDATE `sys_user` SET `sys_user_level`='2',`sys_user_position`='收银员',`sys_attention_time`=NULL WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-09-28T15:28:22+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+NOTIC: [8] Undefined variable: person /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2017-09-28T15:28:28+08:00 ] 124.235.153.58 /index.php/Admin/Admin/addStaff.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined index: sid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 137 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sys_user` WHERE ( sys_nickname like "%金%" )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: sid /var/www/xhy/Application/Runtime/Cache/Admin/6bd865612a6bbc71caccaeac815e3951.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-09-28T16:17:03+08:00 ] 124.235.153.58 /index.php/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+ERR: 非法操作:index
+
+[ 2017-09-28T16:17:13+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-09-28T16:17:17+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=071ldadS0oLqua2ePn9S02kRcS0ldadH&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-09-28T16:18:04+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=071ldadS0oLqua2ePn9S02kRcS0ldadH&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+NOTIC: [8] Undefined index: openid /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 116 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = null AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-09-28T16:18:58+08:00 ] 123.151.138.100 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-09-28T16:19:02+08:00 ] 123.151.138.100 /index.php/Admin/Admin/?code=001Ta9YT0TnjGU1jwoYT0vrfYT0Ta9YE&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005685s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-09-28T16:19:05+08:00 ] 117.185.27.113 /index.php/Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-09-28T17:02:58+08:00 ] 124.235.153.58 /index.php/Admin/Admin/admin/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined index: keywords /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM sys_user as p INNER JOIN user_permission c ON p.sid=c.sid AND p.sys_user_level=c.sys_user_level  WHERE ( p.sid = "0000000001" ) ORDER BY p.sys_user_openid desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-09-28T17:11:19+08:00 ] 123.151.138.100 /index.php/Admin/Admin/admin/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004351s ]
+NOTIC: [8] Undefined index: keywords /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM sys_user as p INNER JOIN user_permission c ON p.sid=c.sid AND p.sys_user_level=c.sys_user_level  WHERE ( p.sid = "0000000001" ) ORDER BY p.sys_user_openid desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-09-28T17:17:09+08:00 ] 101.226.66.177 /index.php/Admin/Admin/admin/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+NOTIC: [8] Undefined index: keywords /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT p.*,c.* FROM sys_user as p INNER JOIN user_permission c ON p.sid=c.sid AND p.sys_user_level=c.sys_user_level  WHERE ( p.sid = "0000000001" ) ORDER BY p.sys_user_openid desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-09-28T17:19:47+08:00 ] 117.185.27.115 /index.php/Admin/Admin/admin/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: keywords /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM sys_user as p INNER JOIN user_permission c ON p.sid=c.sid AND p.sys_user_level=c.sys_user_level  WHERE ( p.sid = "0000000001" ) ORDER BY p.sys_user_openid desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-09-28T20:17:12+08:00 ] 119.147.207.152 /index.php/Admin/Admin/admin/sid/0000000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: keywords /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT p.*,c.* FROM sys_user as p INNER JOIN user_permission c ON p.sid=c.sid AND p.sys_user_level=c.sys_user_level  WHERE ( p.sid = "0000000001" ) ORDER BY p.sys_user_openid desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+

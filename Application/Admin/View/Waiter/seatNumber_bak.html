@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>餐位管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/quanxian/css/cwguanli.css" />
+</head>
+<body class="main">
+    <div class="xzk">
+        <div class="xzk_z">
+            <p>大厅</p>
+        </div>
+        <div class="xzk_y">
+            <p>包房</p>
+        </div>
+    </div>
+    <input type="hidden" name="sid" value="{$sid}">
+    <!--canwei开始-->
+    <div class="canwei">
+        <div class="hang">
+            <foreach name="person" item="data">
+                <div class="
+                <if condition='$data.state eq 1'>
+                    fangkuai
+                </if>
+                <if condition='$data.state eq 0'>
+                    fangkuai2
+                </if>
+                ">
+                    <ul>
+                        <a href="{:U('changeSeat',array('table_id'=>$data['table_id'],'sid'=>$data['sid'],'state'=>$data['state']))}">
+                            <li><span>{$data.table_id}</span></li>
+                            <li><span>{$data.table_name}</span></li>
+                            <li>
+                                <span>
+                                    <if condition="$data.state eq 0">未使用</if>
+                                    <if condition="$data.state eq 1">用餐中</if>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <if condition="$data.table_type eq 0">包房</if>
+                                    <if condition="$data.table_type eq 1">2人桌</if>
+                                    <if condition="$data.table_type eq 2">4人桌</if>
+                                    <if condition="$data.table_type eq 3">6人桌</if>
+                                    <if condition="$data.table_type eq 3">8人桌</if>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <if condition="$data.is_order eq 0">提供预订</if>
+                                    <if condition="$data.is_order eq 1">提供预订</if>
+                                </span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </foreach>
+        </div>
+    </div>
+    <!--canwei结束-->
+
+</body>
+</html>

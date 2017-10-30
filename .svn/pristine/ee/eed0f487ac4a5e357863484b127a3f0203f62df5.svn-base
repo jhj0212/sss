@@ -1,0 +1,180 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #F1F1F1;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+/*搜索*/
+#searchContainer{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#searchContainer input{
+    position: relative;
+    z-index: 0;
+    width: 80%;
+    padding: .2rem 5%;
+    height: 1.5rem;
+    border-radius: .3rem;
+    border: none;
+    background: #E4E4E4;
+    outline: none;
+}
+#searchContainer div{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 10%;
+    z-index: 1;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#searchContainer div img{
+    width: 80%;
+    height: 80%;
+}
+/*我的积分*/
+#expContainer{
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+    padding-bottom: 1rem;
+    font-size: .75rem;
+    font-weight: bold;
+    /*color: #FF3A30;*/
+    border-bottom: 1px solid #ddd;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+#expContainer a{
+    color: #333;
+    text-decoration: none;
+}
+/*商品列表*/
+#goodsContainer{
+    width: 90%;
+    margin: 0 auto;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+#goodsContainer .goods{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background: #fff;
+    margin: 0% auto 5%;
+    border-radius: .2rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+#goodsContainer .goods .goods_img{
+    width: 100%;
+    height: 8rem;
+    border-radius: .2rem;
+}
+#goodsContainer .goods>div{
+    width: 100%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+#goodsContainer .goods>div .goods_title{
+    margin: .5rem 0;
+}
+#goodsContainer .goods>div .goods_exp{
+    font-weight: bold;
+    color: #FF3A30;
+}

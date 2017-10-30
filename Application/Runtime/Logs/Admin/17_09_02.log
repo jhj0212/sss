@@ -1,0 +1,1551 @@
+[ 2017-09-02T10:05:48+08:00 ] ::1 /xhy/index.php/Admin/Index/getNumber
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `store_info` [ RunTime:0.0009s ]
+SQL: SELECT `sid`,`address`,`telephone` FROM `store_info` WHERE ( sid = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [2] Illegal string offset 'telephone' D:\wamp64\www\xhy\Application\Runtime\Cache\Admin\064202b93e6edb625654e4191c3f239f.php 第 47 行.
+NOTIC: [2] Illegal string offset 'telephone' D:\wamp64\www\xhy\Application\Runtime\Cache\Admin\064202b93e6edb625654e4191c3f239f.php 第 47 行.
+NOTIC: [2] Illegal string offset 'telephone' D:\wamp64\www\xhy\Application\Runtime\Cache\Admin\064202b93e6edb625654e4191c3f239f.php 第 47 行.
+NOTIC: [2] Illegal string offset 'address' D:\wamp64\www\xhy\Application\Runtime\Cache\Admin\064202b93e6edb625654e4191c3f239f.php 第 51 行.
+NOTIC: [2] Illegal string offset 'address' D:\wamp64\www\xhy\Application\Runtime\Cache\Admin\064202b93e6edb625654e4191c3f239f.php 第 51 行.
+NOTIC: [2] Illegal string offset 'address' D:\wamp64\www\xhy\Application\Runtime\Cache\Admin\064202b93e6edb625654e4191c3f239f.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2017-09-02T10:09:58+08:00 ] ::1 /xhy/index.php/Admin/Index/getNumber
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `store_info` [ RunTime:0.0009s ]
+SQL: SELECT `sid`,`address`,`telephone` FROM `store_info`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2017-09-02T10:10:20+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0003s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020001','1','13344449999','123','2','1','2017-09-02 10:10:20','1') [ RunTime:0.0129s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T10:10:20+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: SELECT `table_type`,count(queue_id) as num FROM `queue_number` WHERE `sid` = '1' AND substr(start_time,1,10) = 'substr(now(),1,10)' AND `state` = '0' GROUP BY table_type  [ RunTime:0.0004s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state="0" and mi.table_type="1" and start_time<(select start_time from queue_number qn where openid="222") [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2017-09-02T10:11:11+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: SELECT `table_type`,count(queue_id) as num FROM `queue_number` WHERE `sid` = '1' AND substr(start_time,1,10) = 'substr(now(),1,10)' AND `state` = '0' GROUP BY table_type  [ RunTime:0.0004s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state="0" and mi.table_type="1" and start_time<(select start_time from queue_number qn where openid="222") [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2017-09-02T10:12:33+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: SELECT `table_type`,count(queue_id) as num FROM `queue_number` WHERE `sid` = '1' AND substr(start_time,1,10) = 'substr(now(),1,10)' AND `state` = '0' GROUP BY table_type  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: num D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 172 行.
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state="0" and mi.table_type="1" and start_time<(select start_time from queue_number qn where openid="222") [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-09-02T10:12:36+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0004s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020002','1','13344449999','123','2','1','2017-09-02 10:12:36','1') [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T10:12:37+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: SELECT `table_type`,count(queue_id) as num FROM `queue_number` WHERE `sid` = '1' AND substr(start_time,1,10) = 'substr(now(),1,10)' AND `state` = '0' GROUP BY table_type  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: num D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 172 行.
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state="0" and mi.table_type="1" and start_time<(select start_time from queue_number qn where openid="222") [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2017-09-02T10:16:40+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0003s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020003','1','13344449999','123','2','1','2017-09-02 10:16:40','1') [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T10:16:40+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: SELECT `table_type`,count(queue_id) as num FROM `queue_number` WHERE `sid` = '1' AND substr(start_time,1,10) = 'substr(now(),1,10)' AND `state` = '0' GROUP BY table_type  [ RunTime:0.0004s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state="0" and mi.table_type="1" and start_time<(select start_time from queue_number qn where openid="222") [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2017-09-02T15:58:18+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: SELECT `table_type`,count(queue_id) as num FROM `queue_number` WHERE `sid` = '1' AND substr(start_time,1,10) = 'substr(now(),1,10)' AND `state` = '0' GROUP BY table_type  [ RunTime:0.0005s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state="0" and mi.table_type="1" and start_time<(select start_time from queue_number qn where openid="222") [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-09-02T15:59:44+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0003s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020004','1','13344449999','123','2','1','2017-09-02 15:59:44','1') [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T15:59:44+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: SELECT `table_type`,count(queue_id) as num FROM `queue_number` WHERE `sid` = '1' AND substr(start_time,1,10) = 'substr(now(),1,10)' AND `state` = '0' GROUP BY table_type  [ RunTime:0.0005s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state="0" and mi.table_type="1" and start_time<(select start_time from queue_number qn where openid="222") [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2017-09-02T16:07:41+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+
+[ 2017-09-02T16:08:49+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0003s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020005','1','13344449999','123','2','1','2017-09-02 16:08:49','1') [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T16:08:49+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: open_id D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 194 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 6
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type='1' and start_time<(select start_time from queue_number qn where openid=)
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 6
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type='1' and start_time<(select start_time from queue_number qn where openid=)
+
+[ 2017-09-02T16:13:30+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0004s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0007s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020006','1','13344449999','123','2','1','2017-09-02 16:13:30','1') [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T16:13:30+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002176s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0007s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type='1' and start_time<(select start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type='1' and start_time<(select start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:27:20+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0003s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:29:01+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:29:01+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:29:56+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:31:21+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:31:41+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:33:17+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0004s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020007','1','13344449999','123','2','1','2017-09-02 16:33:17','1') [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T16:33:17+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and start_time<(select start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:33+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:34+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:34+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:35+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:35+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0007s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:35+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:35+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:36+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:36+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:36+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:36+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:36+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:37+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:37+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0003s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:38+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:38+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:35:40+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0003s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020008','1','13344449999','123','2','1','2017-09-02 16:35:40','1') [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T16:35:40+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+ERR: 1242:Subquery returns more than 1 row
+ [ SQL语句 ] : select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where mu.state='0' and mi.table_type=1 and qn.start_time<(select qn.start_time from queue_number qn where openid='123')
+
+[ 2017-09-02T16:49:16+08:00 ] ::1 /xhy/index.php/Admin/Index/setQueueNumber.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: select sys_user_openid from sys_user where sys_user_openid=123 [ RunTime:0.0003s ]
+SQL: select queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time from queue_number group by start_time DESC limit 1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: INSERT INTO `queue_number` (`queue_id`,`sid`,`phone_number`,`openid`,`person_count`,`table_type`,`start_time`,`state`) VALUES ('201709020009','1','13344449999','123','2','1','2017-09-02 16:49:16','1') [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant numberSuccess - assumed 'numberSuccess' D:\wamp64\www\xhy\Application\Admin\Controller\IndexController.class.php 第 122 行.
+
+[ 2017-09-02T16:49:16+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2017-09-02T16:50:37+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2017-09-02T16:50:49+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0006s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-09-02T16:50:49+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2017-09-02T16:50:50+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0006s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2017-09-02T16:51:22+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2017-09-02T16:52:03+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2017-09-02T16:52:45+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0003s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-09-02T16:53:56+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0007s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001048s ]
+
+[ 2017-09-02T16:54:32+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-09-02T16:55:01+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0004s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0004s ]
+SQL: select count(qn.start_time) as linecode, 
+  				  (case when mi.person_count=2 then (count(qn.start_time))*10 when mi.person_count=4 then (count(qn.start_time))*15 when mi.person_count=6 then (count(qn.start_time))*20 else 0 end ) as waitingtime 
+				  from queue_number qn 
+				  left join meal_usage mu on mu.sid=qn.sid 
+				  left join meal_info mi on mi.sid=qn.sid 
+				  where qn.sid=1  
+				  	and mu.state='0' 
+  					and mi.table_type=1 
+  					and now()>(select max(qn.start_time) from queue_number qn where openid='123') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2017-09-02T17:28:17+08:00 ] ::1 /xhy/index.php/Admin/Index/numberSuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: select * from queue_number where openid='123' order by start_time desc limit 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `queue_number` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0005s ]
+SQL: select table_type,count(queue_id) as num from queue_number where sid = '1' 
+	  				and substr(start_time,1,10)=substr(now(),1,10)
+	  				and state = '0'
+	  				group by table_type [ RunTime:0.0005s ]
+SQL: select (case when table_type='1' then (count(start_time))*10 when table_type='2' then (count(start_time))*15 when table_type='3' then (count(start_time))*20 else 0 end ) as waitingtime 
+		from queue_number 
+		where sid=1
+		and table_type =1 
+		and state='0'
+		and now()>(select max(start_time) from queue_number where openid='123'); [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+

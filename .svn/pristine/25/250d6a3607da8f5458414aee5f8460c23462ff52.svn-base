@@ -1,0 +1,172 @@
+html,
+body,
+div,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0 none;
+}
+*{list-style: none;
+	text-decoration: none !important;}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+
+/*main start*/
+.main{
+	width:100%; 
+	height:100%; 
+	background-color:#efeef4; 
+}
+/*选择框*/
+.xzk{
+	width:100%;
+	height:50px;
+}
+.xzk_z{
+	width:50%;
+	height:50px;
+	border-bottom: solid #ff4c2e 2px;
+	float:left;
+}
+.xzk_z p{
+	font-family:"微软雅黑";
+	font-size:1.7rem;
+	color:#ff4c2e;
+	line-height:3rem;
+	text-align:center;
+}
+.xzk_y{
+	width:50%;
+	height:50px;
+	border-bottom: solid #9e9d9d 2px;
+	float:right;
+}
+.xzk_y p{
+	font-family:"微软雅黑";
+	font-size:1.7rem;
+	color:#9e9d9d;
+	line-height:3rem;
+	text-align:center;
+}
+/*餐位*/
+.canwei{
+	width:100%;
+	height:100%;
+	margin:auto;
+}
+.hang{
+	width:99.7%;
+	height:auto;
+	margin:auto;
+	background-color:red;
+	/*margin-top:5px;*/
+}
+.fangkuai0{
+	width:33.03%;
+	height:125px;
+	/*background-color:#ff4c2e;*/
+	background-color:#e9e7e7;
+	float:left;
+	border-bottom: solid #c2c1c7 1px;
+	border-right: solid #c2c1c7 1px;
+}
+.fangkuai0 img{
+	width:60%;
+	height:60%;
+	margin-top:20%;
+	margin-left:20%;
+}
+.fangkuai{
+	width:33.03%;
+	height:125px;
+	/*background-color:#ff4c2e;*/
+	background-color:#ef999a;
+	float:left;
+	border-bottom: solid #c2c1c7 1px;
+	border-right: solid #c2c1c7 1px;
+}
+.fangkuai2{
+	width:33%;
+	height:125px;
+	/*background-color:#13b5b1;*/
+	background-color:#03bbd5;
+	float:left;
+	border-bottom: solid #c2c1c7 1px;
+	border-right: solid #c2c1c7 1px;
+}
+.fangkuai ul li span{
+	line-height:25px;
+	font-family:"微软雅黑";
+    color:#fafafa;
+    font-size:0.9rem;
+    margin-left:5px;
+    margin-top:-10px;
+}
+.fangkuai2 ul li span{
+	line-height:25px;
+	font-family:"微软雅黑";
+    color:#fafafa;
+    font-size:0.9rem;
+    margin-left:5px;
+    margin-top:-10px;
+}
+
+
+
+/*.kuai1{
+	width:33%;
+	height:100%;
+	background-color:blue;
+	float:left;
+	padding:.04rem;
+}
+.nr{
+	width:100%;
+	height:100%;
+	background:url(../img/weiyong.png) no-repeat;
+	background-color:#13b5b1;
+	border-radius: 10px;
+}
+.nr ul li{
+	width:100%; 
+	height:25px; 
+	line-height:45px;
+
+}
+.nr ul li span{
+	line-height:25px;
+	font-family:"微软雅黑";
+    color:#fafafa;
+    font-size:0.9rem;
+    margin-left:10px;
+    margin-top:-5px;
+}*/

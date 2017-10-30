@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title></title>
+        <link rel="stylesheet" href="__PUBLIC__/quanxian/css/frozen.css">
+        <link rel="stylesheet" href="__PUBLIC__/quanxian/css/style.css">
+    </head>
+    <body ontouchstart="">
+        <section class="ui-container ui-center">
+            <i class="ui-icon-success success_icon"></i>
+            <p class="success_p">添加成功</p>
+            <p class="success_p" style="display:none;">签约成功</p>
+            <p class="success_p" style="display:none;">注册成功</p>
+        </section>
+        <!--<script src="__PUBLIC__/home/js/zepto.min.js"></script>
+        <script src="__PUBLIC__/home/js/frozen.js"></script>-->
+        <script>
+
+        </script>
+    </body>
+</html>

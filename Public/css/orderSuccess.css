@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    background: url('../images/orderSuccess/bg.png');
+    background-size: cover;
+}
+
+.logo{
+    width: 9.0625rem;
+    height: 8.875rem;
+    margin: -3rem auto 1rem;
+}
+.title{
+    width: 10.3125rem;
+    height: 4.53rem;
+}
+a{
+	width: 6rem;
+	height: 1.5rem;
+	text-align: center;
+	line-height: 1.5rem;
+	padding: .2rem .5rem;
+	color: #F56F31;
+	font-weight: bold;
+	background: #fff;
+	border-radius: 1rem;
+	margin-top: 1.5rem;
+}

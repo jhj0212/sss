@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>添加人员</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/quanxian/css/quanxian.css" />
+</head>
+<body class="main">
+<form action="{:U('addStaff',array('sid'=>$sid))}" method='post' class="" enctype="multipart/form-data">
+    <div class="tupian">
+        <img src="__PUBLIC__/quanxian/img/gaiyaoi.png"/>
+    </div>
+    <div class="sousuo">
+        <input type="text" name="sys_nickname" value="" placeholder="请输入搜索微信名"/>
+        <button>
+            <img src="__PUBLIC__/quanxian/img/fangda.png"/>
+        </button>
+    </div>
+    <div class="liebiao">
+        <ul>
+            <foreach name="person" item="data">
+
+                <li>
+                    <div class="txxm">
+                        <img src="__PUBLIC__/quanxian/img/toux.png" class="ws1"/>
+                        <p>{$data.sys_user_name}</p>
+                    </div>
+                    <p>
+                        {$data.sys_user_position}
+                        <if condition="$data.sys_user_position eq null">系统用户</if>
+                    </p>
+                    <a href="{:U('changeStaff', array('sys_user_openid' => $data['sys_user_openid'],'sid'=>$data['sid']))}">设置身份 ></a>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+</form>
+</body>
+</html>

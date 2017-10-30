@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/sign.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>签到</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 用户头像 -->
+        <foreach name="result" item="vo">
+        <div id="headContainer">
+            <img src="__PUBLIC__/images/memberCenter/t1.png" alt="用户头像">
+            <span class="nickName">{$vo['nickname']}</span>
+        </div>
+        </foreach>
+        <!-- 内容容器 -->
+        <div id="contentContainer">
+            <!-- 签到按钮 -->
+            <div class="signBtnContainer">
+                <a href="{:U('admin/create/sign_info')}" class="signBtn">签到</a>
+            </div>
+            <!-- 积分详情 -->
+            <div class="cardContainer">
+                <foreach name="res" item="vo">
+                <span>总积分：<span class="card">{$vo['integral_balance']}</span></span>
+                </foreach>
+                <span>每天签到可获得10积分</span>
+            </div>
+            <!-- 签到表格 -->
+            <div class="signTable">
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/sign.js"></script>
+</body>
+
+</html>

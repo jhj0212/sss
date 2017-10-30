@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <!-- 三级联动&地图css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/lib/ydui.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/lib/demo.css" />
+    <!-- 页面主控css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/addShop.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <!-- jquery优先加载 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <!-- 地图 -->
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=EZPCgQ6zGu6hZSmXlRrUMTpr"></script>
+    <script type="text/javascript" src="__PUBLIC__/lib/map.jquery.min.js"></script>
+    <title>新建门店</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 头部标题 -->
+        <div id="headerContainer">
+            <h3>创建门店</h3>
+        </div>
+        <!-- 信息验证提示 -->
+        <h3 id="validate"></h3>
+        <form method="POST" action="{:U('admin/create/createshop')}" name="addShop" id="addShop" enctype="multipart/form-data">
+            <!-- 基本信息容器 -->
+            <input type="hidden" name="city" id="city">
+            <input type="hidden" name="district" id="district">
+            <input type="hidden" name="province" id="province">
+            <input type="hidden" name="street" id="street">
+            <input type="hidden" name="streetNumber" id="streetNumber">
+            <input type="hidden" name="lng" id="lng">
+            <input type="hidden" name="lat" id="lat">
+            <div id="baseContainer">
+                <h4>基本信息</h4>
+                <!-- 三级联动定位 -->
+                <section class="g-flexview">
+                    <section class="g-scrollview">
+                        <div class="m-cell">
+                            <div class="cell-item">
+                                <div class="cell-left">门店定位：<span style="color: #777;font-size: .75rem;">(选择省市区)</span></div>
+                                <div class="cell-right cell-arrow">
+                                    <input type="text" class="cell-input" readonly id="J_Address" name="shopLocation" placeholder="请点选地址信息">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- 由三级联动提供位置，填写详细地图并由map点选 -->
+                <div class="addMap">
+                    <p class="title">门店地址：<span style="color: #777;font-size: .75rem;">(填写门店具体地址)</span></p>
+                    <div class="bMap" id='addMap'></div>
+                    <div id="callback"></div>
+                </div>
+                <!-- 门店名称 -->
+                <div class="shopSingle">
+                    <p class="title">门店名称：</p>
+                    <input type="text" placeholder="请先进行门店定位" name="business_name" class="disabled" disabled value=""></input>
+                </div>
+                 <!-- 门店种类 -->
+                <div class="shopSingle">
+                    <p class="title">门店种类：</p >
+                    <select name="categories" id="shopData">
+                        <option value="美食,江浙菜">江浙菜</option>
+                        <option value="美食,粤菜">粤菜</option>
+                        <option value="美食,川菜">川菜</option>
+                        <option value="美食,湘菜">湘菜</option>
+                        <option value="美食,东北菜">东北菜</option>
+                        <option value="美食,徽菜">徽菜</option>
+                        <option value="美食,闽菜">闽菜</option>
+                        <option value="美食,鲁菜">鲁菜</option>
+                        <option value="美食,西北菜">西北菜</option>
+                        <option value="美食,东南亚菜">东南亚菜</option>
+                        <option value="美食,西餐">西餐</option>
+                        <option value="美食,日韩菜">日韩菜</option>
+                        <option value="美食,清真菜">清真菜</option>
+                        <option value="美食,小吃快餐">小吃快餐</option>
+                        <option value="美食,海鲜">海鲜</option>
+                        <option value="美食,烧烤">烧烤</option>
+                        <option value="美食,自助餐">自助餐</option>
+                        <option value="美食,面包甜点">面包甜点</option>
+                        <option value="美食,茶餐厅">茶餐厅</option>
+                        <option value="美食,咖啡厅">咖啡厅</option>
+                        <option value="美食,其它美食">其它美食</option>
+                    </select>
+                </div>
+                <!-- 客服电话 -->
+                <div class="shopSingle">
+                    <p class="title">分店名称：</p>
+                    <input type="text" placeholder="请输入分店名称" class="businessName" name="branch_name" value=""></input>
+                </div>
+                <!-- 门店图片 -->
+                <div class="shopSingle">
+                    <p class="title">门店图片：</p>
+                    <input type="file" name="shopLogo" id="shopLogo">
+                    <span class="sign">提交门店Logo图片。文件格式为bmp、png、jpeg、jpg或gif，大小不超过2M。最佳尺寸80px*80px。</span>
+                </div>
+                <!-- 客服电话 -->
+                <div class="shopSingle">
+                    <p class="title">客服电话：</p>
+                    <input type="text" maxlength="13" placeholder="请输入手机号码" name="telephone" value=""></input>
+                    <span class="sign">固定电话需加区号；区号、分机号均用“-”连接</span>
+                </div>
+                <!-- 营业时间 -->
+                <div class="shopSingle shopTime">
+                    <p class="title">营业时间：</p>
+                    <div>
+                        <input type="text" name="time_1" class="timeInput" placeholder="时间一"></input>
+                        <span>至</span>
+                        <input type="text" name="time_2" class="timeInput" placeholder="时间二"></input>
+                    </div>
+                    <span class="sign">24小时制，如09：00-20：30</span>
+                </div>
+            </div>
+            <!-- 资质信息容器 -->
+            <div id="zizhiContainer">
+                <h4>资质信息</h4>
+                <!-- 经营主旨主体 -->
+                <div class="shopSingle purpose">
+                    <p class="title">经营主旨主体：</p>
+                    <div>
+                        <div>
+                            <input type="radio" name="zizhiMain" value="0" checked></input>
+                            <p>公众号帐号主体</p>
+                        </div>
+                        <!-- 此处动态填写公众号主体 -->
+                        <span class="sign">(吉林省腾放科技有限公司)</span>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" name="zizhiMain" value="1"></input>
+                            <p>相关主体</p>
+                        </div>
+                        <span class="sign">(若地点的经营资质名称与帐号主体名称不一致，请选择相关主体。)</span>
+                    </div>
+                </div>
+                <!-- 经营资质证件号 -->
+                <div class="shopSingle">
+                    <p class="title">经营资质证件号：</p>
+                    <input type="text" maxlength="21" placeholder="请填写经营资质证件号" name="zizhiCard" value=""></input>
+                    <span class="sign">请填写15位营业执照注册号或9位组织机构代码（如12345678-9）或18位或20位统一社会信用代码</span>
+                </div>
+                <!-- 经营资质名称 -->
+                <div class="shopSingle zizhiName">
+                    <p class="title">经营资质名称：</p>
+                    <input type="text" placeholder="请填写经营资质名称" name="zizhiName" value=""></input>
+                    <span class="sign">请填写营业执照名称，或组织机构代码证名称。</span>
+                </div>
+                <!-- 相关证明材料 -->
+                <div class="shopSingle zizhiFile">
+                    <p class="title">相关证明材料：</p>
+                    <input type="file" name="zizhiFile" id="zizhiFile">
+                    <span class="sign">提交能证明此经营资质主体与帐号主体相关的证明材料。文件格式为bmp、png、jpeg、jpg或gif，大小不超过2M。</span>
+                </div>
+            </div>
+            <!-- 提交 -->
+            <div id="btnContainer">
+                <button id="submitBtn" type="submit">立即提交</button>
+            </div>
+        </form>
+    </div>
+    <!-- 三级联动 -->
+    <script type="text/javascript" src="__PUBLIC__/lib/ydui.citys.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/lib/ydui.js"></script>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="__PUBLIC__/js/addShop.js"></script>
+</body>
+
+</html>

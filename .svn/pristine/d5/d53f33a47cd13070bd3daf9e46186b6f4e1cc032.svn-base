@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/cardManage.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>会员卡管理</title>
+</head>
+
+<body>
+<!-- 父容器 -->
+<div class="container">
+    <form method="get" action="">
+        <table id="table">
+            <thead>
+            <tr>
+                <th class="th1">会员卡</th>
+                <th class="th2">来源</th>
+                <th class="th3">状态</th>
+                <th class="th4">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td>{$card_id}</td>
+                <td>自制会员卡</td>
+                <td>{$event}</td>
+                <td>
+                    <a href="{:U('/admin/create/readBarcode',array('card_id'=>$card_id))}">投放</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <!-- 没有门店时显示提示 -->
+    <div id="empty">
+        <img src="__PUBLIC__/commonLib/images/empty.png">
+        <h3>暂无数据哦</h3>
+    </div>
+</div>
+<!-- 外部库引用 -->
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript">
+    ;$(function (){
+        var empty = $('#empty');
+        if ($('tbody').find('tr').length == 0) {
+            empty.show();
+        } else {
+            empty.hide();
+        }
+    })
+</script>
+</body>
+
+</html>

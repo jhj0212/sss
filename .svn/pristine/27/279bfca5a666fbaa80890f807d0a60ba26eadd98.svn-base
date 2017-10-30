@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/payExchange.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>消费详情</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 图片容器 -->
+        <div id="imgContainer">
+            <img src="__PUBLIC__/images/payExchange/bg.png">
+        </div>
+        <!-- 表格 -->
+        <table id="table">
+            <thead>
+                <!-- 表格头部 -->
+                <tr>
+                    <th>消费时间：</th>
+                    <th>消费金额：</th>
+                    <th>获取积分：</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 每一个tr循环一组积分数据 -->
+                <foreach name="result" item="vo">
+                <tr>
+                    <td class="table_time">
+                        <p>
+                            <span>{$vo['consumption_time']}</span>
+                    
+                        </p>
+                    </td>
+                    <td class="table_money">
+                        <p>
+                            <span>{$vo['consumption_balance']}</span>
+                        </p>
+                    </td>
+                    <td class="table_exp">
+                        <p>{$vo['modify_bonus']}</p>
+                    </td>
+                </tr>
+                </foreach>
+            </tbody>
+        </table>
+        <!-- 没有门店时显示提示 -->
+        <div id="empty">
+            <img src="__PUBLIC__/commonLib/images/empty.png">
+            <h3>暂无数据哦</h3>
+        </div>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    ;
+    $(function() {
+        var empty = $('#empty');
+        if ($('tbody').find('tr').length == 0) {
+            empty.show();
+        } else {
+            empty.hide();
+        }
+    })
+    </script>
+</body>
+
+</html>

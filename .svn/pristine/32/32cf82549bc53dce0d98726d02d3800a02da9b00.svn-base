@@ -1,0 +1,68 @@
+[ 2017-09-14T13:21:15+08:00 ] 124.235.153.58 /?code=011opvPe2y1aRE0vjvRe2wNEPe2opvPf&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 22 行.
+NOTIC: [8] Undefined index: access_token /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 28 行.
+NOTIC: [8] Undefined index: openid /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 27 行.
+
+[ 2017-09-14T13:23:59+08:00 ] 124.235.153.58 /?code=001vfJ8d0e6Ehv1Gdj9d0RvI8d0vfJ8T&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 22 行.
+NOTIC: [8] Undefined index: access_token /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 28 行.
+NOTIC: [8] Undefined index: openid /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 27 行.
+
+[ 2017-09-14T13:25:58+08:00 ] 36.104.36.70 /?code=001n23NH0Hvdok2YFSNH0zi1NH0n23Nu&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 22 行.
+NOTIC: [8] Undefined index: access_token /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 28 行.
+NOTIC: [8] Undefined index: openid /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 27 行.
+
+[ 2017-09-14T13:26:02+08:00 ] 36.104.36.70 /?code=071O5v6u0kBlke1Hpr7u0gaz6u0O5v6Z&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 22 行.
+NOTIC: [8] Undefined index: access_token /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 28 行.
+NOTIC: [8] Undefined index: openid /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 27 行.
+
+[ 2017-09-14T13:26:55+08:00 ] 124.235.153.58 /?code=021CiOTE0yH8Mi2eqJUE0NMtTE0CiOT8&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 22 行.
+NOTIC: [8] Undefined index: access_token /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 28 行.
+NOTIC: [8] Undefined index: openid /var/www/xhy/ThinkPHP/Library/Vendor/Wechat/WechatOauth.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant ‘openid’ - assumed '‘openid’' /var/www/xhy/Application/Home/Controller/IndexController.class.php 第 27 行.
+
+[ 2017-09-14T14:39:14+08:00 ] 101.68.10.212 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+

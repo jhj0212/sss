@@ -1,0 +1,1012 @@
+[ 2017-09-25T08:53:12+08:00 ] 124.235.153.58 /index.php/Admin/Waiter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-09-25T08:53:14+08:00 ] 124.235.153.58 /index.php/Admin/Waiter?code=061x2l1R1ActI61CQsYQ146g1R1x2l1s&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2017-09-25T08:53:27+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0006s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wechat_session` SET `val`='veOwtD3vuko6XmOEKIso2j98_Nkiq8fiLgnYzjF4ham2sAOhpkEhLpmdJmMt0BzqlfXPhPWgTRvjxDRXSGcAxv3Ttmp_COqDdP4AjQSxmAmR5gwPlQag28x9sx5OcnchNJXbAIAUQE',`time`='1506300807' WHERE `id` = 1 [ RunTime:0.0252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2017-09-25T09:06:32+08:00 ] 124.235.153.58 /index.php/Admin/Waiter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-09-25T09:06:37+08:00 ] 124.235.153.58 /index.php/Admin/Waiter?code=071OZ2df1q7GOx0LQygf15Xpdf1OZ2d8&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-09-25T09:06:55+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0006s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-09-25T09:07:58+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0007s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0006s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-09-25T09:08:20+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0006s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006885s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-09-25T09:10:41+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-09-25T09:10:43+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/?code=071LHBW20PU3GF10DRV20mxMW20LHBWu&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-09-25T09:10:58+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0009s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0006s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-09-25T09:12:53+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+
+[ 2017-09-25T09:12:55+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/?code=061Ryo8M08R8l72Ow39M0Lzr8M0Ryo8x&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-09-25T09:13:07+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0024s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0007s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2017-09-25T09:25:23+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-09-25T09:25:25+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/?code=011HpfeI0ZILsk2xXkfI0c5meI0Hpfe8&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-09-25T09:25:32+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0005s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-09-25T09:27:19+08:00 ] 182.254.86.153 /admin/create/rec?signature=d4d38bc105adc31b2b9b0121cded29f46f135fd1&timestamp=1506302836&nonce=517188855&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=3498caea7d13ffa43fd855055a14b4c40796b92e
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1105 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-25T09:29:01+08:00 ] 124.235.153.58 /index.php/Admin/Waiter
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+
+[ 2017-09-25T09:29:03+08:00 ] 124.235.153.58 /index.php/Admin/Waiter?code=021l7OxZ0tiq9323ygzZ0fnMxZ0l7Ox2&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-09-25T09:29:13+08:00 ] 124.235.153.58 /index.php/Admin/Waiter?code=021l7OxZ0tiq9323ygzZ0fnMxZ0l7Ox2&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+NOTIC: [8] Undefined index: openid /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 116 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-09-25T09:29:29+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0006s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: openid /var/www/xhy/Application/Admin/Controller/WaiterController.class.php 第 232 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-09-25T09:30:08+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+
+[ 2017-09-25T09:30:09+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/?code=081DGcs81Y5YOT1Pjhr81tVis81DGcsK&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-09-25T09:30:18+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0008s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0006s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2017-09-25T09:31:15+08:00 ] 182.254.86.158 /admin/create/rec?signature=ae5b7d83c53bc94c1fe23ac8010f5187cb445414&timestamp=1506303073&nonce=1072452687&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=c33dcb783d9d53a120da0c7cdc5234f02a57ddd2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002580s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1105 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-25T09:34:43+08:00 ] 182.254.86.158 /admin/create/rec?signature=595628420d8d7fb44dc557864a7c7eca06d8cb62&timestamp=1506303279&nonce=362196421&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=2c7328148514c694ce089703698e60eac197041a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1105 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-25T09:38:45+08:00 ] 182.254.86.143 /admin/create/rec?signature=212050598f4a34961af95b85de3705ea9bfcb159&timestamp=1506303523&nonce=2029717137&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=f3344fa5b69d32ae77229c341067376a84ab44be
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1105 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-25T09:42:28+08:00 ] 36.104.25.59 /admin/create/readBarcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0008s ]
+
+[ 2017-09-25T09:42:30+08:00 ] 36.104.25.59 /admin/create/readBarcode?code=061zE2va0ZfMVt11V5ra02FPua0zE2v3&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant CURLOPT_SAFE_UPLOAD - assumed 'CURLOPT_SAFE_UPLOAD' /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 415 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 415 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-09-25T09:44:07+08:00 ] 182.254.86.154 /admin/create/rec?signature=c0c026e808e111ef47bc4151b941e6460ebdbec5&timestamp=1506303843&nonce=1614808617&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=2ecc20d03d1c92bbe3fc3e41e43d410cddc99fe7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1105 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0010s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-25T09:45:10+08:00 ] 117.185.27.114 /admin/create/readBarcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0008s ]
+
+[ 2017-09-25T09:49:34+08:00 ] 124.235.153.58 /admin/create/rec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined index: signature /var/www/xhy/Application/Admin/Controller/token.php 第 8 行.
+NOTIC: [8] Undefined index: timestamp /var/www/xhy/Application/Admin/Controller/token.php 第 9 行.
+NOTIC: [8] Undefined index: nonce /var/www/xhy/Application/Admin/Controller/token.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2017-09-25T09:55:08+08:00 ] 101.226.125.105 /admin/create/rec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: signature /var/www/xhy/Application/Admin/Controller/token.php 第 8 行.
+NOTIC: [8] Undefined index: timestamp /var/www/xhy/Application/Admin/Controller/token.php 第 9 行.
+NOTIC: [8] Undefined index: nonce /var/www/xhy/Application/Admin/Controller/token.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-09-25T09:55:29+08:00 ] 182.254.86.143 /admin/create/rec?signature=b30e1491d29f4cebae23a4161f6a6690b5747487&timestamp=1506304526&nonce=1096903514&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=b20d4b989226bcea32cf600435420e01e99d610a
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1111 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+ERR: 1048:Column 'event' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES (NULL,NULL)
+
+[ 2017-09-25T09:56:14+08:00 ] 182.254.86.143 /admin/create/rec?signature=cbf022924439e77c25a84adf380055e5b2b968c9&timestamp=1506304572&nonce=715361547&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=d82ac0411d028101734949381e85d7e68ce99839
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined offset: 0 /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1111 行.
+SQL: SHOW COLUMNS FROM `xml` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 /var/www/xhy/ThinkPHP/Library/Think/Db/Driver.class.php 第 803 行.
+SQL: INSERT INTO `xml` (`xml`) VALUES ('<xml>
+    <ToUserName><![CDATA[gh_4829265ee5b1]]></ToUserName>
+    <FromUserName><![CDATA[oGcQ7wUvHN9sEvSWHLtUHEx22DRI]]></FromUserName>
+    <CreateTime>1506304572</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[card_pass_check]]></Event>
+    <CardId><![CDATA[pGcQ7wYpFfeHQC_2p4fcyp-n4xQk]]></CardId>
+    <RefuseReason><![CDATA[]]></RefuseReason>
+    <Encrypt><![CDATA[nKaOVdVkSTzFQRzj2AhtttIke9fST4CuvObsoHA5/U+cXKwlogzxuWtS54AaPmLfhUb/TEZ1qTrjLL9aO/HJs3dQtCHDWGArmNwo3l3GG0xM5Udc6evPZ7F7vogqbmFP7Ahj2YgzRJAnFe9xTuogXnjUBBpScSswo7lkODjTOKS+L7m4xgPULjXIcljsvaXVnT8zrzTtiP0YkUfsmvarId96EINU8Nr3JzpF2hoeCf3DXblUiGjryJFpEYUevC8RddwLjodWsnieOhKbWk1njLxuosK//4W4vlg3e3ZbMHwxFvEVADmmbR0a1FyqWZcK4TJRRZGc9yRH2NUF41Sl/0gdrnY36kXGqCysUg82qcOdLfLXnU1qhlHzPUxx3ZEqegiAB9NafEjYkuk/mMLpSRNiaAZ6KERDKqcsjFSWblE6wuxRVzGYkXJsUZcZIlE14evOmmm0YqEwDcJ7WQfpC9CTOQ8+Lw1mas85LK/sxO32C8nV+CVar68Xr86iI60VqbT5I5C4aI8btU32by9rPEO2CiDH5ycc/d0D13e6MRo=]]></Encrypt>
+</xml>
+') [ RunTime:0.0226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-09-25T10:00:19+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+
+[ 2017-09-25T10:00:21+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/?code=0714UKFH1wYEv5036zJH1FSUFH14UKFj&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-09-25T10:00:31+08:00 ] 124.235.153.58 /index.php/Admin/Waiter/seatNumber/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0013s ]
+SQL: SELECT p.*,c.* FROM meal_info as p INNER JOIN meal_usage c on p.sid=c.sid and p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0000s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wechat_session` SET `val`='YQOJJcNv-WHxiCFPVpq58uTFagEO7tuNV3F7iS8Gp9ZrOYroAy4tcMTHn8cA3z4goUDO6xE0OKmHYw-hqBDYBvWxUKC9SjvnjJBDEU052mKrcJGa08En1vTFQwvKSzEcOUIaAIAEKY',`time`='1506304831' WHERE `id` = 1 [ RunTime:0.0237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-25T10:01:38+08:00 ] 61.151.226.16 /admin/create/rec
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Undefined index: signature /var/www/xhy/Application/Admin/Controller/token.php 第 8 行.
+NOTIC: [8] Undefined index: timestamp /var/www/xhy/Application/Admin/Controller/token.php 第 9 行.
+NOTIC: [8] Undefined index: nonce /var/www/xhy/Application/Admin/Controller/token.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2017-09-25T10:04:10+08:00 ] 182.254.86.153 /admin/create/rec?signature=8903d5e17a1b31f2eec1220608ee3ef6c35566af&timestamp=1506305046&nonce=38248505&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=8b6da47d5e449d3042b152342ee09c262b4f6ab9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+SQL: INSERT INTO `status` (`event`,`card_id`) VALUES ('card_pass_check','pGcQ7wYd0-4AWx9A2DnVBGas-z6M') [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `xml` [ RunTime:0.0008s ]
+SQL: INSERT INTO `xml` (`xml`,`xml_load`) VALUES ('<xml>
+    <ToUserName><![CDATA[gh_4829265ee5b1]]></ToUserName>
+    <FromUserName><![CDATA[oGcQ7wUvHN9sEvSWHLtUHEx22DRI]]></FromUserName>
+    <CreateTime>1506305046</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[card_pass_check]]></Event>
+    <CardId><![CDATA[pGcQ7wYd0-4AWx9A2DnVBGas-z6M]]></CardId>
+    <RefuseReason><![CDATA[]]></RefuseReason>
+    <Encrypt><![CDATA[cIi8Rmr9QczvpJ02eW9zLZWCM1cz16Sn6LidcyLQfmGWKHdqYRHujF46+7B9RO9kceHget9oHko5u42fzR+ylM2fWuiTcGYmllo52JrwbXC1r+RfxbD7ZXrSoSp0WYJNl8IF/hhyAeXKw0xYxvGocX/ISj8FlhVSxr5ZM/5DlhO3eEm/p/GSVblYuJK2Xf3dVnqjanciZy0KjAM9IkCU7zaiywQL9cJKEqW+O9X2+kpjxHG9j0B06qFO9gY9ET0IEVqaRtQNQ43DN3BF11Vvg87cv5+KB3+ZHEU4CeFLFCPZpZGeyVB3TvHBPtSanYTQyXtwZJBYeDhYiGgVHAblBlUniKgk2nLhSWGovdtGXTHzwbbRsXhqWUQ2TeOFz7i+sb4vrZOCbCwRw4eAQasc0Uhgcg84ZRijndBAkNemBCmJ1bMDcmkewJxivgRN0uyB196AOypFqNLz2wrNN+1SoA6xkwr4qSY/7SjTSadAclVe6BNM678a8SqNfc3LSI+diuhISVYm73hN+ngI1Z8PS6u/24fozFPde0HyOqM9BtU=]]></Encrypt>
+</xml>
+','a:8:{s:10:\"ToUserName\";s:15:\"gh_4829265ee5b1\";s:12:\"FromUserName\";s:28:\"oGcQ7wUvHN9sEvSWHLtUHEx22DRI\";s:10:\"CreateTime\";s:10:\"1506305046\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:15:\"card_pass_check\";s:6:\"CardId\";s:28:\"pGcQ7wYd0-4AWx9A2DnVBGas-z6M\";s:12:\"RefuseReason\";a:0:{}s:7:\"Encrypt\";s:556:\"cIi8Rmr9QczvpJ02eW9zLZWCM1cz16Sn6LidcyLQfmGWKHdqYRHujF46+7B9RO9kceHget9oHko5u42fzR+ylM2fWuiTcGYmllo52JrwbXC1r+RfxbD7ZXrSoSp0WYJNl8IF/hhyAeXKw0xYxvGocX/ISj8FlhVSxr5ZM/5DlhO3eEm/p/GSVblYuJK2Xf3dVnqjanciZy0KjAM9IkCU7zaiywQL9cJKEqW+O9X2+kpjxHG9j0B06qFO9gY9ET0IEVqaRtQNQ43DN3BF11Vvg87cv5+KB3+ZHEU4CeFLFCPZpZGeyVB3TvHBPtSanYTQyXtwZJBYeDhYiGgVHAblBlUniKgk2nLhSWGovdtGXTHzwbbRsXhqWUQ2TeOFz7i+sb4vrZOCbCwRw4eAQasc0Uhgcg84ZRijndBAkNemBCmJ1bMDcmkewJxivgRN0uyB196AOypFqNLz2wrNN+1SoA6xkwr4qSY/7SjTSadAclVe6BNM678a8SqNfc3LSI+diuhISVYm73hN+ngI1Z8PS6u/24fozFPde0HyOqM9BtU=\";}') [ RunTime:0.0237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2017-09-25T12:49:52+08:00 ] 182.254.86.151 /admin/create/rec?signature=5eece85aba8bfb6152fe202832a99287d974c15b&timestamp=1506314990&nonce=1460365394&openid=oGcQ7wTgcTqK0PmAE5Vk3LNhXRUs&encrypt_type=aes&msg_signature=7486cf19a2a5db5fc488fedeb3db75218ace9d2b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('unsubscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('unsubscribe',NULL)
+
+[ 2017-09-25T12:51:04+08:00 ] 182.254.86.146 /admin/create/rec?signature=3f2b0a829297b6c57d08fcd53035a3b6c46cc606&timestamp=1506315059&nonce=1223134421&openid=oGcQ7wTgcTqK0PmAE5Vk3LNhXRUs&encrypt_type=aes&msg_signature=275e1646f26f122d689d3c288b5dac64bbaad526
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+
+[ 2017-09-25T14:59:08+08:00 ] 123.151.138.57 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2017-09-25T14:59:13+08:00 ] 123.151.138.57 /index.php/Admin/Admin/gift/sid/0000000001/openid/1237.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+NOTIC: [8] Undefined index: gift_name /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 309 行.
+SQL: SHOW COLUMNS FROM `gift_info` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `gift_info` WHERE ( sid = "0000000001" ) ORDER BY gift_id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-09-25T14:59:16+08:00 ] 123.151.138.57 /index.php/Admin/Admin/addGift/sid/0000000001/openid/1237.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0007s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wechat_session` SET `val`='T3PC79LMPgx5T3Ko3GwQDnbTyVl0RqQKuUDv6uDBfQZy7YD0809rcSftLB9Qqlif4bwpmYxaDG-KYXq50d3m0H8wHVhe-DkKmWTCQcuEM6G40GLzkMC_UR3N6IuZpLJMQMEeADAZVN',`time`='1506322756' WHERE `id` = 1 [ RunTime:0.0150s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wechat_session` SET `val`='kgt8ON7yVITDhtdwci0qefSsaR-0gaEUwxjRf-H1t4FA5EaT0KL70_-99M57hESiY1Y6XsnZTNqEExfSO5z-yA',`time`='1506322756' WHERE `id` = 2 [ RunTime:0.0111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-09-25T14:59:33+08:00 ] 117.185.27.113 /index.php/Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-09-25T15:01:06+08:00 ] 182.254.86.158 /admin/create/rec?signature=23f41cdc24e9600a0febe21b3f6afae9cd61ff2c&timestamp=1506322863&nonce=627198689&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=f95fe5f0e3298de0f119a85f925d734733bda9bb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+SQL: INSERT INTO `status` (`event`,`card_id`) VALUES ('card_pass_check','pGcQ7wdPH9QxA-hBzao_J9KDGzHM') [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `xml` [ RunTime:0.0008s ]
+SQL: INSERT INTO `xml` (`xml`,`xml_load`) VALUES ('<xml>
+    <ToUserName><![CDATA[gh_4829265ee5b1]]></ToUserName>
+    <FromUserName><![CDATA[oGcQ7wUvHN9sEvSWHLtUHEx22DRI]]></FromUserName>
+    <CreateTime>1506322863</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[card_pass_check]]></Event>
+    <CardId><![CDATA[pGcQ7wdPH9QxA-hBzao_J9KDGzHM]]></CardId>
+    <RefuseReason><![CDATA[]]></RefuseReason>
+    <Encrypt><![CDATA[z7a+6sDsZ2V5HCIVv4GA0+4+VrT6/LVaSV8+L3EVXTp7c72HWWC+OuWGYIUy5/gcipoFz5DuL8uuCp3ABBNuvCkLt5gnSU0UP8R/Ztdipoe+YL7ftQRbudnkpXY1SQFwpjjU43OmoHrruy/ncOpnbtTU7enR0xjmrRYkuzt5p71ApIa4ldfPI0is6N8Tbh+HEDUFBQm/U1BLHlnA98mEfgDZDTg+GnTysDdQ/LxiO7huKPYQu7qFz/kfGKh2WN57g+QPOu+rEdZ64gwq8MrNbuP0E3k8EM+vcBvOjZ+lqGiuNGuwA1ir2H+HzzmeDnHwdT8Bdr6NV9NB60Cp97EYQrcqA6muC7z8qbvaNspmFZSk48rpOfd56AC0CLkiHJ/TAtHU61ZHNtb85o4tgE3gqOq3mGO8PlbhHVBYt8FXDB1UAtXgZJHRXrGsbEOblNbo1Q3ul1LIiTjOm0get5YTHGAo2tOwKA1Wjy0dG+BXDYYVZvV41VqDL2atKn/ez9kYr3mKVu7YeNrSTtHaS0XVp3R6hxXNzBinlvaDx0iLXIQ=]]></Encrypt>
+</xml>
+','a:8:{s:10:\"ToUserName\";s:15:\"gh_4829265ee5b1\";s:12:\"FromUserName\";s:28:\"oGcQ7wUvHN9sEvSWHLtUHEx22DRI\";s:10:\"CreateTime\";s:10:\"1506322863\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:15:\"card_pass_check\";s:6:\"CardId\";s:28:\"pGcQ7wdPH9QxA-hBzao_J9KDGzHM\";s:12:\"RefuseReason\";a:0:{}s:7:\"Encrypt\";s:556:\"z7a+6sDsZ2V5HCIVv4GA0+4+VrT6/LVaSV8+L3EVXTp7c72HWWC+OuWGYIUy5/gcipoFz5DuL8uuCp3ABBNuvCkLt5gnSU0UP8R/Ztdipoe+YL7ftQRbudnkpXY1SQFwpjjU43OmoHrruy/ncOpnbtTU7enR0xjmrRYkuzt5p71ApIa4ldfPI0is6N8Tbh+HEDUFBQm/U1BLHlnA98mEfgDZDTg+GnTysDdQ/LxiO7huKPYQu7qFz/kfGKh2WN57g+QPOu+rEdZ64gwq8MrNbuP0E3k8EM+vcBvOjZ+lqGiuNGuwA1ir2H+HzzmeDnHwdT8Bdr6NV9NB60Cp97EYQrcqA6muC7z8qbvaNspmFZSk48rpOfd56AC0CLkiHJ/TAtHU61ZHNtb85o4tgE3gqOq3mGO8PlbhHVBYt8FXDB1UAtXgZJHRXrGsbEOblNbo1Q3ul1LIiTjOm0get5YTHGAo2tOwKA1Wjy0dG+BXDYYVZvV41VqDL2atKn/ez9kYr3mKVu7YeNrSTtHaS0XVp3R6hxXNzBinlvaDx0iLXIQ=\";}') [ RunTime:0.0312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-09-25T15:01:06+08:00 ] 182.254.86.158 /admin/create/rec?signature=7d804a9065037510355acb487e09f0665970573a&timestamp=1506322865&nonce=1910944283&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=da888448b1d2fb9c08c020a9b5315384a1d7c2c5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+SQL: INSERT INTO `status` (`event`,`card_id`) VALUES ('card_pass_check','pGcQ7wc4mCOOeLuDVn-VIlu6AEbc') [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `xml` [ RunTime:0.0008s ]
+SQL: INSERT INTO `xml` (`xml`,`xml_load`) VALUES ('<xml>
+    <ToUserName><![CDATA[gh_4829265ee5b1]]></ToUserName>
+    <FromUserName><![CDATA[oGcQ7wUvHN9sEvSWHLtUHEx22DRI]]></FromUserName>
+    <CreateTime>1506322865</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[card_pass_check]]></Event>
+    <CardId><![CDATA[pGcQ7wc4mCOOeLuDVn-VIlu6AEbc]]></CardId>
+    <RefuseReason><![CDATA[]]></RefuseReason>
+    <Encrypt><![CDATA[7BcQioQKXnM4aJnKniuqgXppj0x1vTCVhnpt7dhQHk/HPW5VSR7WGR9BZKgkUKxNw5OkQJQjAM5hYr7UYevwzpf0S7mcEEEgyslneJ4ZB4g+vZv4FSI7Lcdo10Fa2YFLxSIxbeXjwXAPvvtMuQR3Xq41SFRsrbbl8yiBFfEafNS7iQ1qw+9Gn+U8bzKpVvAL/mte8rfYKuL4vdIl9ZRlJS0QToaJAmM0A5Y0GpNbPdd09Bza5AWqVEqX1vqpBYlZpW8jGNzzC6uIfSOS9grN2i0gq5AVLd2HFtXGQo7C3uo/rBMtpknVcNQb85aGbsrn6InymzQpKyC+2YDq1oK/CGjf+2K5rJ5oeSdbS3L7qfUJUwzSc4BecTd0i0es/jFLpGpe0ey3PA6EAkPcIJH886Voe90VZUc943c8Y29NivY+OAtguWSe+trBOAWmLXPkRDL0iO455AtKCQxp8Se4nJ7YAQswteG/iSPDY0wKrUPhdd9/4z1M7RLaF+qzQvvJGEwNy/YwevYqwb9QdM/UevTRRE9q8krvDJjJYZZDZyw=]]></Encrypt>
+</xml>
+','a:8:{s:10:\"ToUserName\";s:15:\"gh_4829265ee5b1\";s:12:\"FromUserName\";s:28:\"oGcQ7wUvHN9sEvSWHLtUHEx22DRI\";s:10:\"CreateTime\";s:10:\"1506322865\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:15:\"card_pass_check\";s:6:\"CardId\";s:28:\"pGcQ7wc4mCOOeLuDVn-VIlu6AEbc\";s:12:\"RefuseReason\";a:0:{}s:7:\"Encrypt\";s:556:\"7BcQioQKXnM4aJnKniuqgXppj0x1vTCVhnpt7dhQHk/HPW5VSR7WGR9BZKgkUKxNw5OkQJQjAM5hYr7UYevwzpf0S7mcEEEgyslneJ4ZB4g+vZv4FSI7Lcdo10Fa2YFLxSIxbeXjwXAPvvtMuQR3Xq41SFRsrbbl8yiBFfEafNS7iQ1qw+9Gn+U8bzKpVvAL/mte8rfYKuL4vdIl9ZRlJS0QToaJAmM0A5Y0GpNbPdd09Bza5AWqVEqX1vqpBYlZpW8jGNzzC6uIfSOS9grN2i0gq5AVLd2HFtXGQo7C3uo/rBMtpknVcNQb85aGbsrn6InymzQpKyC+2YDq1oK/CGjf+2K5rJ5oeSdbS3L7qfUJUwzSc4BecTd0i0es/jFLpGpe0ey3PA6EAkPcIJH886Voe90VZUc943c8Y29NivY+OAtguWSe+trBOAWmLXPkRDL0iO455AtKCQxp8Se4nJ7YAQswteG/iSPDY0wKrUPhdd9/4z1M7RLaF+qzQvvJGEwNy/YwevYqwb9QdM/UevTRRE9q8krvDJjJYZZDZyw=\";}') [ RunTime:0.0083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-09-25T15:02:02+08:00 ] 182.254.86.153 /admin/create/rec?signature=f45a42744120afed2f7151613f789bb3d9c7d56d&timestamp=1506322918&nonce=995811111&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=c23996d32c6f886830f26ec75e44637f17f0994b
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0009s ]
+SQL: INSERT INTO `status` (`event`,`card_id`) VALUES ('card_pass_check','pGcQ7wftrqERKkDFCzX0bMxpPYhc') [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `xml` [ RunTime:0.0008s ]
+SQL: INSERT INTO `xml` (`xml`,`xml_load`) VALUES ('<xml>
+    <ToUserName><![CDATA[gh_4829265ee5b1]]></ToUserName>
+    <FromUserName><![CDATA[oGcQ7wUvHN9sEvSWHLtUHEx22DRI]]></FromUserName>
+    <CreateTime>1506322918</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[card_pass_check]]></Event>
+    <CardId><![CDATA[pGcQ7wftrqERKkDFCzX0bMxpPYhc]]></CardId>
+    <RefuseReason><![CDATA[]]></RefuseReason>
+    <Encrypt><![CDATA[T0PETOq2/5lFl/wmncVXPG59oUVm7VUja7eEKhLntYfJdwXZ1YO92hXx6GB37KXVda7VMouCN+e8wD1/L6R7vk6pUXczXdQ44AVORKjHnL772He24nGAFf3dLS2537InsU5foGqUfvcgMCDScglMEuUfIoPDZAWXh4B5Jd3naRG7sO29e3ggVRvklO8wc3GNO5UXgQwx7K3X1Rl52jCt09audItMtAk7U2v3/DY4GCmweGm9DfPL30QlQA7OV6KYAXM+iypohJRbblzQ0WfM5dnQFUm3dpwnCbdR2OQCYM0RSKOzuwOnNpryuouXDINVlS+JNqwF8Dnkva8I4jg+OQSAoxe7pYTfW1Zjgzt4Jeir80e7wbzCpq7SUETYk5OayeNJYfUIeb9DT5MYPfTcBNB8TjlZuRaOCtqK7QRwyO9Y7twNEY/3TQlrOCrH0LJZXgqNKqwnJgEjgk2psqs7NbLhDoR+cOqEv5eR5VUKFLfJ48EbWsnBIrryiqdwNet9fo8aAPfPzyH+71AgKjbosMjroOBoO8hhoA5q4yJB9KI=]]></Encrypt>
+</xml>
+','a:8:{s:10:\"ToUserName\";s:15:\"gh_4829265ee5b1\";s:12:\"FromUserName\";s:28:\"oGcQ7wUvHN9sEvSWHLtUHEx22DRI\";s:10:\"CreateTime\";s:10:\"1506322918\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:15:\"card_pass_check\";s:6:\"CardId\";s:28:\"pGcQ7wftrqERKkDFCzX0bMxpPYhc\";s:12:\"RefuseReason\";a:0:{}s:7:\"Encrypt\";s:556:\"T0PETOq2/5lFl/wmncVXPG59oUVm7VUja7eEKhLntYfJdwXZ1YO92hXx6GB37KXVda7VMouCN+e8wD1/L6R7vk6pUXczXdQ44AVORKjHnL772He24nGAFf3dLS2537InsU5foGqUfvcgMCDScglMEuUfIoPDZAWXh4B5Jd3naRG7sO29e3ggVRvklO8wc3GNO5UXgQwx7K3X1Rl52jCt09audItMtAk7U2v3/DY4GCmweGm9DfPL30QlQA7OV6KYAXM+iypohJRbblzQ0WfM5dnQFUm3dpwnCbdR2OQCYM0RSKOzuwOnNpryuouXDINVlS+JNqwF8Dnkva8I4jg+OQSAoxe7pYTfW1Zjgzt4Jeir80e7wbzCpq7SUETYk5OayeNJYfUIeb9DT5MYPfTcBNB8TjlZuRaOCtqK7QRwyO9Y7twNEY/3TQlrOCrH0LJZXgqNKqwnJgEjgk2psqs7NbLhDoR+cOqEv5eR5VUKFLfJ48EbWsnBIrryiqdwNet9fo8aAPfPzyH+71AgKjbosMjroOBoO8hhoA5q4yJB9KI=\";}') [ RunTime:0.0192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-09-25T15:02:04+08:00 ] 182.254.86.143 /admin/create/rec?signature=53a56be51085846bd07087abdf32db58a8af1aff&timestamp=1506322920&nonce=1870349661&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=288072f6f96f3e670209b85b300943d5b0166828
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+SQL: INSERT INTO `status` (`event`,`card_id`) VALUES ('card_pass_check','pGcQ7wU39s6LWrYhqSnSZSrF1RuU') [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `xml` [ RunTime:0.0008s ]
+SQL: INSERT INTO `xml` (`xml`,`xml_load`) VALUES ('<xml>
+    <ToUserName><![CDATA[gh_4829265ee5b1]]></ToUserName>
+    <FromUserName><![CDATA[oGcQ7wUvHN9sEvSWHLtUHEx22DRI]]></FromUserName>
+    <CreateTime>1506322920</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[card_pass_check]]></Event>
+    <CardId><![CDATA[pGcQ7wU39s6LWrYhqSnSZSrF1RuU]]></CardId>
+    <RefuseReason><![CDATA[]]></RefuseReason>
+    <Encrypt><![CDATA[SSEVVPHmqyXnYaa59gEZLgFkrm4nhBwkXxOqJ9Ye80FgJ1uoEg3qu4ACR9cxg9ebwcb72rboYiU+uP68nArderVzUd4PRO1Y5yrIhnEyobyfPfhqXw6aTXowq51LEcT7fKfwM8UStg8bYCxWy1jAOwVFDbIFyDpf8ciWNnUPQfk4u5qGMsx8a1eOTOhcdDLLre7JM1G90/a1gfHYzIG53ky4+YZo99aV/oLZuNY0OG1EtFBhcpAyYy3F5zB5JlxjW3p+IUXQK7xGo3f3YDWXolPjTa7FltTAV96+2CWZjc3OfH8s0gUGt4lgyxJuogVDt2+LpU6k7O9bVloO/tamlbAdpW6cMAXHF99oIwKHM1yObAWPFQhz9a8bGlGKA1uM74TtuAr66yS3ri6Nv3VqAqUHzsqlPxR0FUpAiAsi2CNYmW6TWJBf/OQeK4bsjV6uOGeEaxcmfxsi2UMTUD6HC9oV2EETrZ70JTZzIbaz8RGYrMR77fjibFYg5MCORFvuw0QgSpp+kwrspqBkq5i9/lk5SN+HA30QdPtrC72fAAU=]]></Encrypt>
+</xml>
+','a:8:{s:10:\"ToUserName\";s:15:\"gh_4829265ee5b1\";s:12:\"FromUserName\";s:28:\"oGcQ7wUvHN9sEvSWHLtUHEx22DRI\";s:10:\"CreateTime\";s:10:\"1506322920\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:15:\"card_pass_check\";s:6:\"CardId\";s:28:\"pGcQ7wU39s6LWrYhqSnSZSrF1RuU\";s:12:\"RefuseReason\";a:0:{}s:7:\"Encrypt\";s:556:\"SSEVVPHmqyXnYaa59gEZLgFkrm4nhBwkXxOqJ9Ye80FgJ1uoEg3qu4ACR9cxg9ebwcb72rboYiU+uP68nArderVzUd4PRO1Y5yrIhnEyobyfPfhqXw6aTXowq51LEcT7fKfwM8UStg8bYCxWy1jAOwVFDbIFyDpf8ciWNnUPQfk4u5qGMsx8a1eOTOhcdDLLre7JM1G90/a1gfHYzIG53ky4+YZo99aV/oLZuNY0OG1EtFBhcpAyYy3F5zB5JlxjW3p+IUXQK7xGo3f3YDWXolPjTa7FltTAV96+2CWZjc3OfH8s0gUGt4lgyxJuogVDt2+LpU6k7O9bVloO/tamlbAdpW6cMAXHF99oIwKHM1yObAWPFQhz9a8bGlGKA1uM74TtuAr66yS3ri6Nv3VqAqUHzsqlPxR0FUpAiAsi2CNYmW6TWJBf/OQeK4bsjV6uOGeEaxcmfxsi2UMTUD6HC9oV2EETrZ70JTZzIbaz8RGYrMR77fjibFYg5MCORFvuw0QgSpp+kwrspqBkq5i9/lk5SN+HA30QdPtrC72fAAU=\";}') [ RunTime:0.0083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-09-25T15:02:58+08:00 ] 182.254.86.158 /admin/create/rec?signature=74ba722bc1d8f5540bca2ac7fc1c03159d2bab86&timestamp=1506322974&nonce=1188762182&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=8756b6663bf86cb275c57c6f424901314db44146
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0008s ]
+SQL: INSERT INTO `status` (`event`,`card_id`) VALUES ('card_pass_check','pGcQ7wb3Dqqcc6nVLLplZjTt3fu4') [ RunTime:0.0465s ]
+SQL: SHOW COLUMNS FROM `xml` [ RunTime:0.0008s ]
+SQL: INSERT INTO `xml` (`xml`,`xml_load`) VALUES ('<xml>
+    <ToUserName><![CDATA[gh_4829265ee5b1]]></ToUserName>
+    <FromUserName><![CDATA[oGcQ7wUvHN9sEvSWHLtUHEx22DRI]]></FromUserName>
+    <CreateTime>1506322974</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[card_pass_check]]></Event>
+    <CardId><![CDATA[pGcQ7wb3Dqqcc6nVLLplZjTt3fu4]]></CardId>
+    <RefuseReason><![CDATA[]]></RefuseReason>
+    <Encrypt><![CDATA[DjvFk2gaBylMWZsfG66w53NHbxd+WGTXWefzCDWmWKZCPFrz751OkEl8rx6YOSmYPlojVQOWkkKtlqg65CUkif3o0ofy6pbgsETVmtbjdV4dib0ymzaYWAVEOkPykWqgz5Pe5TuMznwUTukD5ZhRx69UQVdcMaNxbHOXFCqYe9c6FFWejFAuDzKHeHe5EnDez4ZR1VqgJBg+sz1jSbs/iHIYyJvRPqGu5P0sUa85oamCsiWsptc8AK3a9OsXcLbyqGHnpY4IZ6KYnoqlwpp83ql1Ko9ygkfG5GVsKzXlLTq6fAsTTZJnVF7R0UR2jjVFH6IhHQToKfOSnPduU0q7OLXVQOLnoeNsB2Wqy08wqT2NV7tlbtd78p3a5K9C4T91/X+fGxLg3YauybCqVqWRHEnoykQFAtSyR51/k5LmZkeRymBOMn8qdPcPRjSjZaRJjHtcgMhPW7747BKcdqTXwMkilSr4vPBhPOXflEsYUzy+QdsiTLJsBRLHPXlF1G6kcE95qB0I5bZ4bDp6azKj9jG60lGjsHPV+r4+bNbLVRA=]]></Encrypt>
+</xml>
+','a:8:{s:10:\"ToUserName\";s:15:\"gh_4829265ee5b1\";s:12:\"FromUserName\";s:28:\"oGcQ7wUvHN9sEvSWHLtUHEx22DRI\";s:10:\"CreateTime\";s:10:\"1506322974\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:15:\"card_pass_check\";s:6:\"CardId\";s:28:\"pGcQ7wb3Dqqcc6nVLLplZjTt3fu4\";s:12:\"RefuseReason\";a:0:{}s:7:\"Encrypt\";s:556:\"DjvFk2gaBylMWZsfG66w53NHbxd+WGTXWefzCDWmWKZCPFrz751OkEl8rx6YOSmYPlojVQOWkkKtlqg65CUkif3o0ofy6pbgsETVmtbjdV4dib0ymzaYWAVEOkPykWqgz5Pe5TuMznwUTukD5ZhRx69UQVdcMaNxbHOXFCqYe9c6FFWejFAuDzKHeHe5EnDez4ZR1VqgJBg+sz1jSbs/iHIYyJvRPqGu5P0sUa85oamCsiWsptc8AK3a9OsXcLbyqGHnpY4IZ6KYnoqlwpp83ql1Ko9ygkfG5GVsKzXlLTq6fAsTTZJnVF7R0UR2jjVFH6IhHQToKfOSnPduU0q7OLXVQOLnoeNsB2Wqy08wqT2NV7tlbtd78p3a5K9C4T91/X+fGxLg3YauybCqVqWRHEnoykQFAtSyR51/k5LmZkeRymBOMn8qdPcPRjSjZaRJjHtcgMhPW7747BKcdqTXwMkilSr4vPBhPOXflEsYUzy+QdsiTLJsBRLHPXlF1G6kcE95qB0I5bZ4bDp6azKj9jG60lGjsHPV+r4+bNbLVRA=\";}') [ RunTime:0.0317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-09-25T15:02:59+08:00 ] 182.254.86.143 /admin/create/rec?signature=1d88b5783a6e3fcd90c6f3b4c25c028ade473512&timestamp=1506322975&nonce=437507543&openid=oGcQ7wUvHN9sEvSWHLtUHEx22DRI&encrypt_type=aes&msg_signature=0b9283f5e0cf050061f4324b23c995ab9ea4dc71
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0025s ]
+SQL: INSERT INTO `status` (`event`,`card_id`) VALUES ('card_pass_check','pGcQ7wXysp9fd1NLYTfLaiPXvCXI') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `xml` [ RunTime:0.0024s ]
+SQL: INSERT INTO `xml` (`xml`,`xml_load`) VALUES ('<xml>
+    <ToUserName><![CDATA[gh_4829265ee5b1]]></ToUserName>
+    <FromUserName><![CDATA[oGcQ7wUvHN9sEvSWHLtUHEx22DRI]]></FromUserName>
+    <CreateTime>1506322975</CreateTime>
+    <MsgType><![CDATA[event]]></MsgType>
+    <Event><![CDATA[card_pass_check]]></Event>
+    <CardId><![CDATA[pGcQ7wXysp9fd1NLYTfLaiPXvCXI]]></CardId>
+    <RefuseReason><![CDATA[]]></RefuseReason>
+    <Encrypt><![CDATA[Jbu/Sb7MjI9fssRszH9UqOPq/CqpoS9sg2H+T5S75g3qkY7uZCfoeyXLNa1BOIfqHfoSVnPh3dthd6Qe/Xa6D/9HDNKIwEcLTXpjXGK70+G9qv7CHbmlUycpR+BDG8FEuMHoNpMWakcg0bZakUmoOXZ3KLQfw5w/qnBpwxdOOaz6aiIahOPrXcFhL5rqH/lzVyMB9Lmy8QwSPEh+kQ48kNNeJWz16xlHWA7wwrDtGR09DMwtewxBylIx19AW5lG3h5bHJq0Wba0XxavGDQwAzdV7sNgfOfBa5CMHhNn4McXaJQLUpugmUHzUt61RGBi3tcpjYdOzhyS/1oK/UmN/mHIcYZ7tJ3RSu1/TIFhzVLY0i5lxLvvVWK0aprCPk/kCY6/uIZKCpa5hhJLiPj7txDQxtXWgW6iAPrEdi50Hsht7Rga1OLSOlVzUIlBsIYDMqC270BthavU/GpoTcspc8txh0dvlB4Cb98d0DOZI+5a6TjYChBpnYmEJoslwcJiLYh1hQ0lHfRVPROGo0+YmIrBa1/k/fal4GQ16Dz4+4QI=]]></Encrypt>
+</xml>
+','a:8:{s:10:\"ToUserName\";s:15:\"gh_4829265ee5b1\";s:12:\"FromUserName\";s:28:\"oGcQ7wUvHN9sEvSWHLtUHEx22DRI\";s:10:\"CreateTime\";s:10:\"1506322975\";s:7:\"MsgType\";s:5:\"event\";s:5:\"Event\";s:15:\"card_pass_check\";s:6:\"CardId\";s:28:\"pGcQ7wXysp9fd1NLYTfLaiPXvCXI\";s:12:\"RefuseReason\";a:0:{}s:7:\"Encrypt\";s:556:\"Jbu/Sb7MjI9fssRszH9UqOPq/CqpoS9sg2H+T5S75g3qkY7uZCfoeyXLNa1BOIfqHfoSVnPh3dthd6Qe/Xa6D/9HDNKIwEcLTXpjXGK70+G9qv7CHbmlUycpR+BDG8FEuMHoNpMWakcg0bZakUmoOXZ3KLQfw5w/qnBpwxdOOaz6aiIahOPrXcFhL5rqH/lzVyMB9Lmy8QwSPEh+kQ48kNNeJWz16xlHWA7wwrDtGR09DMwtewxBylIx19AW5lG3h5bHJq0Wba0XxavGDQwAzdV7sNgfOfBa5CMHhNn4McXaJQLUpugmUHzUt61RGBi3tcpjYdOzhyS/1oK/UmN/mHIcYZ7tJ3RSu1/TIFhzVLY0i5lxLvvVWK0aprCPk/kCY6/uIZKCpa5hhJLiPj7txDQxtXWgW6iAPrEdi50Hsht7Rga1OLSOlVzUIlBsIYDMqC270BthavU/GpoTcspc8txh0dvlB4Cb98d0DOZI+5a6TjYChBpnYmEJoslwcJiLYh1hQ0lHfRVPROGo0+YmIrBa1/k/fal4GQ16Dz4+4QI=\";}') [ RunTime:0.0074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-09-25T15:07:01+08:00 ] 117.185.27.115 /index.php/Admin/Admin/addGift/sid/0000000001/openid/1237.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:0.0007s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+

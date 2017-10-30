@@ -1,0 +1,204 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+
+/*信息验证*/
+
+#validate {
+    position: fixed;
+    height: 2.5rem;
+    width: 100%;
+    line-height: 2.8rem;
+    text-align: center;
+    background: #FF4E30;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/*头部*/
+
+#headerContainer {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.8rem;
+    background: #FF4E30;
+    font-size: 1rem;
+}
+
+#headerContainer h3 {
+    padding-left: 5%;
+    color: #fff;
+}
+
+
+/*表单*/
+
+#form {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#baseContianer {
+    width: 100%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+#baseContianer h4 {
+    padding-left: 5%;
+    height: 2rem;
+    line-height: 2rem;
+    background: #eee;
+    margin-bottom: 1rem;
+}
+
+#baseContianer>div {
+    width: 90%;
+    margin: 0 auto 1rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/*礼品类型*/
+
+#baseContianer>div div {
+    margin-top: .5rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#baseContianer>div div input {
+    width: 1rem;
+    height: 1rem;
+    margin: 1px .2rem 0;
+}
+
+#baseContianer>div div input:last-child {
+    margin-left: 3rem;
+}
+
+
+/*礼品类型 end*/
+
+#baseContianer>div input {
+    margin: .5rem 0;
+    padding: .4rem .2rem;
+}
+
+#baseContianer>div span {
+    color: #939393;
+    font-size: .75rem;
+}
+
+
+/*上传礼品可视化*/
+.input-group{
+    margin-top: 0 !important;
+}
+
+.col-sm-9 {
+    width: 100%;
+}
+
+#preview {
+    width: 80%;
+}
+
+#imghead {
+    width: 100%;
+    height: 8rem;
+    border: 1px solid #ddd;
+    margin-bottom: .5rem;
+    border-radius: .3rem;
+}
+
+
+/*按钮类*/
+
+#btnHack {
+    width: 100%;
+    height: 2.5rem;
+}
+
+#btnContainer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#submitBtn {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: none;
+    color: #fff;
+    background: #FF4E30;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    outline: none;
+}

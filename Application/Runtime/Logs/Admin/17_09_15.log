@@ -1,0 +1,1146 @@
+[ 2017-09-15T08:44:06+08:00 ] 124.235.153.58 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+
+[ 2017-09-15T08:44:08+08:00 ] 124.235.153.58 /admin/pay/index?code=081gIL542HIo1L0VNA642za0642gIL5t&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2017-09-15T08:48:01+08:00 ] 124.235.153.58 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+
+[ 2017-09-15T08:48:02+08:00 ] 124.235.153.58 /admin/pay/index?code=011DnYc00ypUHD17Zbb00Dm8d00DnYc2&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002579s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-09-15T09:39:12+08:00 ] 124.235.153.58 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-09-15T09:39:13+08:00 ] 124.235.153.58 /admin/pay/index?code=081uLlff09mkky1PAhff0h4eff0uLlfT&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-09-15T09:47:18+08:00 ] 124.235.153.58 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2017-09-15T09:47:19+08:00 ] 124.235.153.58 /admin/pay/index?code=081vlLHp1D2Hin0WvREp1TgHHp1vlLHe&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2017-09-15T09:49:45+08:00 ] 124.235.153.58 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-09-15T09:49:49+08:00 ] 124.235.153.58 /admin/pay/index?code=011l0GSv1XjVzc03kYQv17RjSv1l0GSp&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2017-09-15T09:59:00+08:00 ] 124.235.153.58 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-09-15T09:59:01+08:00 ] 124.235.153.58 /admin/pay/index?code=0218ahMI1z3iJ80nBmMI1w9sMI18ahMe&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-09-15T10:01:43+08:00 ] 124.235.153.58 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-09-15T10:01:49+08:00 ] 124.235.153.58 /admin/pay/index?code=071LHW3w0brfWg1TOE1w0SRz3w0LHW3P&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('111') [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2017-09-15T10:05:42+08:00 ] 124.235.153.58 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+
+[ 2017-09-15T10:05:45+08:00 ] 124.235.153.58 /admin/pay/index?code=021AY6LZ0YNq132pl1NZ0UTgLZ0AY6LJ&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('111') [ RunTime:0.0146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2017-09-15T10:32:44+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-09-15T10:32:47+08:00 ] 36.104.36.70 /admin/pay/index?code=021J9lpN0D4rI52vKIqN0J1qpN0J9lp9&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('111') [ RunTime:0.0228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-09-15T10:35:06+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-09-15T10:35:10+08:00 ] 36.104.36.70 /admin/pay/index?code=011cR6vd2WT13B0elvsd2nC7vd2cR6vK&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0099s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('1') [ RunTime:0.0216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2017-09-15T10:36:21+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-09-15T10:36:26+08:00 ] 36.104.36.70 /admin/pay/index?code=071QBTKk0bebho1nH8Jk0dGvKk0QBTK6&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('1') [ RunTime:0.0336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2017-09-15T10:38:05+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+
+[ 2017-09-15T10:38:08+08:00 ] 36.104.36.70 /admin/pay/index?code=08125zcu0H77ee1Sycbu0Xaocu025zcH&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('1') [ RunTime:0.0113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2017-09-15T10:38:17+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('2') [ RunTime:0.0108s ]
+
+[ 2017-09-15T10:38:36+08:00 ] 140.207.54.75 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('2') [ RunTime:0.0085s ]
+
+[ 2017-09-15T10:38:55+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('2') [ RunTime:0.0128s ]
+
+[ 2017-09-15T10:39:31+08:00 ] 140.207.54.73 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0007s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('2') [ RunTime:0.0099s ]
+
+[ 2017-09-15T10:42:36+08:00 ] 58.251.80.46 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('2') [ RunTime:0.0129s ]
+
+[ 2017-09-15T10:44:37+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-09-15T10:44:40+08:00 ] 36.104.36.70 /admin/pay/index?code=081ETw8W0dFfZW1Npm9W0PPH8W0ETw8B&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('1') [ RunTime:0.0194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-09-15T10:44:49+08:00 ] 140.207.54.73 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0007s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('2') [ RunTime:0.0138s ]
+
+[ 2017-09-15T10:45:07+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0035s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('2') [ RunTime:0.0130s ]
+
+[ 2017-09-15T10:45:27+08:00 ] 183.3.234.46 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0010s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('2') [ RunTime:0.0187s ]
+
+[ 2017-09-15T10:46:00+08:00 ] 101.226.103.59 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+
+[ 2017-09-15T10:46:00+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+
+[ 2017-09-15T10:46:05+08:00 ] 36.104.36.70 /admin/pay/index?code=011l3dxJ1oNP080OgdxJ1xqUwJ1l3dxz&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('1') [ RunTime:0.0201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-09-15T10:46:13+08:00 ] 58.251.80.46 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-09-15T10:46:23+08:00 ] 101.226.103.61 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+
+[ 2017-09-15T10:46:40+08:00 ] 58.251.80.63 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-09-15T10:47:12+08:00 ] 140.207.54.75 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+
+[ 2017-09-15T10:47:18+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2017-09-15T10:47:22+08:00 ] 36.104.36.70 /admin/pay/index?code=011LffOh1nwNgA089BPh1UmxOh1LffOT&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('1') [ RunTime:0.0146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-09-15T10:47:29+08:00 ] 183.3.234.48 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-09-15T10:47:42+08:00 ] 58.251.80.58 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+
+[ 2017-09-15T10:48:00+08:00 ] 183.3.234.46 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-09-15T10:48:31+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-09-15T10:49:02+08:00 ] 58.251.80.58 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-09-15T10:50:13+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+
+[ 2017-09-15T10:51:34+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2017-09-15T11:00:18+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+
+[ 2017-09-15T11:00:23+08:00 ] 36.104.36.70 /admin/pay/index?code=011ttwtQ1WT9J71qIbtQ1wNwtQ1ttwtc&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('1') [ RunTime:0.0229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2017-09-15T11:00:34+08:00 ] 183.3.234.63 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0171s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0093s ]
+
+[ 2017-09-15T11:00:50+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0129s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0090s ]
+
+[ 2017-09-15T11:01:10+08:00 ] 58.251.80.53 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0205s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0245s ]
+
+[ 2017-09-15T11:01:47+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0135s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0074s ]
+
+[ 2017-09-15T11:02:43+08:00 ] 36.104.36.70 /admin/pay/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-09-15T11:02:48+08:00 ] 36.104.36.70 /admin/pay/index?code=081HgRdk1Ygmek0Ljvck1SqHdk1HgRdw&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0012s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('1') [ RunTime:0.0181s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2017-09-15T11:03:00+08:00 ] 58.251.80.48 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0145s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0068s ]
+
+[ 2017-09-15T11:03:14+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0421s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0238s ]
+
+[ 2017-09-15T11:03:34+08:00 ] 58.251.80.48 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0007s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0394s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0103s ]
+
+[ 2017-09-15T11:04:10+08:00 ] 183.3.234.48 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0200s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0078s ]
+
+[ 2017-09-15T11:04:51+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0099s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0076s ]
+
+[ 2017-09-15T11:07:15+08:00 ] 140.207.54.75 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0119s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0109s ]
+
+[ 2017-09-15T11:12:40+08:00 ] 140.207.54.73 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0339s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"gxfhxchnjvkdxyshu4kuqmcjtqiet9c5\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915103806\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"AAC7343D8AABA744F554B202FEC5E501\",\"time_end\":\"20170915103814\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152180563698\"}') [ RunTime:0.0086s ]
+
+[ 2017-09-15T11:19:07+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0013s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0145s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"8gifmc7di3tm1jgkhrmfgo0kx5kfbf2f\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104437\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"7D84B963FD9904A1A9D30554569F1FDE\",\"time_end\":\"20170915104446\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152182700302\"}') [ RunTime:0.0151s ]
+
+[ 2017-09-15T11:20:18+08:00 ] 183.3.234.46 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0101s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"f2ynzyqf8l08xot1sisnlgw4jl6vveaa\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104601\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D3CEA02BEA6534E6DB614EA479673B50\",\"time_end\":\"20170915104612\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152178994395\"}') [ RunTime:0.0076s ]
+
+[ 2017-09-15T11:21:40+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0082s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"yfwc91mgdfac3ih9l1name7k5d1l0win\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104718\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D88219CD2658F51A0CE556502729D43D\",\"time_end\":\"20170915104728\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152177954308\"}') [ RunTime:0.0096s ]
+
+[ 2017-09-15T11:34:57+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0136s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0110s ]
+
+[ 2017-09-15T11:37:20+08:00 ] 140.207.54.73 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0127s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0110s ]
+
+[ 2017-09-15T11:42:46+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0141s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"gxfhxchnjvkdxyshu4kuqmcjtqiet9c5\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915103806\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"AAC7343D8AABA744F554B202FEC5E501\",\"time_end\":\"20170915103814\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152180563698\"}') [ RunTime:0.0061s ]
+
+[ 2017-09-15T11:49:13+08:00 ] 58.251.80.48 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0263s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"8gifmc7di3tm1jgkhrmfgo0kx5kfbf2f\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104437\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"7D84B963FD9904A1A9D30554569F1FDE\",\"time_end\":\"20170915104446\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152182700302\"}') [ RunTime:0.0070s ]
+
+[ 2017-09-15T11:50:25+08:00 ] 140.207.54.75 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0007s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0136s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"f2ynzyqf8l08xot1sisnlgw4jl6vveaa\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104601\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D3CEA02BEA6534E6DB614EA479673B50\",\"time_end\":\"20170915104612\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152178994395\"}') [ RunTime:0.0077s ]
+
+[ 2017-09-15T11:51:45+08:00 ] 58.251.80.53 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0140s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"yfwc91mgdfac3ih9l1name7k5d1l0win\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104718\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D88219CD2658F51A0CE556502729D43D\",\"time_end\":\"20170915104728\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152177954308\"}') [ RunTime:0.0069s ]
+
+[ 2017-09-15T12:05:02+08:00 ] 183.3.234.48 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0016s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0343s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0082s ]
+
+[ 2017-09-15T12:07:24+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0007s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0192s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0072s ]
+
+[ 2017-09-15T12:12:51+08:00 ] 140.207.54.73 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0176s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"gxfhxchnjvkdxyshu4kuqmcjtqiet9c5\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915103806\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"AAC7343D8AABA744F554B202FEC5E501\",\"time_end\":\"20170915103814\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152180563698\"}') [ RunTime:0.0196s ]
+
+[ 2017-09-15T12:19:18+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0010s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0184s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"8gifmc7di3tm1jgkhrmfgo0kx5kfbf2f\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104437\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"7D84B963FD9904A1A9D30554569F1FDE\",\"time_end\":\"20170915104446\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152182700302\"}') [ RunTime:0.0086s ]
+
+[ 2017-09-15T12:20:30+08:00 ] 58.251.80.63 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0087s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"f2ynzyqf8l08xot1sisnlgw4jl6vveaa\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104601\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D3CEA02BEA6534E6DB614EA479673B50\",\"time_end\":\"20170915104612\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152178994395\"}') [ RunTime:0.0076s ]
+
+[ 2017-09-15T12:21:51+08:00 ] 183.3.234.48 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0118s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"yfwc91mgdfac3ih9l1name7k5d1l0win\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104718\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D88219CD2658F51A0CE556502729D43D\",\"time_end\":\"20170915104728\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152177954308\"}') [ RunTime:0.0069s ]
+
+[ 2017-09-15T12:35:08+08:00 ] 140.207.54.75 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0107s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0065s ]
+
+[ 2017-09-15T12:37:29+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0019s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0103s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0066s ]
+
+[ 2017-09-15T12:42:56+08:00 ] 140.207.54.75 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0086s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"gxfhxchnjvkdxyshu4kuqmcjtqiet9c5\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915103806\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"AAC7343D8AABA744F554B202FEC5E501\",\"time_end\":\"20170915103814\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152180563698\"}') [ RunTime:0.0310s ]
+
+[ 2017-09-15T12:49:22+08:00 ] 58.251.80.53 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0007s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0083s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"8gifmc7di3tm1jgkhrmfgo0kx5kfbf2f\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104437\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"7D84B963FD9904A1A9D30554569F1FDE\",\"time_end\":\"20170915104446\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152182700302\"}') [ RunTime:0.0226s ]
+
+[ 2017-09-15T12:50:36+08:00 ] 183.3.234.56 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0007s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0292s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"f2ynzyqf8l08xot1sisnlgw4jl6vveaa\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104601\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D3CEA02BEA6534E6DB614EA479673B50\",\"time_end\":\"20170915104612\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152178994395\"}') [ RunTime:0.0080s ]
+
+[ 2017-09-15T12:51:56+08:00 ] 140.207.54.73 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0111s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"yfwc91mgdfac3ih9l1name7k5d1l0win\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104718\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D88219CD2658F51A0CE556502729D43D\",\"time_end\":\"20170915104728\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152177954308\"}') [ RunTime:0.0348s ]
+
+[ 2017-09-15T13:05:12+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0178s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0089s ]
+
+[ 2017-09-15T13:07:34+08:00 ] 140.207.54.73 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0132s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0074s ]
+
+[ 2017-09-15T13:43:02+08:00 ] 101.226.103.70 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0174s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"gxfhxchnjvkdxyshu4kuqmcjtqiet9c5\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915103806\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"AAC7343D8AABA744F554B202FEC5E501\",\"time_end\":\"20170915103814\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152180563698\"}') [ RunTime:0.0111s ]
+
+[ 2017-09-15T13:49:27+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0011s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0115s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"8gifmc7di3tm1jgkhrmfgo0kx5kfbf2f\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104437\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"7D84B963FD9904A1A9D30554569F1FDE\",\"time_end\":\"20170915104446\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152182700302\"}') [ RunTime:0.0113s ]
+
+[ 2017-09-15T13:50:42+08:00 ] 183.3.234.60 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0007s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0161s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"f2ynzyqf8l08xot1sisnlgw4jl6vveaa\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104601\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D3CEA02BEA6534E6DB614EA479673B50\",\"time_end\":\"20170915104612\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152178994395\"}') [ RunTime:0.0075s ]
+
+[ 2017-09-15T13:52:00+08:00 ] 101.226.103.59 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0023s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0208s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"yfwc91mgdfac3ih9l1name7k5d1l0win\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915104718\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D88219CD2658F51A0CE556502729D43D\",\"time_end\":\"20170915104728\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152177954308\"}') [ RunTime:0.0082s ]
+
+[ 2017-09-15T14:05:17+08:00 ] 140.207.54.76 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0115s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"jee3yqbwwfe7fr1mejhm640ik9ipy3kn\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110019\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"D364A01EBF2C616DAC37D2632664FFEE\",\"time_end\":\"20170915110030\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152184438520\"}') [ RunTime:0.0094s ]
+
+[ 2017-09-15T14:07:38+08:00 ] 58.251.80.63 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0009s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0118s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('{\"appid\":\"wx9e1d8fc5ee0c85a1\",\"attach\":\"test\",\"bank_type\":\"CFT\",\"cash_fee\":\"1\",\"fee_type\":\"CNY\",\"is_subscribe\":\"Y\",\"mch_id\":\"1485492832\",\"nonce_str\":\"mih5fqwjd1opkjqnyiw293njr0hlpci7\",\"openid\":\"otmgKwNHJBo1YUnP04M7O30xKEw4\",\"out_trade_no\":\"148549283220170915110244\",\"result_code\":\"SUCCESS\",\"return_code\":\"SUCCESS\",\"sign\":\"3F8A67DA9E81B9BBC4803DC2068A0BFD\",\"time_end\":\"20170915110255\",\"total_fee\":\"1\",\"trade_type\":\"JSAPI\",\"transaction_id\":\"4005292001201709152183497494\"}') [ RunTime:0.0232s ]
+
+[ 2017-09-15T16:08:31+08:00 ] 14.17.3.64 /admin/pay/notify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `test` [ RunTime:0.0008s ]
+SQL: INSERT INTO `test` (`data`) VALUES ('haha') [ RunTime:0.0138s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/lib/WxPayApi.php 第 414 行.
+SQL: INSERT INTO `test` (`data`) VALUES ('notify') [ RunTime:0.0071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+

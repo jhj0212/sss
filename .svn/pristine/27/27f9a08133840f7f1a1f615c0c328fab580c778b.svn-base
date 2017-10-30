@@ -1,0 +1,90 @@
+html,
+body,
+div,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0 none;
+}
+*{list-style: none;}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+
+
+.main{
+	width:100%;
+	height:auto;
+	background:url(../img/cwbj.png)no-repeat;
+}
+.main_s{
+	width:50%;
+	height:auto;
+	margin:auto;
+	margin-top:100px;
+}
+.main_s ul li{
+	width:100%;
+	height:40px;
+	font-size:2rem;
+	font-family:"微软雅黑";
+	color:#7d0000;
+	line-height:60px;
+	margin-top:20px;
+}
+.main_x{
+	width:56%;
+	height:auto;
+	margin:auto;
+	margin-top:200px;
+}
+.main_x ul li{
+	width:100%;
+	height:40px;
+	margin:auto;
+	line-height:60px;
+	margin-top:20px;
+}
+.main_x ul li p{
+	font-size:1.5rem;
+	font-family:"微软雅黑";
+	color:#585856;
+	line-height:60px;
+	float:left;
+}
+.main_x ul li a{
+	font-size:1.5rem;
+	font-family:"微软雅黑";
+	color:#ff4c2e;
+	line-height:60px;
+	float:left;
+}
+

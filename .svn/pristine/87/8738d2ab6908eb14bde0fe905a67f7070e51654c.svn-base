@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>餐位管理</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/quanxian/css/cwguanli.css" />
+		<script type="text/javascript" src="__PUBLIC__/quanxian/js/jquery.js"></script>
+ 		<script type="text/javascript" src="__PUBLIC__/quanxian/js/jquery.SuperSlide.2.1.1.js"></script>
+	</head>
+	<body>
+		<input type="hidden" name="id" id="id" value="{$id}"/>
+		fhgsdyjfhgsdjf
+		<input type="text" name="aa" value="123">
+		<!-- Tab切换 S -->
+		<div class="slideTxtBox">
+			<div class="hd">
+				<ul>
+					<li><a href="{:U('seat',array('sid' => $sid,'id'=>1))}">大厅</a></li>
+					<li><a href="{:U('seat',array('sid' => $sid,'id'=>0))}">包房</a></li>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li class="tianjia">
+						<a href="{:U('addSeat',array('sid' => $sid,'id'=>$id))}">
+							<img src="__PUBLIC__/quanxian/img/jia.png"/></span>
+						</a>
+					</li>
+					<foreach name="person" item="data">
+						<a href="{:U('seatInfo',array('table_id'=>$data['table_id'],'sid'=>$data['sid'],'id'=>$id,'level'=>$level[0],'openid'=>$openid[0]))}">
+							<li class="
+								<if condition='$data.state eq 0'>
+									bianse
+								</if>
+								">
+								<span>{$data.table_id}</span>
+								<span>{$data.table_name}</span>
+								<span>
+									<if condition="$data.state eq 0">未使用</if>
+									<if condition="$data.state eq 1">用餐中</if>
+								</span>
+								<span>
+									<if condition="$data.table_type eq 0">包房</if>
+									<if condition="$data.table_type eq 1">2人桌</if>
+									<if condition="$data.table_type eq 2">4人桌</if>
+									<if condition="$data.table_type eq 3">6人桌</if>
+									<if condition="$data.table_type eq 4">8人桌</if>
+								</span>
+								<span>
+									<if condition="$data.is_order eq 0">不可预订</if>
+									<if condition="$data.is_order eq 1">提供预订</if>
+								</span>
+							</li>
+						</a>
+					</foreach>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
+		<!-- Tab切换 E -->
+	</body>
+</html>

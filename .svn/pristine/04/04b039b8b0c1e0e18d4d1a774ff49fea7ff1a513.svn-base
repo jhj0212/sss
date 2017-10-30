@@ -1,0 +1,184 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #F1F1F1;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+/*头部图片*/
+#imgContainer{
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    background: url('../images/register/bg.png');
+    background-size: cover;
+}
+#imgContainer h3{
+    font-size: 1rem;
+    color: #fff;
+}
+/*验证信息*/
+#validate {
+    position: fixed;
+    height: 2.5rem;
+    width: 100%;
+    line-height: 2.8rem;
+    text-align: center;
+    background: #FF4E30;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+}
+/*微信头像*/
+#userHeader{
+    width: 100%;
+    height: 8rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+#userHeader img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    border: 1px solid #333;
+    margin: 2rem auto;
+}
+/*表单提交*/
+#formContainer{
+    width: 100%;
+    height: auto;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+#formContainer>div{
+    width: 90%;
+    height: 3rem;
+    padding: 0 5%;
+    background: #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+}
+/*表单下的一级div容器hack*/
+.birthContainer,.name_sex_Container{
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+/*性别选择器*/
+.sexContent{
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+}
+.sexContent>div{
+    width: 3rem;
+    height: 2.5rem;
+    margin: .25rem 0;
+    text-align: center;
+    line-height: 2.5rem;
+    border-right: 1px dashed #ddd;
+    position: relative;
+}
+.sexContent>div:last-child{
+    border: none;
+}
+.sexContent>div label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+.sexContent>div label.true{
+    border-bottom: .25rem solid #FF4E30;
+}
+.sexContent>div input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+/*end*/
+#formContainer input[type="text"]{
+    border: none;
+    outline: none;
+    padding: .2rem;
+}
+/*提交按钮*/
+#submitBtn{
+    margin: 3rem auto 0;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    width: 80%;
+    border: none;
+    color: #fff;
+    background: #FF4E30;
+    border-radius: .5rem;
+    outline: none;
+}

@@ -1,0 +1,388 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+use youwen\exwechat\api\message\template;
+require_once VENDOR_PATH."youwen/exwechat/api/message/template.php";
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/9/4
+ * Time: 11:21
+ */
+class WaiterController extends CommonController {
+    public function index(){
+        //①、获取用户openid
+        $tools = new \WxPayJsApi();
+        $openId = $tools->GetOpenid();
+        $where['sys_user_openid']=$openId;
+        $where['sid']='0000000001';
+        $res=M('sys_user')
+            ->where($where)
+            ->field('sys_user_openid')
+            ->find();
+        //echo M('sys_user')->_sql();
+        //判断是否为系统用户
+        if ($res){
+            $this->assign('openid',$openId);
+            $this->display();
+        }else{
+            $this->display('error');
+        }
+    }
+    /*
+     * 现场排队
+     */
+    public function getNumber(){
+        $store_info = M("store_info");
+        //echo M('sys_user')->_sql();
+        $sid=$_GET['sid'];
+        $openid=$_GET['openid'];
+        $this->assign('openid',$openid);
+        $this->assign('sid',$sid);
+
+        $where['sid']=$_GET['sid'];
+        $data = $store_info->field('sid,address,telephone,province,city,district',false)->where($where)->select();
+        $this->assign('data',$data);
+        $this->display();
+
+    }
+    public function checkTel(){
+        if (!IS_AJAX){
+            die('页面不存在');
+        }
+        $phone_number=$_GET['tel'];
+        $sid=$_GET['sid'];
+        //获取当天凌晨时间 例：2017-09-01 00:00:00
+        $today = date('Y-m-d 00:00:00', time());
+        $data=M('queue_number')
+            ->where( 'phone_number ="'.$phone_number.'" and sid ="'.$sid.'" and state=0 and start_time >=" '.$today.'"')
+            ->select();
+        //echo M('queue_number')->_sql();
+        if($data){
+            $this->ajaxReturn(1);	//已存在
+        }else{
+            $this->ajaxReturn(0);	//不存在
+        }
+    }
+    public function saveNumber(){
+        $person_count  = $_POST['person_count'];
+        $phone_number  = $_POST['tel'];
+        $openid        = $_POST['sys_user_openid'];
+        $sid           = $_POST['sid'];
+
+        //手机号验证
+        //$phone_number=session('phone_number');
+       /* $res = preg_match('#^13[\d]{9}$|^14[5,7]{1}\d{8}$|^15[^4]{1}\d{8}$|^17[0,5,6,7,8]{1}\d{8}$|^18[\d]{9}$#',$phone_number);
+        if($res==0){
+            echo "<script>alert('请输入正确的手机号码');history.go(-1);</script>";
+        }*/
+        //验证30分钟之内是否重复取号
+        /*$que_data=M('queue_number')
+            ->where(array('phone_number'=>$phone_number,'sid'=>$sid,'state'=>0))
+            ->select();
+        if(!empty($que_data)){
+            echo "<script>alert('此手机号码已经预约了');history.go(-1);</script>";
+        }*/
+        //获取排队取号ID
+        $data=M('queue_number')
+            ->field('queue_id,date_format(max(start_time),"20%y%m%d") as maxtime,start_time')
+            ->group('start_time')
+            ->order('start_time desc')
+            ->limit(1)
+            ->select();
+        $maxTime=$data[0]['maxtime'];
+        $oldId=$data[0]['queue_id'];
+        //获取前端信息存入数据库
+        if($maxTime == date("Ymd")){
+            $queue_id=$oldId+1;//获取当天queue_id
+        }else{
+            $queue_id=date("Ymd").'0001';//获取0点第一个queue_id
+        }
+
+        //获取桌位类型
+        if($person_count<=2){
+            $table_type = '1';
+        }else if($person_count>2&&$person_count<=4){
+            $table_type = '2';
+        }else if($person_count>4&&$person_count<=6){
+            $table_type = '3';
+        }else if($person_count>6&&$person_count<=8){
+            $table_type = '4';
+        }
+        $this->assign('table_type',$table_type);
+        //获取当前时间
+        $start_time = date('Y-m-d H:i:s');
+        $this->assign('start_time',$start_time);
+        //获取当前状态
+        $state=0;
+
+        //获取到的数据
+        $data = array(
+            'queue_id'=>$queue_id,
+            'sid'=>$sid,
+            'phone_number'=>$phone_number,
+            'openid'=>$openid,
+            'person_count'=>$person_count,
+            'table_type'=>$table_type,
+            'start_time'=>$start_time,
+            'state'=>$state,
+        );
+        $que_res=M('queue_number')->where(array('queue_id'=>$queue_id))->select();
+        $result=null;
+        if(empty($que_res)){
+            $result= M('queue_number')->add($data);
+        }
+        if($result == 1){
+            /*
+             * 输出数据到成功页面
+             * 前面等待，预计等待，排队取号号码
+             */
+            //$this->redirect('numberSuccess',array('openid'=>$openid));
+            //排队取号的号码
+            $queue_result=M('queue_number')
+                ->where('state = 0  and substr(start_time,1,10)=substr(now(),1,10) and sid ="'.$sid.'" and start_time <= "'.$start_time.'"')
+                ->field('count(1) as countCode')
+                ->select();
+            $queue_temp_num='A'.$queue_result[0]['countcode'];
+
+            //前面等待桌数
+            $wait_result=M('queue_number')
+                ->where('state = 0  and substr(start_time,1,10)=substr(now(),1,10) and sid ="'.$sid.'"  and table_type = "'.$table_type.'"')
+                ->field('table_type,count(queue_id) as num')
+                ->group('table_type')
+                ->select();
+            $num = $wait_result[0]['num']-1;//前面同餐桌类型(自己除外)的数量
+            $this->assign('wait_num',$num);
+            //预计等待时间
+            $m_time=M('queue_number')
+                ->where('openid= "'.$openid.'"')
+                ->field('max(start_time)')
+                ->select();
+            $mtime=$m_time[0]['max(start_time)'];
+            $res=M('queue_number')
+                ->where('state = 0  and sid="'.$sid.'" and table_type ="'.$table_type.'" and now() > "'.$mtime.'"')
+                ->field('distinct (case when table_type= 1 then '.$num.'*10 when table_type= 2 then '.$num.'*15 when table_type=3
+                        then '.$num.'*20 when table_type=4 then '.$num.'*30 else 0 end ) as waitingtime')
+                ->find();
+            echo M('queue_number')->_sql();
+            $wait_time = $res['waitingtime'];
+            var_dump($res);
+            $this->assign('sid',$sid);
+            $this->assign('waitingtime',$wait_time);
+            $this->assign('queue_no',$queue_temp_num);
+            $this->display('numberSuccess');
+        }else{
+            echo "<script>alert('系统发生异常，请联系管理员');history.go(-1);</script>";
+        }
+    }
+    /**
+     * 取消排队页面
+     */
+    public function numberCancel(){
+        $queue_id = $_GET['queue_id'];
+        $this->assign('queue_id',$queue_id);
+        $this->display();
+    }
+    /*
+     * 菜单浏览
+     */
+    public function numberFoods(){
+        $sid = $_GET['sid'];
+        //查询菜单
+        $menu_result =M('carte_info')
+                ->where('sid="'.$sid.'"')
+                ->field('menu_id,sid,menu_name,menu_pag_url,unit_price,menu_type')
+                ->select();
+        //查询菜品类
+        $type_result =M('carte_info')
+            ->where('sid= "'.$sid.'"')
+            ->field('distinct menu_type')
+            ->select();
+        $this->assign('type_result',$type_result);
+        $this->assign('menu_info',$menu_result);
+
+        $this->display();
+    }
+    /*
+     * 等待福利
+     */
+    public function game(){
+        $sid = $_GET['sid'];
+        $this->assign('sid',$sid);
+        $this->display();
+    }
+    /*
+     * 餐位列表
+     */
+     function seatNumber(){
+         $sid=$_GET['sid'];
+         $id=$_GET['id'];
+         if($id==0){
+             $sql=' and p.table_type = 0';
+         }elseif($id== 1){
+             $sql=' and p.table_type != 0';
+         }
+         $data = M('meal_info as p')->fetchSql(false)
+             ->join('meal_usage c on p.sid=c.sid and p.table_id=c.table_id')
+             ->where(' p.sid = "' . $sid . '"' . $sql)
+             ->field('p.*,c.*')
+             ->select();
+         //echo M('meal_info as p')->_sql();
+
+         //Vendor('youwen.exwechat.api.message.template');
+         $wechat = D('Wechat');
+         $accessToken = $wechat->wx_access_token();
+         $openid = $_GET['openid'];
+         //获取用户基本列表openid列表
+         $openid_url = 'https://api.weixin.qq.com/cgi-bin/user/get?access_token=' . $accessToken;
+         //单个用户基本信息
+         $info_url = 'https://api.weixin.qq.com/cgi-bin/user/info?access_token=' . $accessToken . '&openid=' . $openid . '&lang=zh_CN';
+         //批量获取用户基本信息
+         $info_list_url = 'https://api.weixin.qq.com/cgi-bin/user/info/batchget?access_token=' . $accessToken;
+        /* var_dump($info_url);
+         var_dump($accessToken);*/
+         //$http=new \HttpCurl();
+         /*$info = array(
+             'openid' => $openid,
+             'lang' => 'zh_CN'
+         );
+         var_dump(json_encode($info));*/
+         //$url = $this->http_curl($info_list_url, json_encode($info));
+         $url = $this->http_curl($info_url);
+        // var_dump($url);
+         //var_dump($message);
+
+         $this->assign('sid',$sid);
+         $this->assign('person',$data);
+         $this->display();
+     }
+
+    function http_curl($url,$data=null)
+    {
+        header("Content-type:text/html;charset=utf-8");
+        $ch = curl_init();
+        curl_setopt($ch,CURLOPT_URL,$url);
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+        curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,false);
+        if(!empty($data)){
+            curl_setopt($ch,CURLOPT_POST,true);
+            var_dump(curl_setopt);
+            curl_setopt($ch,CURLOPT_POSTFIELDS,$data);
+        }
+        $res = curl_exec($ch);
+        //var_dump($res);
+        curl_close($ch);
+        $res = json_decode($res,true);
+        //var_dump($res);
+        return $res;
+
+    }
+
+    /*
+     * 空桌号输入
+     */
+    public function changeSeat(){
+        $sid=$_GET['sid'];
+        $where['table_id']=$_GET['table_id'];
+        $where['sid']=$_GET['sid'];
+        if($_GET['state']==1){
+            $res=M('meal_usage')->where($where)->setField(array('state'=>0,'end_time'=>date('Y-m-d H:i:s', time())));
+        }
+        /*else{
+            $res=M('meal_usage')->where($where)->setField('state',0);
+        }*/
+        $table_type=$_GET['table_type'];
+        if ($res){
+            //获取当天凌晨时间 例：2017-09-01 00:00:00
+            $today = date('Y-m-d 00:00:00', time());
+            //取数据第一条
+            $first_res=M('queue_number')
+                    ->where('state= 0  and sid="'.$sid.'" and table_type="'.$table_type.'" and start_time>="'.$today.'"')
+                    ->limit('1')
+                    ->select();
+            //echo M('queue_number')->_sql();
+            $sys_res_first=M('sys_user')->where('sid="'.$sid.'" and sys_user_openid ="'.$first_res[0]['openid'].'"')->find();
+            //数据第一条消息推送
+            $data_first = [
+                'touser'=>$first_res[0]['openid'],
+                'template_id'=>'4a4L0j_ZDJ3sIfBpxLYLJHPg9pfVXnV7phwnNFSD5z8',
+               /* 'url'=>'http://gs.jltengfang.com/order/wxpay/index?ordernum='.$value['out_trade_no'],*/
+                'topcolor'=>'#FF0000',
+                'data'=>[
+                    'first'=>['value'=>'尊敬的客户您好，请您到餐厅用餐'],
+                    'keyword1'=>['value'=>$sys_res_first['sys_nickname']],
+                    'keyword2'=>['value'=>$first_res[0]['queue_id']],
+                    'keyword3'=>['value'=>'0人'],
+                    'keyword4'=>['value'=>'排队用餐'],
+                    'remark'=>['value'=>'如有问题请联系腾放公司客服']
+                ],
+            ];
+            //取数据第三条
+            $third_res=M('queue_number')
+                ->where('state= 0  and sid="'.$sid.'" and table_type="'.$table_type.'" and start_time>="'.$today.'"')
+                ->limit('2,1')
+                ->select();
+            //echo M('queue_number')->_sql();
+            $sys_res_third=M('sys_user')->where('sid="'.$sid.'" and sys_user_openid ="'.$third_res[0]['openid'].'"')->find();
+            //数据第三条消息推送
+            $data_third = [
+                'touser'=>$third_res[0]['openid'],
+                'template_id'=>'4a4L0j_ZDJ3sIfBpxLYLJHPg9pfVXnV7phwnNFSD5z8',
+                /* 'url'=>'http://gs.jltengfang.com/order/wxpay/index?ordernum='.$value['out_trade_no'],*/
+                'topcolor'=>'#FF0000',
+                'data'=>[
+                    'first'=>['value'=>'尊敬的客户您好，前面还有两人等待用餐'],
+                    'keyword1'=>['value'=>$sys_res_third['sys_nickname']],
+                    'keyword2'=>['value'=>$third_res[0]['queue_id']],
+                    'keyword3'=>['value'=>'2人'],
+                    'keyword4'=>['value'=>'排队用餐'],
+                    'remark'=>['value'=>'如有问题请联系腾放公司客服']
+                ],
+            ];
+            //$auth = new AuthExtend();
+            //$accessToken = $auth->getAccessToken(false);
+            $wechat = D('Wechat');
+            $accessToken = $wechat -> wx_access_token();
+            $message = new template($accessToken);
+            $data_all=array(
+                $data_first,$data_third
+            );
+            if (!empty($data_all)){
+                foreach ($data_all as $value){
+                    $res = $message->send($value);
+                }
+            }else
+            {
+                echo "没有人在排队等待用餐";
+            }
+        }
+        if($table_type==0){
+            $id=0;
+        }else{
+            $id=1;
+        }
+        $this->redirect('seatNumber', array('sid' => $sid,'id'=>$id));
+    }
+    /*
+     * 预定列表
+     */
+    public function report(){
+        $sid=$_GET['sid'];
+        $sql=null;
+
+        if($_POST['begin_time']!=''&&$_POST['end_time']!=''){
+            $begin_time= $_POST['begin_time']." 00:00:00";
+            $end_time=$_POST['end_time']." 23:59:59";
+            $sql=(' and order_time >="'. $begin_time.'" and order_time <="'. $end_time.'"');
+        }
+        $data = M('order_number')->fetchSql(false)
+            ->where( 'sid = "'.$sid.'"'.$sql)
+            ->field('table_id,count(table_id) count')
+            ->group('table_id')
+            ->select();
+        //echo M('order_number')->_sql();
+        $this->assign('sid',$sid);
+        $this->assign('person',$data);
+        $this->display();
+    }
+}

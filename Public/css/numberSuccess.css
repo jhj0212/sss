@@ -1,0 +1,214 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+    background: url('../images/orderSuccess/bg.png');
+    background-size: cover;
+}
+
+
+/* 各种信息容器 */
+
+#msgContainer {
+    width: 90%;
+    height: 55%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .7);
+}
+
+
+/*头部一栏容器*/
+
+#msgContainer .msg_header {
+    width: 95%;
+    height: 25%;
+    margin: 10% auto;
+    border-bottom: .3rem solid #ddd;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+/*头部一栏容器->具体的3个容器组件*/
+
+#msgContainer .msg_header_content {
+    width: 28%;
+    height: 70%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#msgContainer .msg_header_content>span {
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+
+/*头部一栏容器->每个容器下方另加1个div用于横向布局*/
+
+#msgContainer .msg_header_content>div {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#msgContainer .msg_header_content>div img {
+    width: .875rem;
+    height: .875rem;
+    margin-right: .3rem;
+}
+
+#msgContainer .msg_header_content>div span {
+    font-size: .875rem;
+}
+
+
+/*头部一栏容器->最后一个布局进行hack*/
+
+#msgContainer .msg_header_content_last {
+    height: 70%;
+}
+
+#msgContainer .msg_header_content_last h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FF4E30;
+}
+
+#msgContainer .msg_btn {
+    width: 70%;
+    height: 45%;
+    margin: 0 auto;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#msgContainer .msg_btn .msg_btn_content {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#msgContainer .msg_btn .msg_btn_content img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#msgContainer .msg_btn .msg_btn_content span {
+    display: block;
+    width: 4rem;
+    margin: .5rem auto;
+    text-align: center;
+    padding: .1rem .5rem;
+    background: #FF4E30;
+    border-radius: .5rem;
+    font-size: .75rem;
+    color: #fff;
+}
+
+
+/* 图片容器 */
+
+#imgContainer {
+    width: 90%;
+    height: 30%;
+    margin-top: -10%;
+}
+
+#imgContainer img {
+    width: 100%;
+    height: 100%;
+}

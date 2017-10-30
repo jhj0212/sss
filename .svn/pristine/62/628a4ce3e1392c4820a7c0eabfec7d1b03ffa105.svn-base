@@ -1,0 +1,390 @@
+[ 2017-10-12T09:35:21+08:00 ] 36.104.33.96 /admin/create/readBarcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined index: card_id /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1320 行.
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:6.7999s ]
+
+[ 2017-10-12T09:35:31+08:00 ] 36.104.33.96 /admin/create/readBarcode?code=011HugOK0ty9b42N2AMK0CNjOK0HugOQ&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined index: card_id /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1320 行.
+SQL: SHOW COLUMNS FROM `wechat_session` [ RunTime:1.8482s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SELECT `val`,`time` FROM `wechat_session` WHERE `id` = 1 LIMIT 1   [ RunTime:0.2164s ]
+SQL: UPDATE `wechat_session` SET `val`='c5oZVNiswnWeaqxwc_nV7oqnP-lYpZ7bMbicR__NHGBoQuZ_ldbS4-PMRgBG659MDazOv3T3Muvj-qJfCLXcrdV2QVnOnHCcIhU0u6iRiTcCG9bEr-6nIexlFRdW_B5FKTUeAHAYHI',`time`='1507772129' WHERE `id` = 1 [ RunTime:0.0292s ]
+NOTIC: [8] Use of undefined constant CURLOPT_SAFE_UPLOAD - assumed 'CURLOPT_SAFE_UPLOAD' /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 487 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 487 行.
+NOTIC: [8] Undefined index: ticket /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1343 行.
+NOTIC: [8] Undefined index: ticket /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1344 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2017-10-12T09:51:13+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-10-12T09:53:31+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-10-12T09:54:32+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=071yvBni19gciz0Cvzni1mXsni1yvBnT&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:26.6783s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-10-12T09:59:46+08:00 ] 124.235.153.58 /index.php/Admin/Admin/foods/sid/0000000001/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `carte_info` [ RunTime:3.5478s ]
+SQL: SELECT `menu_id`,`sid`,`menu_name`,`menu_pag_url`,`unit_price`,`menu_type` FROM `carte_info` WHERE ( sid = "0000000001" )  [ RunTime:6.4751s ]
+SQL: SELECT distinct menu_type FROM `carte_info` WHERE ( sid = "0000000001" )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2017-10-12T10:26:20+08:00 ] 124.235.153.58 /index.php/Admin/Admin/f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+ERR: 非法操作:f
+
+[ 2017-10-12T10:26:53+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+
+[ 2017-10-12T10:30:02+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+
+[ 2017-10-12T10:37:46+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=071XdsNI1V0lS80uPVMI1MAiNI1XdsNc&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:449.7803s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2017-10-12T10:43:41+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seat/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:26.3845s ]
+SQL: SELECT `sys_user_level` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0008s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-10-12T10:47:11+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seatInfo/table_id/01/sid/0000000001/id/1/level/1/openid/o.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:6.8833s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id AND p.is_order=c.is_order  WHERE c.table_id = '01' AND c.sid = '0000000001' LIMIT 1   [ RunTime:0.4197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2017-10-12T10:47:28+08:00 ] 124.235.153.58 /index.php/Admin/Admin/editSeat.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0118s ]
+NOTIC: [2] Illegal offset type in isset or empty /var/www/xhy/ThinkPHP/Library/Think/Model.class.php 第 445 行.
+SQL: UPDATE `meal_info` SET `table_name`='mgdfhjd',`person_count`='6',`table_type`='3',`is_order`='1' WHERE `sid` = '0000000001' AND `table_id` = '01' [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `meal_usage` [ RunTime:0.8322s ]
+NOTIC: [2] Illegal offset type in isset or empty /var/www/xhy/ThinkPHP/Library/Think/Model.class.php 第 445 行.
+SQL: UPDATE `meal_usage` SET `is_order`='1',`state`='0' WHERE `sid` = '0000000001' AND `table_id` = '01' [ RunTime:0.0094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-10-12T10:55:22+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seat/sid/0000000001/id/1/openid/o.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:449.8436s ]
+SQL: SELECT `sys_user_level` FROM `sys_user` WHERE `sys_user_openid` = 'o' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0007s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-10-12T10:55:33+08:00 ] 124.235.153.58 /index.php/Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002662s ]
+
+[ 2017-10-12T10:55:57+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seat/sid/0000000001/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined index: openid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 199 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0007s ]
+SQL: SELECT `sys_user_level` FROM `sys_user` WHERE `sys_user_openid` = null AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0007s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2017-10-12T10:56:35+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seatInfo/table_id/01/sid/0000000001/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0116s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id AND p.is_order=c.is_order  WHERE c.table_id = '01' AND c.sid = '0000000001' LIMIT 1   [ RunTime:26.7077s ]
+NOTIC: [8] Undefined index: openid /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 299 行.
+NOTIC: [8] Undefined index: level /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 301 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-12T11:02:59+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seatInfo/table_id/01/sid/0000000001/id/1/openid/o.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0097s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id AND p.is_order=c.is_order  WHERE c.table_id = '01' AND c.sid = '0000000001' LIMIT 1   [ RunTime:450.3866s ]
+NOTIC: [8] Undefined index: level /var/www/xhy/Application/Admin/Controller/AdminController.class.php 第 301 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-10-12T11:46:47+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2017-10-12T11:47:42+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=021zbE7c1gjQUr0znI7c17ZA7c1zbE7l&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:26.6952s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2017-10-12T13:20:26+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seat/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:6.8799s ]
+SQL: SELECT `sys_user_level` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0007s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-10-12T13:21:01+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seatInfo/table_id/01/sid/0000000001/id/1/level/1/openid/o.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.2173s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id AND p.is_order=c.is_order  WHERE c.table_id = '01' AND c.sid = '0000000001' LIMIT 1   [ RunTime:26.6893s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+

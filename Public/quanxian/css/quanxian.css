@@ -1,0 +1,144 @@
+html,
+body,
+div,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0 none;
+}
+*{list-style: none;
+text-decoration: none !important;}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+
+/*main start*/
+.main{
+	width:100%; 
+	height:100%; 
+	background-color:#efeef4; 
+}
+.tupian img{
+	width:100%;
+}
+.sousuo{
+	width:100%;
+	height:45px;
+	margin:auto;
+	background-color:#c2c1c7; 
+	margin-top:-5px;
+}
+.sousuo input{
+	width: 90%;
+    height:30px;
+    margin-left:5px;
+    border-radius: 6px;
+	background: #fcfcfc;
+	margin-top:7px;
+	background-position: 30%;
+	background-repeat: no-repeat;
+	height: 2rem;
+	border: none;
+	text-align: center;
+	color: #535353;
+	font-size: 1rem;
+	font-family:"微软雅黑";
+}
+.sousuo button{
+	width:6%;
+	height:auto;
+	float:right;
+	margin-top:3%;
+	margin-right:1%;
+	border:none;
+	background-color: #c2c1c7;
+}
+.sousuo button img{
+	width:100%;
+	height:auto;
+	float:right;
+	margin-top:3.5%;
+	margin-right:2%;
+}
+.liebiao{
+	width:100%;
+	height:auto;
+}
+.liebiao ul li{
+	width:100%;
+	height:56px;
+	margin:auto;
+	border-bottom: solid #c2c1c7 1px;
+	position: relative;
+	
+}
+.liebiao ul li>a{
+	font-size:.7rem;
+	font-family:"微软雅黑";
+	float:right;
+	Line-Height:56px;
+	color:#2BA245;
+	margin-right:5px;
+}
+.txxm .ws1{
+	width:38px;
+	margin-top: -19px;
+	margin-left: 10px;
+	float:left;
+	display: inline;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	
+}
+.txxm p{
+	width:70px;
+	font-family:"微软雅黑";
+	font-size:1rem;
+	color:#535353;
+	float:left;
+	margin-left:50px;
+	Line-Height:56px;
+}
+.liebiao p{
+	font-family:"微软雅黑";
+	font-size:1rem;
+	color:#535353;
+	float:left;
+	margin-left:53px;
+	Line-Height:56px;
+}
+.tubiao img{
+	width:5%;
+	float:right;
+	margin-top:20px;
+	margin-right:10px;
+}
+/*main end*/

@@ -1,0 +1,133 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../img/game/bg.jpg);
+    background-size: cover;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+/*我的游戏分数*/
+#myCardContainer{
+    width: 100%;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#myCardContainer img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+#myCardContainer .myCard{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 2px;
+}
+/*积分兑换礼物*/
+#cardGetGoods{
+    width: 100%;
+    margin-top: 2rem;
+    color: #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#cardGetGoods>div{
+    width: 80%;
+    margin: 1rem auto;
+    font-weight: bold;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+#cardGetGoods>div button{
+    border: none;
+    padding: 2px .5rem;
+    border-radius: 1rem;
+    background: #FF4E30;
+    color: #fff;
+    outline: none;
+}
+#cardGetGoods>div button.disabled{
+    background: #ddd;
+    color: #333;
+}
+/*弹窗函数*/
+#getCardWindow{
+    position: fixed;
+    z-index: 1;
+    top: 35%;
+    left: 50%;
+    margin-left: -4rem;
+    width: 8rem;
+    height: 4rem;
+    background: rgba(255,255,255,.5);
+    text-align: center;
+    line-height: 4rem;
+    border-radius: .3rem;
+    color: #fff;
+    display: none;
+}
+#mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: none;
+    z-index: 0;
+}

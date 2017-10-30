@@ -1,0 +1,275 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+/*一些通用的基础配置*/
+.disabled{
+    background: #eee;
+}
+.sign{
+    color: #777;
+    font-size: .75rem;
+    margin-top: .5rem;
+}
+.title {
+    margin-bottom: 1rem;
+}
+.shopSingle {
+    width: 90%;
+    margin: 0 5% 1rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+.shopSingle input{
+    padding: .25rem .5rem;
+    height: 1.2rem;
+    border: 1px solid #ddd;
+}
+.shopSingle select{
+    height: 2rem;
+}
+/*地图调用基本样式*/
+
+.addMap {
+    display: none;
+    width: 88%;
+    padding: 0 5%;
+    margin: 0 auto 1rem;
+}
+
+.bMap {
+    position: relative;
+    width: 100%;
+}
+
+.bMap .map-warp {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    top: 2rem;
+    display: none;
+}
+
+.bMap input {
+    width: 96%;
+    padding: .25rem 2%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: 1px solid #d7d7d7;
+}
+
+.tangram-suggestion-main {
+    z-index: 9999
+}
+
+svg {
+    display: none;
+}
+
+
+/*信息验证*/
+
+#validate {
+    position: fixed;
+    height: 2.5rem;
+    width: 100%;
+    line-height: 2.8rem;
+    text-align: center;
+    background: #FF4E30;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+    z-index: 100000;
+}
+
+
+/*头部*/
+
+#headerContainer {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.8rem;
+    background: #FF4E30;
+    font-size: 1rem;
+}
+
+#headerContainer h3 {
+    padding-left: 5%;
+    color: #fff;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/*表单*/
+
+#form {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+/*两个大板块通用设置*/
+
+#baseContainer,
+#zizhiContainer {
+    background: #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#baseContainer h4,
+#zizhiContainer h4 {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: 5%;
+    margin: 0 0 .5rem 0;
+    background: #eee;
+}
+
+/*营业时间*/
+.shopTime div{
+    width: 100%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.timeInput{
+    width: 6rem;
+    margin: auto 1rem;
+}
+
+/*门店图片*/
+#shopLogo{
+    height: auto;
+}
+
+/*经营主旨*/
+.purpose>div{
+    margin-bottom: .5rem;
+    width: 100%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+.purpose>div>div{
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+}
+.purpose>div>div input{
+    margin-right: .5rem;
+}
+.purpose>div .sign{
+    margin-top: 0;
+}
+
+/*相关证明材料->上传按钮*/
+#zizhiFile{
+    height: auto;
+}
+/*按钮类*/
+
+#btnContainer {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#submitBtn{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: none;
+    color: #fff;
+    background: #FF4E30;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    outline: none;
+}

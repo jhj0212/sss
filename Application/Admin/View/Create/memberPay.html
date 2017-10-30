@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/memberPay.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>后台会员消费情况</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+    <!-- 头部图片 -->
+        <div id="imgContainer">
+            <form action="" method="get" id="form">
+                <input type="text" placeholder="搜索会员/日期查找"></input>
+                <button type="submit"><img src="__PUBLIC__/images/search.png"></button>
+            </form>
+        </div>
+        <!-- 表格详情 -->
+        <table id="table">
+            <!-- 表头 -->
+            <thead>
+                <tr>
+                    <th class="th1">会员姓名</th>
+                    <th class="th2">消费时间</th>
+                    <th class="th3">消费金额</th>
+                    <th class="th4">支付折扣</th>
+                </tr>
+            </thead>
+            <!-- 表身 -->
+            <tbody>
+                <!-- 循环列表 -->
+                <foreach name="res" item="vo">
+                <tr>
+                    <td>{$vo['name']}</td>
+                    <td>{$vo['consumption_time']}</td>
+                    <td>{$vo['consumption_balance']}</td>
+                    <td>{$vo['card_type']}</td>
+                </tr>
+                </foreach>
+
+            </tbody>
+        </table>
+        <!-- 没有门店时显示提示 -->
+        <div id="empty">
+            <img src="../../commonLib/images/empty.png">
+            <h3>暂无数据哦</h3>
+        </div>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        ;$(function (){
+            var empty = $('#empty');
+            if ($('tbody').find('tr').length == 0) {
+                empty.show();
+            } else {
+                empty.hide();
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,557 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+html {
+    background: #fff;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: .875rem;
+}
+
+.disabled{
+    background: #EBEBE4 !important;
+}
+/*头部图片宣传*/
+
+#imgContainer {
+    width: 100%;
+    height: 20%;
+    background: url('../images/orderConfirm/bg.png');
+    background-size: cover;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.img_textContainer {
+    width: 80%;
+    height: 60%;
+    background: rgba(255, 255, 255, .6);
+    border-radius: .3rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.img_textContainer .img_text_big {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF4E30;
+}
+
+.img_textContainer .img_text_small {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #FF4E30;
+}
+
+
+/*表单*/
+
+#formContainer {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*四个表单栏通用样式*/
+
+.form_msgContainer{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/*四个表单栏->所有下列直接子div：通用样式*/
+
+.form_time,
+.form_people,
+.form_order,
+.form_tableMsg,
+.form_tableNumber,
+.form_name,
+.form_phone,
+.form_remark {
+    width: 90%;
+    min-height: 3rem;
+    border-bottom: 1px solid #ddd;
+    padding: 0 5%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.form_people,
+.form_tableNumber,
+.form_phone {
+    border-bottom: .6rem solid #eee;
+}
+
+.form_time>div,
+.form_people>div,
+.form_order>div,
+.form_tableMsg>div,
+.form_tableNumber>div,
+.form_name>div,
+.form_phone>div,
+.form_time .time_icon {
+    display: block;
+    height: 100%;
+    line-height: 3rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+/*第一个表单栏：时间人数*/
+
+
+/*时间*/
+.Day_title{
+    margin-top: .5rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 5%;
+}
+.Day_order {
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+/*移动端隐藏滚动条但可以滚动 css hack*/
+
+.Day_order::-webkit-scrollbar {
+    display: none;
+}
+
+.Day_order span {
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #333;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin: .5rem .1rem;
+}
+.Day_order span.choose{
+    background: #FF4E30;
+    color: #fff;
+}
+.Day_order span:first-child {
+    margin-left: .5rem;
+}
+
+.Day_order span:last-child {
+    margin-right: .5rem;
+}
+
+
+/*订座具体时间容器*/
+
+#TimeContainer {
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border-bottom: 1rem solid #EFEFEF;
+}
+
+
+/*移动端隐藏滚动条但可以滚动 css hack*/
+
+#TimeContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#TimeContainer .time_radio_container {
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+    margin: 1rem .1rem;
+    position: relative;
+    z-index: 0;
+}
+
+#TimeContainer .time_radio_container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #333;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+    z-index: -1;
+}
+#TimeContainer .time_radio_container .choose{
+    background: #FF4E30;
+    color: #fff;
+}
+#TimeContainer .time_radio_container input {
+    opacity: 0;
+    margin: 0 auto;
+    width: 4rem;
+    height: 2rem;
+    z-index: 1;
+    outline: none;
+}
+
+#TimeContainer div:first-child {
+    margin-left: .5rem;
+}
+
+#TimeContainer div:last-child {
+    margin-right: .5rem;
+}
+
+
+/*第二个表单栏：订座*/
+
+
+/*可选座位*/
+
+.form_tableMsg {
+    border: none;
+}
+
+.form_tableMsg .tableMsg_msg {
+    font-weight: bold;
+}
+
+.form_tableMsg .tableMsg_number {
+    color: #FF4E30;
+}
+
+
+/*桌位号码*/
+
+.form_tableNumber {
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: -.3rem;
+}
+
+.form_tableNumber .tableNumber_msg {
+    font-weight: bold;
+}
+
+.form_tableNumber .tableNumber_choose {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tableNumber_choose .radio {
+    position: relative;
+    width: 3rem;
+    height: 1.5rem;
+    margin: 0 .5rem .75rem;
+    border: 1px solid #ddd;
+    border-radius: .2rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.tableNumber_choose .radio label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    z-index: 0;
+    color: #999;
+    background: #eee;
+    border-radius: .2rem;
+}
+.tableNumber_choose .radio label.choose{
+    background: #FF4E30;
+    color: #fff;
+}
+.tableNumber_choose .radio input {
+    width: 3rem;
+    height: 1.5rem;
+    opacity: 0;
+    z-index: 1;
+    outline: none;
+}
+
+
+/*第三个表单栏：姓名手机*/
+
+
+/*姓名*/
+
+.form_name .name_msg {
+    font-weight: bold;
+}
+
+.form_name .name_container {
+    width: 80%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.form_name .name_input input {
+    width: 5rem;
+    color: #333;
+    border: none;
+    outline: none;
+}
+
+.form_name .name_radio_type,
+.form_name .name_sex,
+.form_name .name_sex_content {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.form_name .name_sex_content>label {
+    margin: 0 .5rem;
+}
+
+.form_name .name_sex_content:last-child>label {
+    margin-right: 0;
+}
+
+.form_name .name_radio_type {
+    margin-top: -2px;
+    position: relative;
+}
+
+.form_name .name_radio_type_hack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #999;
+    z-index: 0;
+}
+
+.form_name .name_radio_type_hack_true {
+    background: url('../images/orderConfirm/true.png');
+    background-size: cover;
+    border: 1px solid #36AB5E;
+}
+
+.form_name .name_sex_content input {
+    outline: none;
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+/*手机*/
+
+.form_phone .phone_msg {
+    font-weight: bold;
+}
+
+.form_phone .phone_input {
+    width: 80%;
+}
+
+.form_phone .phone_input input {
+    width: 100%;
+    color: #333;
+    border: none;
+    outline: none;
+}
+
+
+/*第四个表单栏：备注*/
+
+.form_remark {
+    height: 10rem;
+    margin: .5rem 0 0;
+    border: none;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.form_remark .remark_msg {
+    font-weight: bold;
+}
+
+.form_remark .remark_textarea {
+    width: 100%;
+}
+
+.form_remark textarea {
+    margin: .5rem auto;
+    padding: 2%;
+    width: 96%;
+    height: 6rem;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+    outline: none;
+}
+
+/* 提交表单 */
+#btnHack{
+    width: 100%;
+    height: 2.5rem;   
+}
+#submitBtn{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+#submitBtn button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: #FF4E30;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+/*信息验证*/
+#reContent{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: .875rem;
+    background: rgba(255,78,48,.7);
+    color: #fff;   
+}

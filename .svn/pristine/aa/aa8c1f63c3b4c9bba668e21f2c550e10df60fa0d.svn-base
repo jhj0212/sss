@@ -1,0 +1,779 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+use Think\Model;
+use Think\Upload;
+
+
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/8/27
+ * Time: 11:33
+ */
+class AdminController extends CommonController {
+    public function qq(){
+        /*$username['username'] =  session('user.username');
+        //获取服务商的mark权限
+        $res = D('users')->where($username)->find();
+        $mark = $res['mark'];
+        $url='http://pay.jltengfang.com/home/index/pay?r='.$mark;
+        $level=5;
+        $size=8;
+        Vendor('phpqrcode.phpqrcode');
+        $errorCorrectionLevel =intval($level) ;//容错级别
+        $matrixPointSize = intval($size);//生成图片大小
+        //生成二维码图片
+        $object = new \QRcode();
+        $object->png($url, false, $errorCorrectionLevel, $matrixPointSize, 2);*/
+    }
+    public function index(){
+        //①、获取用户openid
+        $tools = new \WxPayJsApi();
+        $openId = $tools->GetOpenid();
+        session('openId',$openId);
+        /*$open=session('openId');
+        if (empty($openId)){
+            $openId=session('openId');
+            //var_dump($openId);
+        }*/
+        $where['sys_user_openid']=$openId;
+        $where['sid']='0000000001';
+        $res=M('sys_user')
+            ->where($where)
+            ->field('sys_user_openid')
+            ->find();
+        //echo M('sys_user')->_sql();
+        //判断是否为系统用户
+        /*if ($res){*/
+            $this->assign('openid',$openId);
+            $this->display();
+        /*}else{
+            $this->display('error');
+        }*/
+    }
+    /******************权限分配******************/
+    public function admin(){
+
+        $sql=null;
+        if($_POST['keywords']!=''){
+            $keywords= $_POST['keywords'];
+            $sql=(' and p.sys_user_name like "%'. $keywords.'%" or p.sys_user_position like "%'. $keywords.'%"');
+        }
+        $sid=$_GET['sid'];
+        $data = M('sys_user as p')->fetchSql(false)
+            ->join('user_permission c ON p.sid=c.sid AND p.sys_user_level=c.sys_user_level')
+            ->where( 'p.sid = "'.$sid.'"'.$sql)
+            ->field('p.*,c.*')
+            ->order('p.sys_user_openid desc')->select();
+        //echo M('sys_user,user_permission')->_sql();
+        $this->assign('sid',$sid);
+        $this->assign('person',$data);
+        $this->display();
+    }
+    /*
+     * 修改权限
+     */
+    public function editAdmin()
+    {
+        $model=D('sys_user');
+        if(IS_POST) {
+            $sid=$_POST['sid'];
+            $where['sys_user_level']=$_POST['sys_user_position'];
+            $where['sid']=$_POST['sid'];
+            $sys=M('user_permission')->fetchSql(false)
+                ->where($where)
+                ->field('sys_user_levelname')
+                ->find();
+            $data = array(
+                'sys_phone_number'  => $_POST['sys_phone_number'],
+                'sys_user_level'    => $_POST['sys_user_position'],
+                'sys_user_position' => $sys['sys_user_levelname'],
+               /* 'sys_attention_time'=>strtotime($_POST['sys_attention_time'])*/
+               'sys_attention_time' =>$_POST['sys_attention_time']
+            );
+            $openid=$_POST['sys_user_openid'];
+
+            $model = new Model('sys_user',null);
+            if ($model->where(array('sys_user_openid'=>$openid))->save($data)!== FALSE) {
+                //echo $model->_sql();
+                $this->assign('sid',$sid);
+                $this->success('修改成功', U('Admin/admin',array('sid'=>$sid)));
+                exit;
+            }else{
+                $this->error($model->getError());
+            }
+        }
+        $res = M('sys_user')->fetchSql(false)
+            ->find($_GET['sys_user_openid']);
+        //dump($res);
+        $where['sid']=$_GET['sid'];
+        $list=M('user_permission')->fetchSql(false)
+            ->where($where)
+            ->select();
+        $this->assign('sid',$_GET['sid']);
+        $this->assign('li', $list);//把数据发送到模板上
+        $this->assign('data', $res);//把数据发送到模板上
+        $this->display();//调用数据
+    }
+    /*
+    * 删除权限
+    */
+    public function delete()
+    {
+        $model = D('sys_user');
+        $id=$_GET['sys_user_openid'];
+        if ($model->delete($id) !== FALSE) {
+            $sid=$_GET['sid'];
+            $this->success('删除成功！', U('Admin/admin',array('sid'=>$sid)));
+            exit;
+        } else {
+            $this->error($model->getError());
+        }
+    }
+
+    /*********************添加人员****************/
+    public function addStaff(){
+        /*$wechat = D('Wechat');
+        $wx_config = $wechat -> wx_get_sign_config();
+        //var_dump($wx_config);
+        $this -> assign('wx_config', $wx_config);*/
+        if (IS_POST){
+            $sys_nickname=$_POST['sys_nickname'];
+            $where['sid']=$_GET['sid'];
+            $res=M('sys_user')
+                ->where('sys_nickname like "%'.$sys_nickname.'%"')
+                ->select();
+            //echo M('sys_user')->_sql();
+            $this->assign('person',$res);
+        }
+        $this->display();
+    }
+    //设置身份
+    public function changeStaff(){
+
+        if (IS_POST){
+            $sid=$_POST['sid'];
+            $where['sys_user_level']=$_POST['sys_user_position'];
+            $where['sid']=$_POST['sid'];
+            $sys=M('user_permission')->fetchSql(false)
+                ->where($where)
+                ->field('sys_user_levelname')
+                ->find();
+            $data = array(
+                'sys_user_level'    => $_POST['sys_user_position'],
+                'sys_user_position' => $sys['sys_user_levelname'],
+                /* 'sys_attention_time'=>strtotime($_POST['sys_attention_time'])*/
+                'sys_attention_time' =>$_POST['sys_attention_time']
+            );
+            $openid=$_POST['sys_user_openid'];
+
+            $model = new Model('sys_user',null);
+            if ($model->where(array('sys_user_openid'=>$openid))->save($data)!== FALSE) {
+                //echo $model->_sql();
+                $this->assign('sid',$sid);
+                $this->success('修改成功', U('Admin/addStaff',array('sid'=>$sid)));
+                exit;
+            }else{
+                $this->error($model->getError());
+            }
+        }
+        $where['sys_user_openid']=$_GET['sys_user_openid'];
+        $where['sid']=$_GET['sid'];
+        $res=M('sys_user')
+            ->where($where)
+            ->find();
+        //echo M('sys_user')->_sql();
+        $where['sid']=$_GET['sid'];
+        $list=M('user_permission')->fetchSql(false)
+            ->where($where)
+            ->select();
+        $this->assign('li',$list);
+        $this->assign('data',$res);
+        $this->display();
+    }
+    /*********************餐位管理****************/
+    public function seat(){
+        $sid=$_GET['sid'];
+        $id=$_GET['id'];
+        $openid=$_GET['openid'];
+        $where['sys_user_openid']=$openid;
+        $where['sid']=$sid;
+        $res=M('sys_user')
+            ->where($where)
+            ->field('sys_user_level')
+            ->find();
+        //echo M('sys_user')->_sql();
+        if($id==0){
+            $sql=' and p.table_type = 0';
+        }elseif($id== 1){
+            $sql=' and p.table_type != 0';
+        }elseif (empty($id)){
+            $sql=' and p.table_type != 0';
+        }
+        $data = M('meal_info as p')->fetchSql(false)
+            ->join('meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id')
+            ->where(' p.sid = "'.$sid.'"'.$sql)
+            ->field('distinct p.*,c.*')
+            ->select();
+        //echo M('meal_info as p')->_sql();
+        $this->assign('level',$res['sys_user_level']);
+        $this->assign('openid',$openid);
+        $this->assign('id',$id);
+        $this->assign('sid',$sid);
+        $this->assign('person',$data);
+        $this->display();
+    }
+    /*
+    * 添加餐位
+    */
+    public function addSeat()
+    {
+        if(IS_POST) {
+            $sid=$_POST['sid'];
+            $id=$_POST['id'];
+            $data = array(
+                'sid'           => $_POST['sid'],
+                'table_id'      => $_POST['table_id'],
+                'table_name'    => $_POST['table_name'],
+                'person_count'  => $_POST['person_count'],
+                'table_type'    => $_POST['table_type'],
+                'is_order'      => $_POST['is_order'],
+            );
+            if (M('meal_info')->add($data)) {
+                $da=array(
+                    'sid'       => $_POST['sid'],
+                    'table_id'  => $_POST['table_id'],
+                    'is_order'  => $_POST['is_order'],
+                    'state'     => 0,
+                );
+
+                if(M('meal_usage')->add($da)){
+                    $this->success('修改成功', U('seat',array('sid'=>$sid,'id'=>$id)));
+                    exit;
+                }else{
+                    $this->error('修改失败');
+                }
+            } else {
+                $this->error('添加失败');
+            }
+        }
+        $this->assign('id',$_GET['id']);
+        $this->assign('sid',$_GET['sid']);
+        $this->display();
+    }
+    public function ok(){
+        $this->display();
+    }
+    /*
+     * 桌号查重
+     */
+    public function checkTable(){
+        if (!IS_AJAX){
+            die('页面不存在');
+        }
+        $where['table_id']=$_GET['table_id'];
+        $where['sid']=$_GET['sid'];
+        $data=M('meal_info')->field('table_id')->where($where)->find();
+
+        if($data){
+            $this->ajaxReturn(1);	//已存在
+        }else{
+            $this->ajaxReturn(0);	//不存在
+        }
+    }
+    /*
+     * 餐位信息(修改)
+     */
+    public function seatInfo(){
+        $where['c.table_id']=$_GET['table_id'];
+        $where['c.sid']=$_GET['sid'];
+        //$data=M('meal_info')->where($where)->find();
+        $data = M('meal_info as p')->fetchSql(false)
+            ->join('meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id AND p.is_order=c.is_order')
+            ->where($where)
+            ->field('distinct p.*,c.*')
+            ->find();
+        //echo M('meal_info')->_sql();
+        $this->assign('id',$_GET['id']);
+        $this->assign('openid',$_GET['openid']);
+        $this->assign('sid',$_GET['sid']);
+        $this->assign('level',$_GET['level']);
+        $this->assign('data',$data);
+        $this->display();
+    }
+    /*
+     * 保存修改信息
+     */
+    public function editSeat(){
+        $sid=$_POST['sid'];
+        $id=$_POST['id'];
+        $openid=$_POST['openid'];
+        $data = array(
+            'sid'           => $_POST['sid'],
+            'table_id'      => $_POST['table_id'],
+            'table_name'    => $_POST['table_name'],
+            'person_count'  => $_POST['person_count'],
+            'table_type'    => $_POST['table_type'],
+            'is_order'      => $_POST['is_order'],
+        );
+        if (M('meal_info')->save($data)) {
+            $da=array(
+                'sid'       => $_POST['sid'],
+                'table_id'  => $_POST['table_id'],
+                'is_order'  => $_POST['is_order'],
+                'state'     => $_POST['state'],
+            );
+            /*if(M('meal_usage')->save($da)){*/
+            M('meal_usage')->save($da);
+                //redirect(U('ok'));
+                $this->success('修改成功', U('seat',array('sid'=>$sid,'id'=>$id,'openid'=>$openid)));
+                //
+                exit;
+            /*}else{
+                $this->error('修改失败');
+            }*/
+        } else {
+            $this->error('修改失败');
+        }
+    }
+    /*
+    * 餐位信息返回
+    */
+    public function seatBack(){
+        redirect(U('Admin/seat'));
+    }
+    /*****************预定列表******************/
+    public function report(){
+        $sid=$_GET['sid'];
+        $sql=null;
+        if($_POST['begin_time']!=''&&$_POST['end_time']!=''){
+            $begin_time= $_POST['begin_time']." 00:00:00";
+            $end_time=$_POST['end_time']." 23:59:59";
+            $sql=(' and order_time >="'. $begin_time.'" and order_time <="'. $end_time.'"');
+        }
+        $data = M('order_number')->fetchSql(false)
+            ->where( 'sid = "'.$sid.'"'.$sql)
+            ->field('table_id,count(table_id) count')
+            ->group('table_id')
+            ->select();
+        //echo M('order_number')->_sql();
+        $this->assign('sid',$sid);
+        $this->assign('person',$data);
+        $this->display();
+    }
+    /*********************排队列表********************/
+
+    public function queue(){
+        $data = M('queue_number as p')->fetchSql(false)
+            ->where(array('p.sid'=>111))
+            ->select();
+        $this->assign('person',$data);
+        $this->display();
+    }
+    /********************员工列表**********************/
+    public function staff(){
+        $sid=$_GET['sid'];
+        $sql=null;
+        if($_POST['keywords']!=''){
+            $keywords= $_POST['keywords'];
+            $sql=(' and sys_user_name like "%'. $keywords.'%" or sys_user_position like "%'. $keywords.'%"');
+        }
+        $data = M('sys_user')->fetchSql(false)
+            ->where( 'sid = "'.$sid.'"'.$sql)
+            ->select();
+        //echo M('sys_user')->_sql();
+        $this->assign('sid',$sid);
+        $this->assign('person',$data);
+        $this->display();
+    }
+    /*
+     * 员工详细信息
+     */
+    public function staffInfo(){
+        $data = M('sys_user')->fetchSql(false)
+            ->find($_GET['sys_user_openid']);
+        $this->assign('data',$data);
+        $this->display();
+;    }
+    /*
+     * 员工详细信息页返回
+     */
+    public function staffBack(){
+        redirect(U('Admin/staff'));
+    }
+    /*******************线上收益***********************/
+    public function revenue(){
+        $sid=$_GET['sid'];
+        $sql=null;
+        if($_POST['begin_time']!=''&&$_POST['end_time']!=''){
+            $begin_time= $_POST['begin_time']." 00:00:00";
+            $end_time=$_POST['end_time']." 23:59:59";
+            $sql=(' and pay_time >="'. $begin_time.'" and pay_time <="'. $end_time.'"');
+        }
+        $data = M('order_info')->fetchSql(false)
+            ->where( 'sid = "'.$sid.'"'.$sql)
+            ->field('count(order_id) as count,(sum(pay_money)/count(order_id)) as consum,sum(money) as summoney,
+                    sum(pay_money) as zhemoney,(sum(money)-sum(pay_money)) as premoney')
+            ->select();
+        //echo M('order_info')->_sql();
+        $this->assign('sid',$sid);
+        $this->assign('data',$data);
+        $this->display();
+    }
+    /*******************礼品信息***********************/
+    public function gift(){
+        $sid=$_GET['sid'];
+        $openid=$_GET['openid'];
+        $sql=null;
+        if($_POST['gift_name']!=''){
+            $gift_name= $_POST['gift_name'];
+            $sql=(' and gift_name like "%'. $gift_name.'%"');
+        }
+        $data = M('gift_info')->fetchSql(false)
+            ->where( 'sid = "'.$sid.'"'.$sql)
+            ->order('gift_id desc')
+            ->select();
+        //echo M('gift_info')->_sql();
+        $this->assign('openid',$openid);
+        $this->assign('sid',$sid);
+        $this->assign('data',$data);
+        $this->display();
+    }
+    /*
+    * 添加礼品
+    */
+    public function addGift()
+    {
+        /*Vendor('WxpayAPI.lib.WxPayApi');
+        Vendor('WxpayAPI.example.WxPayJsApi');
+        Vendor('WxpayAPI.lib.WxPayConfig');*/
+        if(IS_POST) {
+            $sid=$_POST['sid'];
+            $data = array(
+                'gift_id'         => $_POST['imghead'],
+                'sid'         => $_POST['sid'],
+                'gift_name'   => $_POST['gift_name'],
+                /*'gift_url'    => $imaAddress,*/
+                'gift_bonus'  => $_POST['gift_bonus'],
+                'gift_type'   => $_POST['gift_type'],
+            );
+            if(M('gift_info')->save($data)){
+                $this->success('添加成功', U('gift',array('sid'=>$sid)));
+                exit;
+            }else{
+                $this->error('添加失败');
+            }
+        }
+        $openid=$_GET['openid'];
+        $wechat = D('Wechat');
+        $wx_config = $wechat -> wx_get_sign_config();
+        //var_dump($wx_config);
+        $this -> assign('wx_config', $wx_config);
+        $this->assign('sid',$_GET['sid']);
+        $this->display();
+    }
+    /*
+ 	 * 礼品图片上传
+ 	* */
+    public function wxupload() {
+        if (!IS_AJAX && !IS_POST) {
+            $this -> ajaxReturn(array(
+                'status' => '99',
+                'msg' => '非法调用'
+            ));
+        }
+
+        $wechat = D('Wechat');
+        $accessToken = $wechat -> wx_access_token();
+
+        $serverId = I('post.serverId', '');
+        if (!$serverId) {
+            $this -> ajaxReturn(array(
+                'status' => '98',
+                'msg' => '上传失败，请重新上传'
+            ));
+        }
+
+        $save_path = '/' . date('Y-m-d');
+        $imgPath = I('server.DOCUMENT_ROOT') . '/uploads' . $save_path;
+
+        if (!is_dir($imgPath)) {
+            @mkdir($imgPath, 0777, TRUE);
+        }
+
+
+        $save_path .= '/' . uniqid() . rand(1, 10000) . '.jpg';
+        $imgPath = I('server.DOCUMENT_ROOT') . '/uploads' . $save_path;
+
+        $url = "http://file.api.weixin.qq.com/cgi-bin/media/get?access_token={$accessToken}&media_id={$serverId}";
+        $get = file_get_contents($url);
+
+        if (strstr($get, 'errcode') !== false) {
+            M('wechat_session')->where(array('id'=>array('in','1,2')))->setField(array('time'=>0));
+            $data='url:'.$url.chr(10);
+            $data.='path:'.$imgPath.chr(10);
+            $data.='time:'.date('Y-m-d H:i:s').chr(10);
+
+            file_put_contents(I('server.DOCUMENT_ROOT') . '/uploads/log_'.date('y-m-d').'.txt', $data.chr(10),FILE_APPEND);
+            $this -> ajaxReturn(array('status' => '01'));
+
+        } else {
+            file_put_contents($imgPath, $get);
+        }
+        $id = M('gift_info')->add(array('gift_url'=>$save_path));
+        $this -> ajaxReturn(array(
+            'status' => '00',
+            'data' => $save_path,
+            'id' => $id,
+        ));
+    }
+    /*
+     * 编辑礼品
+     */
+    public function editGift(){
+        if(IS_POST) {
+            $sid=$_POST['sid'];
+            $gift_id=$_POST['gift_id'];
+            $data = array(
+                /*'gift_id'         => $_POST['imghead'],*/
+                'sid'         => $_POST['sid'],
+                'gift_name'   => $_POST['gift_name'],
+                /*'gift_url'    => $imaAddress,*/
+                'gift_bonus'  => $_POST['gift_bonus'],
+                'gift_type'   => $_POST['gift_type'],
+            );
+            //var_dump($data);exit();
+            if(M('gift_info')->where('gift_id = "'.$gift_id.'"')->save($data)){
+                $this->success('修改成功', U('gift',array('sid'=>$sid)));
+                exit;
+            }else{
+                $this->error('修改失败');
+            }
+        }
+        $where['gift_id']=$_GET['gift_id'];
+        $where['sid']=$_GET['sid'];
+        $data = M('gift_info')->fetchSql(false)->where($where)->find();
+        //echo M('meal_info')->_sql();
+        $wechat = D('Wechat');
+        $wx_config = $wechat -> wx_get_sign_config();
+        $this -> assign('wx_config', $wx_config);
+        $this->assign('id',$_GET['id']);
+        $this->assign('openid',$_GET['openid']);
+        $this->assign('sid',$_GET['sid']);
+        $this->assign('gift_id',$_GET['gift_id']);
+        $this->assign('data',$data);
+        $this->display();
+    }
+    public function uploadImg(){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize = 3145728;// 设置附件上传大小
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->savePath = ''; // 设置附件上传目录
+        $upload->subName = array('date','Y/m/d'); // 设置附件上传目录
+        // 上传文件
+        $info = $upload->upload($_FILES);
+        $savepath = ltrim($info['img']['savepath'],'./');
+        $imgPath = $savepath.$info['img']['savename'];
+        if ($info) {
+            //上传缩略图
+            $id = M('pic')->add(array('gift_url'=>$imgPath));
+            if($id){
+                $data = array();
+                $data['status'] = 1;
+                $data['msg'] = '上传成功';
+                $data['id'] = $id;
+                $data['path'] = '/uploads/'.$imgPath;
+                $this->ajaxReturn($data);
+            }else{
+                $data = array();
+                $data['status'] = 0;
+                $data['msg'] = '上传失败';
+                $this->ajaxReturn($data);
+            }
+        }else{
+
+            $this->error($upload->getError());
+
+        }
+    }
+    /*
+    * 礼品详情
+    */
+    public function giftInfo()
+    {
+        $model = D('gift_info');
+        $gift_id=$_GET['gift_id'];
+        $sid=$_GET['sid'];
+        $data=$model->where('gift_id = '.$gift_id.' and sid= "'.$sid.'"')->select();
+        $this->assign('data',$data);
+        $this->assign('sid',$sid);
+        $this->display();
+
+    }
+
+    /*
+    * 删除礼品
+    */
+    public function deleteGift()
+    {
+        $id=D('gift_info')->where(array('gift_id'=>array('eq', I('get.gift_id')),'sid'=>array('eq', I('get.sid'))))->delete();
+        /*if ($id){
+            $this->ajaxReturn (1);
+        }else{
+            $this->ajaxReturn (0);
+        }*/
+        $this->redirect('gift',array('sid'=>I('get.sid')));
+    }
+    /*******************菜单管理***********************/
+    public function foods(){
+        $sid = $_GET['sid'];
+        //查询菜单
+        $menu_result = D('carte_info')->fetchSql(false)
+                    ->where('sid = "'.$sid.'"')
+                    ->field('menu_id,sid,menu_name,menu_pag_url,unit_price,menu_type')
+                    ->select();
+        //查询菜品类
+        $type_result = D('carte_info')->fetchSql(false)
+                ->where('sid = "'.$sid.'"')
+                ->field(' distinct menu_type')
+                ->select();
+        $this->assign('type_result',$type_result);
+        $this->assign('menu_info',$menu_result);
+
+        $this->display();
+    }
+    /*
+    * 添加菜单
+    */
+    public function addFood()
+    {
+        if(IS_POST) {
+            $sid=$_POST['sid'];
+            $data = array(
+                'menu_id'     => $_POST['imghead'],
+                'sid'         => $_POST['sid'],
+                'menu_name'   => $_POST['menu_name'],
+                'unit_price'  => $_POST['unit_price'],
+                'menu_type'   => $_POST['menu_type'],
+            );
+            //var_dump($data);
+            if(M('carte_info')->save($data)){
+                $this->success('添加成功', U('foods',array('sid'=>$sid)));
+                exit;
+            }else{
+                $this->error('添加失败');
+            }
+        }
+        $openid=$_GET['openid'];
+        $wechat = D('Wechat');
+        $wx_config = $wechat -> wx_get_sign_config();
+        $this -> assign('wx_config', $wx_config);
+        $this->assign('sid',$_GET['sid']);
+        $this->display();
+    }
+    /*
+ 	 * 菜单图片上传
+ 	* */
+    public function upload() {
+        if (!IS_AJAX && !IS_POST) {
+            $this -> ajaxReturn(array(
+                'status' => '99',
+                'msg' => '非法调用'
+            ));
+        }
+
+        $wechat = D('Wechat');
+        $accessToken = $wechat -> wx_access_token();
+
+        $serverId = I('post.serverId', '');
+        if (!$serverId) {
+            $this -> ajaxReturn(array(
+                'status' => '98',
+                'msg' => '上传失败，请重新上传'
+            ));
+        }
+
+        $save_path = '/' . date('Y-m-d');
+        $imgPath = I('server.DOCUMENT_ROOT') . '/uploads' . $save_path;
+
+        if (!is_dir($imgPath)) {
+            @mkdir($imgPath, 0777, TRUE);
+        }
+
+        $save_path .= '/' . uniqid() . rand(1, 10000) . '.jpg';
+        $imgPath = I('server.DOCUMENT_ROOT') . '/uploads' . $save_path;
+
+        $url = "http://file.api.weixin.qq.com/cgi-bin/media/get?access_token={$accessToken}&media_id={$serverId}";
+        $get = file_get_contents($url);
+
+        if (strstr($get, 'errcode') !== false) {
+            M('wechat_session')->where(array('id'=>array('in','1,2')))->setField(array('time'=>0));
+            $data='url:'.$url.chr(10);
+            $data.='path:'.$imgPath.chr(10);
+            $data.='time:'.date('Y-m-d H:i:s').chr(10);
+
+            file_put_contents(I('server.DOCUMENT_ROOT') . '/uploads/log_'.date('y-m-d').'.txt', $data.chr(10),FILE_APPEND);
+            $this -> ajaxReturn(array('status' => '01'));
+
+        } else {
+            file_put_contents($imgPath, $get);
+        }
+        if(!empty(I('post.menu_id', ''))){
+            /*M('carte_info')->where('menu_id="'.$_POST['menu_id'].'"')->field('menu_pag_url')->delete();*/
+            M('carte_info')->where('menu_id="'.$_POST['menu_id'].'"')->setField('menu_pag_url','');
+            M('carte_info')->where('menu_id="'.$_POST['menu_id'].'"')->setField('menu_pag_url',$save_path);
+            $id=I('post.menu_id', '');
+        }else{
+            $id = M('carte_info')->add(array('menu_pag_url'=>$save_path));
+        }
+        $this -> ajaxReturn(array(
+            'status' => '00',
+            'data' => $save_path,
+            'id' => $id,
+        ));
+    }
+    /*
+     * 编辑菜单
+     */
+    public function editFood(){
+        if(IS_POST) {
+            $sid=$_POST['sid'];
+            $menuid=$_POST['menu_id'];
+            $data = array(
+                'sid'         => $_POST['sid'],
+                'menu_name'   => $_POST['menu_name'],
+                'unit_price'  => $_POST['unit_price'],
+                'menu_type'   => $_POST['menu_type'],
+            );
+            //var_dump($data);exit();
+            if(M('carte_info')->where('menu_id = "'.$menuid.'"')->save($data)){
+                $this->success('修改成功', U('foods',array('sid'=>$sid)));
+                exit;
+            }else{
+                $this->error('修改失败');
+            }
+        }
+        $where['menu_id']=$_GET['menu_id'];
+        $where['sid']=$_GET['sid'];
+        $data = M('carte_info')->fetchSql(false)->where($where)->find();
+        //echo M('meal_info')->_sql();
+        $wechat = D('Wechat');
+        $wx_config = $wechat -> wx_get_sign_config();
+        $this -> assign('wx_config', $wx_config);
+        $this->assign('id',$_GET['id']);
+        $this->assign('openid',$_GET['openid']);
+        $this->assign('sid',$_GET['sid']);
+        $this->assign('menu_id',$_GET['menu_id']);
+        $this->assign('data',$data);
+        $this->display();
+    }
+    /*
+    * 菜品删除
+    */
+    public function foodsInfo()
+    {
+        $id=D('carte_info')->where(array('menu_id'=>array('eq', I('get.menu_id')),'sid'=>array('eq', I('get.sid'))))->delete();
+        $this->redirect('foods',array('sid'=>I('get.sid')));
+    }
+}

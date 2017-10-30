@@ -1,0 +1,171 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: .875rem;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/*表单提示*/
+
+#prompt {
+    width: 100%;
+    height: 2rem;
+    background: #FF4E30;
+    color: #fff;
+    font-weight: bold;
+    font-size: 。875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*餐桌取号容器*/
+
+#getContainer {
+    width: 90%;
+    height: auto;
+    margin: 1.5rem auto;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+
+/*餐桌取号具体信息-》人数和电话*/
+
+#getContainer .get_people,
+#getContainer .get_phone {
+    width: 100%;
+    margin: .5rem 0;
+}
+
+#getContainer span {
+    font-weight: bold;
+}
+
+#getContainer input {
+    padding: .2rem;
+    outline: none;
+}
+
+
+/*信息容器*/
+
+#msgContainer {
+    width: 90%;
+    margin: 0 auto;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+#msgContainer>div {
+    margin: 0 0 1.5rem 0;
+}
+
+#msgContainer .msg_msg p {
+    font-size: .75rem;
+    color: #999;
+    margin: .1rem 0;
+}
+
+#msgContainer .msg_phone,
+#msgContainer .msg_add {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#msgContainer .msg_phone>img,
+#msgContainer .msg_add>img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+
+/*表单提交BTN*/
+
+#submitContainer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#submitContainer button {
+    width: 8rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: none;
+    border-radius: .3rem;
+    outline: none;
+    color: #fff;
+    background: #FF4E30;
+}

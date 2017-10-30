@@ -1,0 +1,216 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: .875rem;
+}
+
+
+/*头部->容器->内含会员卡、会员基本信息：积分、会员等级、余额*/
+#headerContainer{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    background: url('../images/memberCenter/bg.png');
+    background-size: cover;
+    color: #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+/*头部->会员卡*/
+#headerContainer .head_img_container{
+    position: relative;
+    margin-top: -2rem;
+    width: 10rem;
+    height: 6rem;
+}
+#headerContainer .head_img_container img{
+    width: 100%;
+    height: 100%;
+}
+#headerContainer .head_img_container p{
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    z-index: 1;
+}
+/*头部->会员基本信息容器*/
+#headerContainer .head_msg_container{
+    width: 100%;
+    height: 3rem;
+    background: rgba(0,0,0,.2);
+    border-bottom: .2rem solid #969696;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+/*头部->会员基本信息*/
+#headerContainer .head_msg_container>div{
+    width: 100%;
+    height: 3rem;
+    font-weight: bold;
+    border-right: 1px solid #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#headerContainer .head_msg_container>div span:nth-child(2){
+    font-size: .75rem;
+    font-weight: normal;
+}
+#headerContainer .head_msg_container>div:last-child{
+    border: none;
+}
+
+/*签到容器*/
+#signContainer{
+    width: 90%;
+    height: 8%;
+    padding-right: 10%;
+    color: #333;
+    background: #eee;
+    border-bottom: .1rem dashed #ddd;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: flex-end;
+    -ms-align-items: center;
+    align-items: center;
+}
+#signContainer .sign_msg{
+    font-size: .75rem;
+}
+#signContainer .sign_btn{
+    background: #FF6249;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+/*下方3行3列导航容器*/
+#navContainer{
+    width: 100%;
+    height:auto;
+    margin-top: 2rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.nav_top,.nav_mid,.nav_bottom{
+    width: 70%;
+    height: 6rem;
+    margin: .2rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+.nav_top a div,.nav_mid a div,.nav_bottom a div{
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #eee;
+    margin: .2rem;
+    text-decoration: none;
+    color: #333;
+    font-size: .75rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.nav_top a div span,.nav_mid a div span,.nav_bottom a div span{
+    margin-top: .5rem;
+}
+.nav_top img,.nav_mid img,.nav_bottom img{
+    width: 3rem;
+    height: 3rem;
+}

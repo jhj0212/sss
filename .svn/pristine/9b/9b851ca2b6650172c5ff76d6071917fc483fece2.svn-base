@@ -1,0 +1,190 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+/*表格*/
+#table{
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+/*表格头类型*/
+.th1{
+    background: #0CCBF9;
+}
+.th2{
+    background: #FF8A01;
+}
+.th3{
+    background: #EF5D5D;
+}
+.th4{
+    background: #BD28A6;
+}
+/*表头*/
+#table thead{
+    width: 100%;
+}
+#table thead tr{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+}
+#table thead th{
+    width: 25%;
+}
+/*选择器样式*/
+#table thead th select{
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+}
+#table thead th #couponType option{
+    background: #57C4FF;
+}
+#table thead th #couponState option{
+    background: #C95555;
+}
+/*表身*/
+#table tbody{
+    width: 100%;
+}
+#table tbody tr{
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: .75rem;
+}
+#table tbody td a{
+    display: inline-block;
+    width: 2rem;
+    height: 1.2rem;
+    line-height: 1.4rem;
+    border-radius: .2rem;
+    background: #ddd;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: .75rem;
+    color: #333;
+    position: relative;
+}
+#table tbody td input{
+    position: absolute;
+    width: 2.5rem;
+    height: 1.5rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#table tbody td{
+    width: 20%;
+    border-right: 1px dashed #ddd;
+}
+#table tbody td:last-child{
+    border: none;
+}
+#table tbody td .pushCoupon{
+    color: #fff;
+    background: #FF4E30;
+}
+/*尾部*/
+#footerHack{
+    width: 100%;
+    height: 2.5rem;
+}
+#footer{
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+#footer button{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.7rem;
+    position: fixed;
+    bottom: 0;
+    border: none;
+    color: #fff;
+    background: #FF4E30;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+/*弹窗*/
+#mask{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+}
+#confirmWs{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 15rem;
+    height: 8rem;
+    margin-left: -7.5rem;
+    background: #fff;
+    z-index: 100;
+    border-radius: .2rem;
+}
+#confirmWs .ws_head{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.7rem;
+    border-radius: .2rem .2rem 0 0;
+    background: #555;
+    text-align: center;
+    color: #fff;
+}
+#confirmWs .ws_body{
+    width: 100%;
+    height: 5.5rem;
+    text-align: center;
+}
+#confirmWs .ws_body span{
+    display: inline-block;
+    width: 40%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #888;
+    margin-top: 1.5rem;
+    border-radius: .2rem;
+    color: #fff;
+}
+#confirmWs .ws_body .true{
+    background: #FF4E30;
+}

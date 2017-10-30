@@ -1,0 +1,131 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="/Public/quanxian/css/getNumber.css">
+    <link rel="stylesheet" type="text/css" href="/Public/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="/Public/commonLib/css/common/media.css">
+    <title>排队取号</title>
+</head>
+
+<body>
+<!-- 父容器 -->
+<div class="container">
+    <!-- 表单提示 -->
+    <div id="prompt">
+        <span>欢迎使用排队取号系统</span>
+    </div>
+    <!-- 餐桌取号容器 -->
+    <form method="post" action="<?php echo U('saveNumber');?>"  name="register">
+        <input type="hidden" name="sid" id="sid" value="<?php echo ($sid); ?>">
+        <input type="hidden" name="sys_user_openid" id="sys_user_openid" value="<?php echo ($openid); ?>">
+        <div id="getContainer">
+            <div class="get_people">
+                <span>用餐人数：</span>
+                <input id="get_people" type="text"  name="person_count" placeholder="请输入用餐人数" value="" />
+            </div>
+            <div class="get_phone">
+                <span>联系电话：</span>
+                <input id="tel" type="text"  name="tel" placeholder="请输入联系方式" value="" />
+            </div>
+        </div>
+        <!-- 信息容器 -->
+        <div id="msgContainer">
+            <div class="msg_msg">
+                <p>听到叫号请到迎宾台，过号作废，重新取号。</p>
+                <p>等待桌数为3桌时，微信平台进行通知，请注意查看。</p>
+            </div>
+            <div class="msg_phone">
+                <img src="/Public/commonLib/images/phone.png">
+                <span><?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; echo ($vo['telephone']); endforeach; endif; else: echo "" ;endif; ?></span>
+            </div>
+            <div class="msg_add">
+                <img src="/Public/commonLib/images/add.png">
+                <span><?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; echo ($vo['province']); echo ($vo['city']); echo ($vo['district']); echo ($vo['address']); endforeach; endif; else: echo "" ;endif; ?></span>
+            </div>
+        </div>
+        <div id="submitContainer">
+            <button id="button" type="submit">确认提交</button>
+        </div>
+    </form>
+</div>
+<!-- 外部库引用 -->
+<!--<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>-->
+<script type="text/javascript" src="/Public/quanxian/js/jquery.js"></script>
+<!--<script type="text/javascript" src="/Public/quanxian/js/getNumber.js"></script>-->
+<script>
+    var validate = {
+        tel : false,
+        person_count : false,
+
+    };
+    //var reContent = $("#reContent");
+    var span = $('#prompt').find('span');
+    var msg = '';
+    $(function(){
+
+        var register = $( 'form[name=register]' );
+
+        register.submit( function () {
+            var isOK = validate.tel && validate.person_count ;
+            if ( isOK ) {
+                return true;
+            }
+            $( 'input[name=tel]', register ).trigger('blur');
+            $( 'input[name=person_count]', register ).trigger('blur');
+            return false;
+        } );
+
+        //验证
+        $("input[name='tel']", register ).blur(function(){
+            var tel = $('#tel').val();
+            var sid = $('#sid').val();
+            /*var span = $( this ).next();*/
+            if ( tel == '' ) {
+                /*msg = '桌号不能为空';
+                 span.html( msg ).addClass('error');*/
+                /*span.show().html('请输入桌号！');*/
+                span.html('').html('请输入正确的11位手机号码！');
+                validate.tel = false;
+                return;
+            }
+
+            $.get("<?php echo U('Waiter/checkTel');?>",{'tel':tel,'sid':sid},function(data){
+                console.log(data);
+                if(data==1){
+                    span.html('').html('此手机号码已经预约了！');
+                    $('#tel').val('');
+                    validate.tel = false;
+                }else{
+                    span.html('').html('欢迎使用排队取号系统');
+                    validate.tel = true;
+                }
+            })
+            validate.tel = true;
+        });
+        //验证
+        $( 'input[name=person_count]', register ).blur( function () {
+            var person_count = $('#get_people').val();
+            /*var span = $( this ).next();*/
+            if ( person_count == '' ) {
+                span.show().html('请输入用餐人数！');
+                validate.person_count = false;
+                return;
+            }
+            validate.person_count = true;
+            /*span.html('').html('欢迎使用排队取号系统');*/
+        } );
+    })
+</script>
+</body>
+
+</html>

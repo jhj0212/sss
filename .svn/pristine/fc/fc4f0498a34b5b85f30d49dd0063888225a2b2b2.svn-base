@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/addCouponIndex.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>新建卡券类型</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 标题 -->
+        <div id="headerContainer">
+            <h3>新建卡券类型</h3>
+        </div>
+        <!-- 表单 -->
+        <form id="form" method="get" action="{:U('/admin/create/card_type')}">
+            <p>选择你要新建卡券的类型</p>
+            <div class="zhe">
+                <input type="radio" name="card_type" value="DISCOUNT" checked>折扣券</input>
+                <p>可为用户提供消费折扣</p>
+            </div>
+            <div class="dui">
+                <input type="radio" name="card_type" value="GIFT">兑换券</input>
+                <p>可为用户提供消费送赠品服务</p>
+            </div>
+            <div class="tong">
+                <input type="radio" name="card_type" value="GENERAL_COUPON">优惠券</input>
+                <p>即"通用券"，建议当以上四种无法满足需求时采用</p>
+            </div>
+            <!-- 提交按钮 -->
+            <button id="submitBtn" type="submit">立即建立</button>
+        </form>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+</body>
+
+</html>

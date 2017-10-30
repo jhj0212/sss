@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/memberRank.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>后台会员特权</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 等级折扣 -->
+        <table id="table">
+            <thead>
+                <tr>
+                    <th class="th1">会员等级</th>
+                    <th class="th2">所需积分</th>
+                    <th class="th3">享受折扣</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>普通会员</td>
+                    <td>0</td>
+                    <td>0折</td>
+                </tr>
+                <tr>
+                    <td>白银会员</td>
+                    <td>500</td>
+                    <td>95折</td>
+                </tr>
+                <tr>
+                    <td>黄金会员</td>
+                    <td>500</td>
+                    <td>9折</td>
+                </tr>
+                <tr>
+                    <td>白金会员</td>
+                    <td>500</td>
+                    <td>85折</td>
+                </tr>
+                <tr>
+                    <td>钻石会员</td>
+                    <td>500</td>
+                    <td>8折</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 积分说明 -->
+        <div id="rankMsg">
+            <h3>积分说明：</h3>
+            <p>1、注册新会员奖励20积分</p>
+            <p>2、每日签到奖励10积分</p>
+            <p>3、每充值100元得20积分</p>
+            <p>4、分享一次得10积分</p>
+        </div>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+</body>
+
+</html>

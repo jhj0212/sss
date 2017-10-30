@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/exchangeRecord.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>兑换记录</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 表格容器 -->
+        <div id="table-container">
+            <!-- 表格 -->
+            <table id="table">
+                <thead>
+                    <!-- 表头 -->
+                    <tr>
+                        <th>订单编号</th>
+                        <th>店面名称</th>
+                        <th>订单金额</th>
+                        <th>下单日期</th>
+                        <th>积分兑换</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 表身 -->
+                    <tr>
+                        <td>
+                            <span>782548115187</span>
+                        </td>
+                        <td>
+                            <span>小花点便利店</span>
+                        </td>
+                        <td>
+                            <span>￥</span>
+                            <span>120</span>
+                        </td>
+                        <td>
+                            <p>2017-07-28</p>
+                            <p>15:32</p>
+                        </td>
+                        <td>
+                            <span class="table_exp">55</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 没有门店时显示提示 -->
+        <div id="empty">
+            <img src="__PUBLIC__/commonLib/images/empty.png">
+            <h3>暂无数据哦</h3>
+        </div>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    ;
+    $(function() {
+        var empty = $('#empty');
+        if ($('tbody').find('tr').length == 0) {
+            empty.show();
+        } else {
+            empty.hide();
+        }
+    })
+    </script>
+</body>
+
+</html>

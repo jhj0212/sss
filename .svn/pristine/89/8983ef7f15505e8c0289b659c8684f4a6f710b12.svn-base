@@ -1,0 +1,101 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+/*表格*/
+#table{
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+/*表格头类型*/
+.th1{
+    background: #0CCBF9;
+}
+.th2{
+    background: #FF8A01;
+}
+.th3{
+    background: #EF5D5D;
+}
+.th4{
+    background: #BD28A6;
+}
+/*表头*/
+#table thead{
+    width: 100%;
+}
+#table thead tr{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+}
+#table thead th{
+    width: 25%;
+}
+/*表身*/
+#table tbody{
+    width: 100%;
+}
+#table tbody tr{
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: .75rem;
+}
+#table tbody td a{
+    display: inline-block;
+    width: 2rem;
+    height: 1.2rem;
+    line-height: 1.4rem;
+    border-radius: .2rem;
+    background: #FF4E30;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: .75rem;
+    color: #fff;
+    position: relative;
+}
+#table tbody td input{
+    position: absolute;
+    width: 2.5rem;
+    height: 1.5rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#table tbody td{
+    width: 20%;
+    border-right: 1px dashed #ddd;
+}
+#table tbody td:last-child{
+    border: none;
+}
+#table tbody td .pushCoupon{
+    color: #fff;
+    background: #FF4E30;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <!-- 优先加载-固定日期插件css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/lib/dataTime.css">
+    <!-- 其他手写样式css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/addCouponCommon.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>添加折扣券</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 头部标题 -->
+        <div id="headerContainer">
+            <h3>创建折扣券</h3>
+        </div>
+        <!-- 信息验证提示 -->
+        <h3 id="validate"></h3>
+        <form id="form" method="post" action="{:U('/admin/create/make_Gift')}">
+            <!-- 基本信息容器：包括商户名称、卡券颜色、卡券标题、有效期、可用时段 -->
+            <div id="baseContianer">
+                <h4>基本信息</h4>
+                <!-- 商户名称 -->
+                <div class="base_shop">
+                    <p>商户名称：<span>吉林省腾放科技</span></p>
+                </div>
+                <!-- 商户提示信息 -->
+                <p class="base_shop_text">如商户信息有变更，请在卡券商户资料更新。</p>
+                <!-- 卡券颜色:固定颜色 -->
+                <div class="base_color_container">
+                    <span>卡券颜色：</span>
+                    <!-- 卡券支持的颜色列表；6个，传递不同值来识别颜色 -->
+                    <div class="base_color_list">
+                        <div class="base_color color0 true">
+                            <input type="radio" name="baseColor" checked="checked" value="Color010"></input>
+                        </div>
+                        <div class="base_color color1">
+                            <input type="radio" name="baseColor" value="Color030"></input>
+                        </div>
+                        <div class="base_color color2">
+                            <input type="radio" name="baseColor" value="Color050"></input>
+                        </div>
+                        <div class="base_color color3">
+                            <input type="radio" name="baseColor" value="Color070"></input>
+                        </div>
+                        <div class="base_color color4">
+                            <input type="radio" name="baseColor" value="Color080"></input>
+                        </div>
+                        <div class="base_color color5">
+                            <input type="radio" name="baseColor" value="Color100"></input>
+                        </div>
+                    </div>
+                </div>
+                <!-- 卡券标题 -->
+                <div class="base_title">
+                    <span>折扣券标题：</span>
+                    <input type="text" name="baseTitle" placeholder="请输入卡券标题"></input>
+                </div>
+                <!-- 折扣程度 -->
+                <div class="base_discount">
+                    <span>折扣额度：</span>
+                    <div>
+                        <input type="number" maxlength="3" name="discount" placeholder="请输入折扣额度"></input>
+                        <span>折</span>
+                    </div>
+                    <p>请填写1-9.9之间的数字，精确到小数点后1位</p>
+                </div>
+                <!-- 卡券有效期->两种有效期二选一 -->
+                <div class="base_chooseTime">
+                    <span>有效期：</span>
+                    <!-- 固定有效期 -->
+                    <div class="chooseTime_fixed">
+                        <div>
+                            <input type="radio" checked name="chooseTime" value="DATE_TYPE_FIX_TIME_RANGE"></input>
+                            <span>固定日期</span>
+                        </div>
+                        <!-- 日期选择插件 -->
+                        <div class="chooseTime_fixed_content">
+                            <div class="iDate date">
+                                <input type="text" class="chooseTimeFixed1" name="begin_timestamp">
+                                <button type="button" class="addOn"></button>
+                            </div>
+                            <span>至</span>
+                            <div class="iDate date">
+                                <input type="text" class="chooseTimeFixed2">
+                                <button type="button" class="addOn"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 生效有效期 -->
+                    <div class="chooseTime_select">
+                        <input type="radio" name="chooseTime" value="1">领取后，</input>
+                        <!-- 下拉列表天数进行循环：当天->90天 -->
+                        <select name="selectDay1">
+                            <option value="0">当天</option>
+                        </select>
+                        <span>生效，有效天数</span>
+                        <!-- 下拉列表天数进行循环：1天->90天-->
+                        <select name="selectDay2">
+                            <option value="0">1天</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- 可用时间段 -->
+                <div class="base_slot">
+                    <span>可用时段：</span>
+                    <!-- 全部时段 -->
+                    <div class="slot_all">
+                        <input type="radio" name="slot" value="0">全部时段</input>
+                    </div>
+                    <!-- 部分时段 -->
+                    <div class="slot_some">
+                        <input type="radio" name="slot" value="1">部分时段</input>
+                        <!-- 部分时段->固定日期选择 -->
+                        <div class="slot_some_day">
+                            <span>日期(可多选)：</span>
+                            <div>
+                                <input type="checkbox" class="slotName" name="limit[]" value="MONDAY">周一</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="TUESDAY">周二</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="WEDNESDAY">周三</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="THURSDAY">周四</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="FRIDAY">周五</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="SATURDAY">周六</input>
+                                <input type="checkbox" class="slotName" name="limit[]" value="SUNDAY>周日</input>
+                            </div>
+                            <p class="addTime">添加时间段：<span>(仅可以添加两组，选填)</span></p>
+                            <div class="slot_some_input">
+                                <span>第一组时间：</span>
+                                <input type="text" name="begin_time[]" class="slotInput"></input>
+                                <span>至</span>
+                                <input type="text" name="end_time[]" class="slotInput"></input>
+                            </div>
+                            <div class="slot_some_input">
+                                <span>第二组时间：</span>
+                                <input type="text" name="begin_time[]" class="slotInput"></input>
+                                <span>至</span>
+                                <input type="text" name="end_time[]" class="slotInput"></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 优惠详情 -->
+            <div id="discountContianer">
+                <h4>优惠详情</h4>
+                <div class="discount_lim">
+                    <div>
+                        <span>领券限制(选填)：</span>
+                        <input type="number" class="limit" name="max_increase_bonus" value="0" placeholder="请输入用户领券上限">张</input>
+                    </div>
+                    <span>每个用户领券上限，如不填，则默认为1</span>
+                </div>
+                <div class="discount_use">
+                    <span>使用条件：</span>
+                    <div class="use_pay">
+                        <div>
+                            <input type="checkbox" class="usePay" value="0"></input>
+                            <span>适用条件</span>
+                        </div>
+                        <div class="use_pay_div_zhe">
+                            <div>
+                                <span>适用商品</span>
+                                <input type="text" class="usePay_text1" maxlength="15" name="accept_category" placeholder="请输入适用商品"></input>
+                            </div>
+                            <div>
+                                <span>不适用商品</span>
+                                <input type="text" class="usePay_text2" maxlength="15" name="reject_category" placeholder="请输入不适用商品"></input>
+                            </div>
+                            <p>商品填写最多不超过15个汉字</p>
+                        </div>
+                    </div>
+                    <div class="use_share">
+                        <span>优惠共享</span>
+                        <select id="use_share_select" name="share">
+                            <option value="true">请选择</option>
+                            <option value="false">不与其他优惠共享</option>
+                            <option value="true">可与其他优惠共享</option>
+                        </select>
+                    </div>
+                    <span>使用条件的设置会在券上展示，请务必仔细确认。</span>
+                </div>
+                <!-- 封面样式 -->
+                <div class="discount_img">
+                    <span>封面图片样式：</span>
+                    <!-- 卡券支持的封面列表；4个，传递不同值来识别图片 -->
+                    <div class="img_list">
+                        <div class="img_type">
+                            <!-- 图片的地址为固定地址，不支持用户上传 -->
+                            <img class="img imgTrue" src="__PUBLIC__/getNumber/images/orderCancel/bg.png" alt="图片">
+                            <input type="radio" checked="checked" name="imgType" value="0"></input>
+                        </div>
+                        <div class="img_type">
+                            <img class="img" src="__PUBLIC__/getNumber/images/orderCancel/bg.png" alt="图片">
+                            <input type="radio" name="imgType" value="1"></input>
+                        </div>
+                        <div class="img_type">
+                            <img class="img" src="__PUBLIC__/getNumber/images/orderCancel/bg.png" alt="图片">
+                            <input type="radio" name="imgType" value="2"></input>
+                        </div>
+                        <div class="img_type">
+                            <img class="img" src="__PUBLIC__/getNumber/images/orderCancel/bg.png" alt="图片">
+                            <input type="radio" name="imgType" value="3"></input>
+                        </div>
+                    </div>
+                </div>
+                <!-- 封面简介 -->
+                <div class="discount_msg">
+                    <span>封面简介：</span>
+                    <input type="text" maxlength="12" name="abstract" class="discountMsg" placeholder="最多12字的简介"></input>
+                </div>
+                <!-- 注意事项 -->
+                <div class="discount_notice">
+                    <span>使用须知(选填)：</span>
+                    <textarea name="description" placeholder="请填写使用本优惠券的注意事项"></textarea>
+                </div>
+            </div>
+            <!-- 商户介绍(选填) -->
+            <div id="shopContainer">
+                <h4>商户介绍(选填)</h4>
+                <!-- 电话信息 -->
+                <div class="shopPhone">
+                    <span>电话：</span>
+                    <input type="text" class="phone" name="phone" placeholder="请填写手机号码"></input>
+                </div>
+                <!-- 商户服务 -->
+                <div class="shopSupport">
+                    <span>商户服务(可多选)：</span>
+                    <div>
+                        <input type="checkbox" name="business_service[]" value="BIZ_SERVICE_FREE_WIFI">免费WIFI</input>
+                        <input type="checkbox" name="business_service[]" value="BIZ_SERVICE_WITH_PET">可带宠物</input>
+                        <input type="checkbox" name="business_service[]" value="BIZ_SERVICE_FREE_PARK">免费停车</input>
+                        <input type="checkbox" name="business_service[]" value="BIZ_SERVICE_DELIVER">可外卖</input>
+                    </div>
+                </div>
+            </div>
+            <!-- 提交 -->
+            <div id="btnContainer">
+                <button id="submitBtn" type="submit">立即提交</button>
+            </div>
+        </form>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/lib/moment.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/lib/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/addCouponCommonZhe.js"></script>
+</body>
+
+</html>

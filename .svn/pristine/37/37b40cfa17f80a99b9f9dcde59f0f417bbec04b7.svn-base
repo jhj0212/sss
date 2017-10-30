@@ -1,0 +1,565 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+
+/*卡券颜色组*/
+
+.color0 {
+    background: #FF6565;
+}
+
+.color1 {
+    background: #6584FF;
+}
+
+.color2 {
+    background: #31D931;
+}
+
+.color3 {
+    background: #FFA965;
+}
+
+.color4 {
+    background: #000000;
+}
+
+.color5 {
+    background: #FFFFFF;
+}
+
+
+/*信息验证*/
+
+#validate {
+    position: fixed;
+    height: 2.5rem;
+    width: 100%;
+    line-height: 2.8rem;
+    text-align: center;
+    background: #FF4E30;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    display: none;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+
+/*头部*/
+
+#headerContainer {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.8rem;
+    background: #FF4E30;
+    font-size: 1rem;
+}
+
+#headerContainer h3 {
+    padding-left: 5%;
+    color: #fff;
+}
+
+
+/*表单*/
+
+#form {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+/*三个大板块通用设置*/
+
+#baseContianer,
+#discountContianer,
+#shopContainer {
+    background: #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#baseContianer h4,
+#discountContianer h4,
+#shopContainer h4 {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: 5%;
+    margin: .5rem 0;
+    background: #eee;
+}
+
+#baseContianer>div,
+#baseContianer>p,
+#discountContianer>div,
+#shopContainer>div {
+    padding: 0 5%;
+    margin: .8rem 0;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*第一模块上边距和P标签HACK*/
+
+#baseContianer h4 {
+    margin-top: 0;
+}
+
+#baseContianer>p {
+    margin: 0 0 1rem 0;
+    font-size: .75rem;
+}
+
+
+/*通用设置完毕*/
+
+
+/*基本信息模块*/
+
+
+/*商户名称*/
+
+.base_shop_text {
+    color: #777;
+}
+
+
+/*卡券颜色*/
+
+.base_color_list {
+    margin-top: .5rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.base_color {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid #ddd;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.base_color input {
+    width: 1.2rem;
+    height: 1.2rem;
+    opacity: 0;
+}
+
+.base_color.true {
+    border-radius: 1.2rem;
+}
+
+
+/*卡券标题*/
+
+.base_title input {
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+
+/*卡券有效期*/
+
+.base_chooseTime>span {
+    margin-bottom: .3rem;
+}
+
+.base_chooseTime .chooseTime_select {
+    margin: .3rem 0;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.base_chooseTime .chooseTime_fixed{
+    margin: .3rem 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+.base_chooseTime .chooseTime_select input {
+    margin-right: .5rem;
+}
+
+.base_chooseTime .chooseTime_select select {
+    margin: 0 .5rem;
+}
+/*固定日期插件容器*/
+.chooseTime_fixed_content{
+    width: 100%;
+    margin: .5rem 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.chooseTime_fixed_content>span{
+    margin: .5rem 0;
+}
+/*可用时间段*/
+
+.base_slot>span,
+.base_slot>div {
+    margin-bottom: .5rem;
+}
+
+.base_slot>div input {
+    margin: .3rem .5rem .3rem 0;
+}
+
+.base_slot .slot_some_day {
+    display: none;
+    margin: .5rem 0;
+}
+
+.base_slot .slot_some_day>div {
+    margin: .5rem 0;
+}
+
+.base_slot .slot_some_day>div input {
+    width: 1rem;
+    height: 1rem;
+}
+
+.slot_some_day .addTime span {
+    color: #333;
+    font-size: .75rem;
+    margin-left: .5rem;
+}
+
+.slot_some_day .cancelTime {
+    color: #FF4E30;
+}
+
+.slot_some_day .slot_some_input {
+    margin-top: .5rem;
+}
+
+.slot_some_day .slot_some_input input {
+    width: 3.5rem !important;
+    padding: .1rem !important;
+    margin: 0 !important;
+}
+
+
+/*优惠详情模块*/
+
+
+/*领券限制*/
+
+.discount_lim input {
+    width: 8rem;
+    padding: .2rem .5rem;
+    margin: 0 .3rem 0 0;
+}
+
+.discount_lim>span {
+    color: #777;
+    font-size: .75rem;
+    margin: .3rem 0 0 0;
+}
+
+
+/*使用条件*/
+
+.discount_use>span:last-child {
+    margin-top: .5rem;
+    margin-bottom: 0;
+    color: #777;
+    font-size: .75rem;
+}
+
+.discount_use>div {
+    margin: .5rem 0;
+}
+
+.use_pay div {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.use_pay .use_pay_div {
+    display: none;
+}
+
+.use_pay div:first-child {
+    margin: .5rem 0;
+}
+
+.use_pay div:first-child input {
+    margin-right: .5rem;
+}
+
+.use_pay div:last-child select {
+    margin-right: .5rem;
+}
+
+.use_pay div:last-child input {
+    margin: 0 .5rem;
+    width: 5rem;
+}
+
+
+/*封面样式*/
+
+.discount_img>span {
+    margin-bottom: .5rem;
+}
+
+.discount_img .img_list {
+    margin-top: .5rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.discount_img .img_list .img_type {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #ddd;
+    position: relative;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.discount_img .img_list .img_type img {
+    width: 100%;
+    height: 100%;
+}
+
+.discount_img .img_list .img_type img.imgTrue {
+    border-radius: 2rem;
+}
+
+.discount_img .img_list .img_type input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0;
+}
+
+
+/*封面简介*/
+
+.discount_msg span {
+    margin-bottom: .5rem;
+}
+
+.discount_msg input {
+    height: 1rem;
+    padding: .5rem;
+}
+
+
+/*使用规则*/
+
+.discount_notice span {
+    margin-bottom: .5rem;
+}
+
+.discount_notice textarea {
+    padding: .5rem;
+    height: 4rem;
+}
+
+
+/*商户介绍模块*/
+
+.shopPhone>span {
+    margin-bottom: .5rem;
+}
+
+
+/*电话*/
+
+.shopPhone input {
+    padding: .5rem;
+}
+
+
+/*商户服务*/
+
+.shopSupport>span {
+    margin-bottom: .5rem;
+}
+
+.shopSupport>div {
+    margin-top: .5rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.shopSupport>div input {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/*按钮类*/
+
+#btnContainer {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#submitBtn,
+#viewBtn {
+    width: 50%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: none;
+    color: #fff;
+    background: #FF4E30;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    outline: none;
+}
+
+#viewBtn {
+    background: #7ECED9;
+}

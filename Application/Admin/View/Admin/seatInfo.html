@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/quanxian/css/yuangong.css" />-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/quanxian/css/tianjia.css" />
+    <script type="text/javascript" src="__PUBLIC__/quanxian/js/jquery.js"></script>
+    <title>餐位信息</title>
+
+</head>
+<body class="main">
+<form action="{:U('Admin/editSeat')}" method='post' class="" enctype="multipart/form-data">
+    <input type="hidden" name="sid" id="sid" value="{$sid}"/>
+    <input type="hidden" name="id" id="id" value="{$id}"/>
+    <input type="hidden" name="table_id" id="table_id" value="{$data.table_id}"/>
+    <input type="hidden" name="state" id="state" value="{$data.state}"/>
+    <input type="hidden" name="level" id="level" value="{$level}"/>
+    <input type="hidden" name="openid" id="openid" value="{$openid}"/>
+    <div class="tupian">
+        <img src="__PUBLIC__/quanxian/img/tianjia.png" />
+        <h3 id="reContent">{$data.table_id}号桌</h3>
+    </div>
+    <div class="liebiao">
+        <ul>
+            <li>
+                <p>餐位名称：</p>
+                <input type="text" class=" " name="table_name" value="{$data.table_name}"
+                    <if condition="$level neq 1">disable123
+                        d</if>
+                />
+            </li>
+            <li>
+                <p>容纳人数：</p>
+
+                <input type="text" class=" " name="person_count" value="{$data.person_count}"
+                    <if condition="$level neq 1">disabled</if>
+                />
+            </li>
+            <li>
+                <p>餐位类型：</p>
+                <if condition="$level eq 1">
+                    <select name="table_type">
+                        <option value="1" <if condition="$data.table_type eq 1">selected="selected"</if>>2人桌</option>
+                        <option value="2" <if condition="$data.table_type eq 2">selected="selected"</if>>4人桌</option>
+                        <option value="3" <if condition="$data.table_type eq 3">selected="selected"</if>>6人桌</option>
+                        <option value="4" <if condition="$data.table_type eq 4">selected="selected"</if>>8人桌</option>
+                        <option value="0" <if condition="$data.table_type eq 0">selected="selected"</if>>包房</option>
+                    </select>
+                </if>
+                <if condition="$level neq 1">
+                    <if condition="$data.table_type eq 0">
+                        <input type="text" class=" " name="table_type" value="包房" disabled/>
+                    </if>
+                    <if condition="$data.table_type eq 1">
+                        <input type="text" class=" " name="table_type" value="2人桌" disabled/>
+                    </if>
+                    <if condition="$data.table_type eq 2">
+                        <input type="text" class=" " name="table_type" value="4人桌" disabled/>
+                    </if>
+                    <if condition="$data.table_type eq 3">
+                        <input type="text" class=" " name="table_type" value="6人桌" disabled/>
+                    </if>
+                    <if condition="$data.table_type eq 4">
+                        <input type="text" class=" " name="table_type" value="8人桌" disabled/>
+                    </if>
+                </if>
+            </li>
+            <li>
+                <p>是否提供预订:</p>
+                <if condition="$level eq 1">
+                    <select name="is_order">
+                        <option value="1" <if condition="$data.is_order eq 1">selected="selected"</if>>是</option>
+                        <option value="0" <if condition="$data.is_order eq 0">selected="selected"</if>>否</option>
+                    </select>
+                </if>
+                <if condition="$level neq 1">
+                    <if condition="$data.is_order eq 1">
+                        <input type="text" class=" " name="is_order" value="是" disabled/>
+                    </if>
+                    <if condition="$data.is_order eq 0">
+                        <input type="text" class=" " name="is_order" value="否" disabled/>
+                    </if>
+                </if>
+            </li>
+        </ul>
+    </div>
+    <if condition="$level eq 1">
+        <div class="tijiao">
+            <button class="" type="submit" id="submitBtn"> 提交</button>
+        </div>
+    </if>
+</form>
+</body>
+</html>

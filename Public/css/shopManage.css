@@ -1,0 +1,196 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+/*单一列表信息*/
+.shopMsg{
+    width: 90%;
+    padding: 2%;
+    height: 8rem;
+    margin: 1rem auto;
+    background: #fff;
+    border: 1px solid #FF4E30;
+    border-radius: .3rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.shopMsg .shopMsg_msg{
+    width: 100%;
+    height: 100%;
+    padding-bottom: .5rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shopMsg .shopMsg_msg>div{
+    max-width: 15rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.shopMsg .shopMsg_msg>div p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.shopMsg .shopMsg_msg img{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+}
+.shopMsg .shopMsg_manage{
+    border-top: 1px dashed #FF4E30;
+    padding: 1rem 0 .5rem;
+    width: 100%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.shopMsg .shopMsg_manage a{
+    padding: .2rem;
+    background: #FF4E30;
+    color: #fff;
+    border-radius: .3rem;
+    font-size: .75rem;
+}
+.shopMsg .shopMsg_manage .cancelShop{
+    background: #777;
+}
+/*end*/
+/*尾部*/
+#footerHack{
+    width: 100%;
+    height: 2.5rem;
+}
+#footer{
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+#footer button{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.7rem;
+    position: fixed;
+    bottom: 0;
+    border: none;
+    color: #fff;
+    background: #FF4E30;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+/*弹窗*/
+#mask{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+}
+#confirmWs{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 15rem;
+    height: 8rem;
+    margin-left: -7.5rem;
+    background: #fff;
+    z-index: 100;
+    border-radius: .2rem;
+}
+#confirmWs .ws_head{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.7rem;
+    border-radius: .2rem .2rem 0 0;
+    background: #555;
+    text-align: center;
+    color: #fff;
+}
+#confirmWs .ws_body{
+    width: 100%;
+    height: 5.5rem;
+    text-align: center;
+}
+#confirmWs .ws_body span{
+    display: inline-block;
+    width: 40%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #888;
+    margin-top: 1.5rem;
+    border-radius: .2rem;
+    color: #fff;
+}
+#confirmWs .ws_body .true{
+    background: #FF4E30;
+}

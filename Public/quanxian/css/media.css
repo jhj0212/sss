@@ -1,0 +1,19 @@
+/*媒查检索->768px/1024px *******通用*/
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 24px !important;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html{
+        font-size: 32px !important;
+    }
+}
+
+/*消费送积分页 自适应表格hack*/
+@media screen and (min-width: 401px) {
+	
+	#table tbody tr .table_time{
+	    line-height: 3rem;
+	}
+}

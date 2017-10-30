@@ -1,0 +1,163 @@
+[ 2017-10-10T12:34:57+08:00 ] 182.254.86.156 /admin/create/rec?signature=33173a94a6e33ece5ff6e2e2a6a45f4939bb0ff9&timestamp=1507610093&nonce=1217594120&openid=oGcQ7wTgcTqK0PmAE5Vk3LNhXRUs&encrypt_type=aes&msg_signature=20d4193fbb5f14f9cb1b9cc7bf8b019bd7af9c72
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('unsubscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('unsubscribe',NULL)
+
+[ 2017-10-10T12:35:32+08:00 ] 182.254.86.151 /admin/create/rec?signature=9367c4442699e4496e93df12c04d5cd05497b394&timestamp=1507610128&nonce=1751736036&openid=oGcQ7wTgcTqK0PmAE5Vk3LNhXRUs&encrypt_type=aes&msg_signature=be1876762a5e7facd7c55c3c39eb4e566f40a737
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+
+[ 2017-10-10T14:44:15+08:00 ] 124.235.153.58 /index.php/Admin/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-10-10T14:44:20+08:00 ] 124.235.153.58 /index.php/Admin/Admin/?code=021w5fui2Ed3BF0I3iti2Qunui2w5fuN&state=STATE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Undefined property: WxPayJsApi::$curl_timeout /var/www/xhy/ThinkPHP/Library/Vendor/WxpayAPI/example/WxPayJsApi.php 第 99 行.
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0011s ]
+SQL: SELECT `sys_user_openid` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009645s ]
+
+[ 2017-10-10T14:44:28+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seat/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0009s ]
+SQL: SELECT `sys_user_level` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0007s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0345s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-10-10T14:51:57+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seat/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0010s ]
+SQL: SELECT `sys_user_level` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0006s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-10-10T15:18:20+08:00 ] 182.254.86.143 /admin/create/rec?signature=62648f0ecb4c5da71caf96eb6dfd745b21eddac5&timestamp=1507619896&nonce=891155525&openid=oGcQ7wXKQRnSPpdgjtLMd67wZW8w&encrypt_type=aes&msg_signature=8e20edd893a9e3d067c2d0acbd5b4573d9441251
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0009s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+
+[ 2017-10-10T15:34:34+08:00 ] 124.235.153.58 /index.php/Admin/Admin/seat/sid/0000000001/id/1/openid/oGcQ7wTdkUrYqYhxVSjYFpjd6wRo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `sys_user` [ RunTime:0.0007s ]
+SQL: SELECT `sys_user_level` FROM `sys_user` WHERE `sys_user_openid` = 'oGcQ7wTdkUrYqYhxVSjYFpjd6wRo' AND `sid` = '0000000001' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `meal_info` [ RunTime:0.0006s ]
+SQL: SELECT distinct p.*,c.* FROM meal_info as p INNER JOIN meal_usage c ON p.sid=c.sid AND p.table_id=c.table_id  WHERE (  p.sid = "0000000001" and p.table_type != 0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2017-10-10T15:39:45+08:00 ] 182.254.86.156 /admin/create/rec?signature=90d83a7fdcd9e7a74e70f8977a771dfe73f06883&timestamp=1507621181&nonce=447020257&openid=oGcQ7waik3vJAGPYgPql3ZCFVkIU&encrypt_type=aes&msg_signature=621fbc33c2e00ee18979f87b9173a9c8804ac344
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined index: echostr /var/www/xhy/Application/Admin/Controller/token.php 第 32 行.
+NOTIC: [8] Undefined index: CardId /var/www/xhy/Application/Admin/Controller/CreateController.class.php 第 1113 行.
+SQL: SHOW COLUMNS FROM `status` [ RunTime:0.0007s ]
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+ERR: 1048:Column 'card_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `status` (`event`,`card_id`) VALUES ('subscribe',NULL)
+

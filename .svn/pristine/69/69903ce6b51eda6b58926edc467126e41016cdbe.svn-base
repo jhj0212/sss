@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/shopManage.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>门店管理</title>
+</head>
+
+<body>
+<!-- 父容器 -->
+<div class="container">
+    <!-- 表格详情 -->
+    <form action="" method="get">
+        <div class="shopMsgContainer">
+            <div class="shopMsg">
+                <div class="shopMsg_msg">
+                    <div>
+                        <p>门店名称：<span>吉林省腾放科技有限公司</span></p>
+                        <p>门店位置：<span>长春市南关区人民大街10606号</span></p>
+                        <p>营业时间：<span>09:00-22:00</span></p>
+                    </div>
+                    <img src="" alt="门店logo">
+                </div>
+                <div class="shopMsg_manage">
+                    <a class="cancelShop" href="#">删除门店</a>
+                    <a href="cardManage.html">会员卡管理</a>
+                    <a href="couponFunction.html">卡券管理</a>
+                </div>
+            </div>
+        </div>
+        <!-- 确认删除弹窗 -->
+        <div id="mask"></div>
+        <div id="confirmWs">
+            <div class="ws_head">
+                <h3>您真的要删除么？</h3>
+            </div>
+            <div class="ws_body">
+                <span class="true">确认</span>
+                <span class="cancel">取消</span>
+            </div>
+        </div>
+        <div id="footerHack"></div>
+    </form>
+    <!-- 尾部新建优惠券 -->
+    <div id="footer">
+        <button id="newShop" type="button">新建门店</button>
+    </div>
+    <!-- 没有门店时显示提示 -->
+    <div id="empty">
+        <img src="__PUBLIC__/commonLib/images/empty.png">
+        <h3>暂无数据哦</h3>
+    </div>
+</div>
+<!-- 外部库引用 -->
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/shopManage.js"></script>
+</body>
+
+</html>

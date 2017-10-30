@@ -1,0 +1,18 @@
+[ 2017-09-26T14:32:53+08:00 ] 124.235.153.58 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-26T14:45:49+08:00 ] 124.235.153.58 /Public/quanxian/css/common/media.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-26T14:45:49+08:00 ] 124.235.153.58 /Public/quanxian/css/common/reset.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+ERR: 无法加载模块:Public
+

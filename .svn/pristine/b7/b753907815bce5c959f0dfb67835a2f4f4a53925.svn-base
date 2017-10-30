@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: .875rem;
+}
+
+/*图片容器*/
+#imgContainer{
+    width: 100%;
+    height: 6rem;
+    background: url('../images/numberFoods/bg.png');
+    background-size: cover;
+    border-bottom: .2rem solid #333;
+    position: relative;
+}
+#imgContainer a{
+	display: block;
+	color: #fff;
+	padding: .2rem .5rem;
+	top: .5rem;
+	left: .5rem;
+	font-weight: bold;
+	width: 2rem;
+	border-radius: 1rem;
+	background: rgba(255,255,255,.4);
+	position: absolute;
+	text-decoration: none;
+}
+/*左侧tab选择菜单栏容器*/
+#foodsNav{
+    width: 30%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    float: left;
+    text-align: center;
+}
+#foodsNav::-webkit-scrollbar{
+    display: none;
+}
+#foodsNav li{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #EDEDED;
+    text-align: center;
+    font-size: .75rem;
+    border-bottom: .1rem dashed #ddd;
+}
+#foodsNav li.active{
+    background: #fff;
+}
+/*右侧tab菜单食物栏容器*/
+#foodsListContainer{
+    width: 70%;
+    float:left;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#foodsListContainer::-webkit-scrollbar{
+    display: none;
+}
+.foodsList{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*移动端隐藏滚动条Hack*/
+.foodsList::-webkit-scrollbar{
+    display: none;
+}
+/*显示tab开关类*/
+.foodsList.offList{
+    display: none;
+}
+/*菜单食物栏容器下的食物*/
+.foodsList li{
+    width: 96%;
+    height: 4.5rem;
+    padding: 2%;
+    margin-bottom: .2rem;
+    border-bottom: 1px dashed #ddd;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+.foodsList li .foods_img{
+    width: 6rem;    
+    height: 4.5rem;
+}
+/*食物介绍->名称和价钱容器*/
+.foodsList li .foods_msg{
+    width: 80%;
+    height: 100%;
+    padding-left: 5%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.foodsList li .foods_msg .foods_title{
+    font-weight: bold;
+}
+.foodsList li .foods_msg .foods_money{
+    font-weight: bold;
+    font-size: .75rem;
+    color: #F21B1B;
+}

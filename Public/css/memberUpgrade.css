@@ -1,0 +1,227 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: .875rem;
+    position: relative;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    z-index: 0;
+}
+
+/*会员到期日*/
+#headerContainer{
+    width: 100%;
+    height: 15%;
+    color: #FF4E30;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#headerContainer h1{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+#headerContainer p{
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: .5rem;
+}
+/*会员升级日期*/
+#msgContainer{
+    width: 100%;
+    height: 80%;
+    background: url('../images/memberUpgrade/bg.png');
+    background-size: 100% 100%;
+    position: relative;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#msgContainer>img{
+    position: absolute;
+    top: -2rem;
+    width: 9.625rem;
+    height: 9.06rem;
+    z-index: -1;
+}
+
+/*升级信息*/
+#msgContainer .up_container{
+    width: 90%;
+    height: 12.75rem;
+    border-radius: .3rem;
+    background: #FFF0D9;
+    margin-bottom: 2rem;
+    position: relative;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#msgContainer .up_container .up_txt{
+    background: url('../images/memberUpgrade/up.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 2rem;
+    text-align: center;
+}
+#msgContainer .up_container .up_txt span{
+    display: block;
+    margin-top: .3rem;
+    color: #C73838;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*会员的会员进度条*/
+#msgContainer .up_container .up_load{
+    width: 80%;
+    height: 1rem;
+    margin-bottom: 3rem;
+    background: red;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+}
+/*升级积分*/
+#msgContainer .up_container .up_msg{
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;   
+}
+#msgContainer .up_container .up_msg>span{
+    padding: 1px .3rem;
+    margin-right: .75rem;
+    border-radius: .3rem;
+    background: #FF4E30;
+    color: #eee;
+    font-size: .875rem;
+}
+#msgContainer .up_container .up_msg p{
+    color: #FF4E30;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/*消费得积分*/
+#msgContainer .msg_container{
+    width: 90%;
+    height: 8rem;
+    border-radius: .3rem;
+    background: #FFF0D9;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#msgContainer .msg_msg{
+    width: 90%;
+    height: 60%;
+    border-radius: .3rem;
+    background: #fff;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#msgContainer .msg_msg span{
+    width: auto;
+    height: 2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    line-height: 2rem;
+    padding: .5rem 1rem;
+    background: #FF4E30;
+    color: #F4F4F4;
+}
+#msgContainer .msg_msg img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    margin-right: -.5rem;
+}

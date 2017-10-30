@@ -1,0 +1,120 @@
+[ 2017-09-27T08:36:53+08:00 ] 124.235.153.58 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-27T08:36:53+08:00 ] 124.235.153.58 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-09-27T15:28:21+08:00 ] 124.235.153.58 /index.php/Index/orderIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+ERR: 无法加载模块:Index
+
+[ 2017-09-27T15:28:25+08:00 ] 124.235.153.58 /index.php/Index/map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+ERR: 无法加载模块:Index
+
+[ 2017-09-27T15:30:06+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bcf0f28d45a1859.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:06+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bcf07ed6aeb5081.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:06+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bcf217475d44066.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:07+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bcf2f941ab99327.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:07+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bcf47c17620954.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:07+08:00 ] 124.235.153.58 /Public/images/numberFoods//uploads/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:07+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-19/59c0b29ef13575998.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:07+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bcebdd231df1830.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:07+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bced525cf2c6186.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:08+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-19/59c09b53366e89370.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:08+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-19/59c09ae9bf09d7887.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008426s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:08+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bceaff8f8177323.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:08+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-19/59c0a95f22b904127.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009927s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:08+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bcee28349be4370.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:08+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bceebdd7e445569.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+ERR: 无法加载模块:Public
+
+[ 2017-09-27T15:30:08+08:00 ] 124.235.153.58 /Public/images/numberFoods//2017-09-16/59bcef419195e9990.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+ERR: 无法加载模块:Public
+

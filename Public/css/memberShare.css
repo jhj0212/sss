@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/memberShare/bodyBg.png);
+    background-size: contain;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*图片容器*/
+
+#imgContainer {
+    width: 19.56rem;
+    height: 16.75rem;
+    margin: 0 auto;
+    background: url('../images/memberShare/bg.png');
+    background-size: 100% 100%;
+    position: relative;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#imgContainer .img_txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 3.125rem;
+}
+
+
+/*会员卡->相对定位二次修正*/
+
+#imgContainer div {
+    width: 12.625rem;
+    height: 7.625rem;
+    margin-left: 1rem;
+    position: relative;
+}
+
+#imgContainer div .img_card {
+    width: 100%;
+    height: 100%;
+}
+
+#imgContainer div p {
+    position: absolute;
+    font-weight: bold;
+    right: .5rem;
+    bottom: .5rem;
+    color: #EBEBEB;
+}
+
+
+/*会员卡标语*/
+
+#textContainer {
+    width: 100%;
+    height: 5rem;
+    margin-top: 5rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#textContainer h3 {
+    font-size: 1rem;
+}
+
+#textContainer span,
+#textContainer h3 {
+    color: #F1F1F1;
+}
+
+#textContainer span {
+    font-size: .875rem;
+}

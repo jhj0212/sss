@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="../css/memberCardNumber.css">
+    <link rel="stylesheet" type="text/css" href="../../commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="../../commonLib/css/common/media.css">
+    <title>会员卡号</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 会员卡图片 -->
+        <span></span>
+        <div id="imgContainer">
+            <img src="../images/memberCardNumber/card.png">
+            <p>NO.<span>12345678</span></p>
+        </div>
+        <!-- 信息容器 -->
+        <div id="msgContainer">
+            <!-- VISA -->
+            <div class="msg_show">
+                <img src="../images/memberCardNumber/visa.png">
+                <span>使用时向服务员出示此卡</span>
+            </div>
+            <!-- 各种信息 -->
+            <div class="msg_msg">
+                <img src="../images/memberCardNumber/add.png" alt="地址">
+                <span>地址：东北亚国际金融中心</span>
+                <span class="msg_border"></span>
+            </div>
+            <div class="msg_msg">
+                <img src="../images/memberCardNumber/phone.png" alt="电话">
+                <span>电话：400-755-63647</span>
+                <span class="msg_border"></span>
+            </div>
+            <!-- 二维码 -->
+            <div class="msg_QR">
+                <img src="../../commonLib/images/qr.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+</body>
+
+</html>

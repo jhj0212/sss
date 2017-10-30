@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+/*图片容器*/
+#imgContainer{
+    width: 100%;
+    height: 7rem;
+    border-bottom: .3rem solid #999;
+}
+#imgContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+/*表格*/
+#table{
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+/*表头*/
+#table thead{
+    width: 100%;
+    height: 3rem;
+    background: #DEDEDE;
+}
+#table thead tr{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#table thead tr th{
+    border-right: 1px solid #C2C2C2;
+    border-bottom: 1px solid #C2C2C2;
+    width: 33.3%;
+}
+#table thead tr th:last-child{
+    border-right: none;
+}
+
+/*表身*/
+#table tbody{
+    width: 100%;
+    background: #fff;
+}
+#table tbody tr{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#table tbody tr td{
+    text-align: center;
+    width: 33.3%;
+    border-right: 1px solid #C2C2C2;
+    border-bottom: 1px solid #C2C2C2;
+}
+#table tbody tr td:last-child{
+    border-right: none;
+}
+#table tbody tr .table_exp{
+    font-weight: bold;
+    color: #F13030;
+}
+
+#table tbody tr .table_time{
+    line-height: 1.5rem;
+}

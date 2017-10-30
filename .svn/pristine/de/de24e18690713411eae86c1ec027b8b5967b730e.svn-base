@@ -1,0 +1,14 @@
+hello china
+<?php
+	echo $name;
+	
+?>
+<br/>
+<if condition="$aaa eq 10 ">value1
+    <else /> value2
+</if>
+<switch name='name'>
+<case value='laoshi'>老师，出去<br/></case>
+<case value='xiaoming/xiaohuang'>小明，走0<br/></case>
+<default/>小明，没了
+</switch>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <!-- 优先加载-固定日期插件css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/lib/dataTime.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/register.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>注册用户</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div id="imgContainer">
+            <h3>智慧餐厅会员注册</h3>
+        </div>
+        <!-- 验证信息 -->
+        <h3 id="validate"></h3>
+        <!-- 微信头像 -->
+        <div id="userHeader">
+            <img src="" alt="用户微信头像">
+        </div>
+        <!-- 表单提交 -->
+        <form id="formContainer" method="post" action="{:U('admin/create/register')}">
+            <div class="name_sex_Container">
+                <div class="nameContent">
+                    <label for="nickName">姓名：</label>
+                    <input type="text" name="nickName" id="nickName" maxlength="8" placeholder="请输入姓名"></input>
+                </div>
+                <div class="sexContent">
+                    <div>
+                        <label class="true">先生</label>
+                        <input type="radio" checked class="sex" name="sex" value="1"></input>
+                    </div>
+                    <div>
+                        <label>女士</label>
+                        <input type="radio" class="sex" name="sex" value="2"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="birthContainer">
+
+                <label>生日：</label>
+                <div class="birthChoose">
+                    <div class="iDate date">
+                        <input type="text" name="birthday" class="chooseTimeFixed1">
+                        <button type="button" class="addOn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="phoneContainer">
+                <div>
+                    <label for="phone">手机：</label>
+                    <input type="text" name="phone" id="phone" maxlength="11" placeholder="请输入11位手机号"></input>   
+                </div>
+            </div>
+        </form>
+        <!-- 尾部 -->
+        <button id="submitBtn" type="submit">立即注册</button>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/register.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/lib/moment.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/lib/bootstrap-datetimepicker.js"></script>
+</body>
+
+</html>

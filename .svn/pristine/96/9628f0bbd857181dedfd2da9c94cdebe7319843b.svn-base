@@ -1,0 +1,71 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #F4F4F4;
+}
+
+
+/*父容器*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: .875rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+/*单一信息容器*/
+#msgContainer{
+    width: 80%;
+    padding: 5% 10%;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #CACACA;
+    -webkit-box-shadow: 1px 1px 1px #ddd;
+    box-shadow: 1px 1px 1px #ddd;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+#msgContainer h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+#msgContainer .msg_phone,#msgContainer .msg_add{
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#msgContainer .msg_phone{
+    margin-bottom: 1rem;
+}
+#msgContainer .msg_add img,#msgContainer .msg_phone img{
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+}

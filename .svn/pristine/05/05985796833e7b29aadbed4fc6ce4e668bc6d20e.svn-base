@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/memberPrivilege.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>会员特权</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 会员特权 -->
+        <div id="headerContainer">
+            <h1>会员特权说明</h1>
+            <div class="header_msg">
+                <span class="header_msg_time">2017-07-28</span>
+                <span class="header_msg_txt">智慧餐厅</span>
+            </div>
+        </div>
+        <!-- 特权信息 -->
+        <div id="msgContainer">
+            <span>一、会员储值享受储值优惠活动</span>
+            <span>二、会员享受会员菜品和会员价菜品</span>
+            <span>三、会员生日享受店面生日服务</span>
+            <span>四、会员享受不定期发送的赠送优惠券</span>
+            <span>五、会员享受随机的互动优惠活动</span>
+        </div>
+        <!-- 图片容器 -->
+        <div id="imgContainer">
+            <img src="__PUBLIC__/images/memberPrivilege/food.png">
+        </div>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+</body>
+
+</html>

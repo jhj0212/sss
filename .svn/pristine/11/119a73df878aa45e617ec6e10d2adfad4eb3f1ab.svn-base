@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="../css/rechange.css">
+    <link rel="stylesheet" type="text/css" href="../../commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="../../commonLib/css/common/media.css">
+    <title>立即充值</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <h3 id="validate"></h3>
+        <!-- 头部 -->
+        <div id="imgContainer"></div>
+        <!-- 表单 -->
+        <form id="form" method="post" action="">
+            <div class="form_money">
+                <input id="text" type="text" placeholder="请输入金额"></input>
+            </div>
+            <div class="form_coupon">
+                <h3>-----特惠活动-----</h3>
+                <div class="form_discount">
+                    <label>充值100元立送200</label>
+                    <input type="radio" name="discount" value="0"></input>
+                </div>
+                <div class="form_discount">
+                    <label>充值200元立送500</label>
+                    <input type="radio" name="discount" value="1"></input>
+                </div>
+                <div class="form_discount">
+                    <label>充值500元立送1000</label>
+                    <input type="radio" name="discount" value="2"></input>
+                </div>
+            </div>
+            <button id="submitBtn" type="button">立即充值</button>
+        </form>
+        <!-- 尾部 -->
+        <div id="footerHack"></div>
+        <footer id="footerContainer"></footer>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/rechange.js"></script>
+</body>
+
+</html>

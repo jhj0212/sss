@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <!-- ios下删除默认的苹果工具栏和菜单栏 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- ios下控制状态栏显示样式，黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 电话号码非默认识别 -->
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/memberManage.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/reset.css">
+    <!-- @media css -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/commonLib/css/common/media.css">
+    <title>后台会员管理中心</title>
+</head>
+
+<body>
+    <!-- 父容器 -->
+    <div class="container">
+        <!-- 图片容器 -->
+        <div id="imgContainer">
+            <a href="{:U('admin/create/memberFiles')}"><img src="__PUBLIC__/images/manageBg.png"></a>
+        </div>
+        <!-- 信息容器 -->
+        <div id="msgContainer">
+            <a href="memberFiles.html">
+                <div>
+                    <img src="__PUBLIC__/images/manage_1.png">
+                    <span>会员档案记录</span>
+                </div>
+            </a>
+            <a href="{:U('admin/create/memberRechange')}">
+                <div>
+                     <img src="__PUBLIC__/images/manage_2.png">
+                    <span>会员充值记录</span>
+                </div>
+            </a>
+            <a href="memberPay.html">
+                <div>
+                    <img src="__PUBLIC__/images/manage_5.png">
+                    <span>会员消费记录</span>
+                </div>
+            </a>
+            <a href="memberRecord.html">
+                <div>
+                    <img src="__PUBLIC__/images/manage_4.png">
+                    <span>积分管理记录</span>
+                </div>
+            </a>
+            <a href="{:U('admin/create/memberRank')}">
+                <div>
+                    <img src="__PUBLIC__/images/manage_3.png">
+                    <span>会员特权说明</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+</body>
+
+</html>

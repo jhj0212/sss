@@ -1,0 +1,68 @@
+html,
+body,
+div,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0 none;
+}
+*{list-style: none;}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+
+/*main start*/
+.main{
+	width:100%; 
+	height:100%; 
+	/*background-color:#efeef4; */
+}
+.main_s{
+	width:90%;
+	height:50%;
+	border-radius: 10px;
+/*	background-color:#fcfcfc;*/
+	margin:auto;
+	margin-top:20px;
+	
+}
+.main_s ul li p{
+	float:left;
+	font-size:1.2rem;
+	font-family:"微软雅黑";
+	margin-left:10%;
+	margin-top:10%;
+}
+.main_x img{
+	width:100%;
+	height:auto;
+    margin:auto;
+}

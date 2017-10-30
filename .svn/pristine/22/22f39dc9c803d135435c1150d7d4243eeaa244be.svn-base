@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/quanxian/css/yuangong.css" />
+    <title>餐位信息</title>
+
+</head>
+<body class="main">
+<form action="{:U('Admin/seatBack')}" method='post' class="" enctype="multipart/form-data">
+    <h1>{$data.table_id}号桌</h1>
+    <div class="xinxi">
+        <ul>
+            <li>
+                <span>餐位名称：</span>
+                <input type="text" class=" " name="table_name" value="{$data.table_name}" disabled/>
+            </li>
+            <li>
+                <span>容纳人数：</span>
+
+                <input type="text" class=" " name="person_count" value="{$data.person_count}" disabled/>
+            </li>
+            <li>
+                <span>餐位类型：</span>
+                <if condition="$data.table_type eq 0">
+                    <input type="text" class=" " name="table_type" value="包房" disabled/>
+                </if>
+                <if condition="$data.table_type eq 1">
+                    <input type="text" class=" " name="table_type" value="2人桌" disabled/>
+                </if>
+                <if condition="$data.table_type eq 2">
+                    <input type="text" class=" " name="table_type" value="4人桌" disabled/>
+                </if>
+                <if condition="$data.table_type eq 3">
+                    <input type="text" class=" " name="table_type" value="6人桌" disabled/>
+                </if>
+                <if condition="$data.table_type eq 4">
+                    <input type="text" class=" " name="table_type" value="8人桌" disabled/>
+                </if>
+            </li>
+            <li>
+                <span>是否提供预订:</span>
+                <if condition="$data.is_order eq 1">
+                    <input type="text" class=" " name="is_order" value="是" disabled/>
+                </if>
+                <if condition="$data.is_order eq 0">
+                    <input type="text" class=" " name="is_order" value="否" disabled/>
+                </if>
+            </li>
+        </ul>
+    </div>
+    <!--<div class="tijiao" >
+        <input type="submit" value="返回"/>
+    </div>-->
+</form>
+</body>
+</html>
